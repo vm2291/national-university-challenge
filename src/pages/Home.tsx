@@ -32,9 +32,7 @@ const Home = () => {
               </span>
             </h1>
             
-            <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground/90">
-              Falcon's Talon Edition
-            </p>
+            <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground/90">Takamul Cup</p>
 
             <div className="inline-block px-8 py-4 bg-gradient-to-r from-gold to-gold-dark rounded-full">
               <p className="text-xl sm:text-2xl font-bold text-primary">
@@ -68,7 +66,7 @@ const Home = () => {
               </Card>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12 mb-20 my-[100px]">
+            <div className="flex flex-col gap-4 justify-center items-center mt-12 mb-20 my-[100px] sm:flex sm:flex-row">
               <Link to="/2025-event">
                 <Button size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-purple-deep hover:shadow-lg hover:shadow-primary/50 transition-all duration-300">
                   Learn More
