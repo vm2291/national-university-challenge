@@ -29,16 +29,6 @@ const Home = () => {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
-            {/* Logo Placeholder */}
-            <div className="flex justify-center mb-8">
-              <div className="w-32 h-32 sm:w-48 sm:h-48 bg-gradient-to-br from-gold via-gold-dark to-primary rounded-2xl flex items-center justify-center shadow-2xl transform hover:scale-105 transition-transform duration-500">
-                <div className="text-center">
-                  <div className="text-4xl sm:text-6xl font-bold text-primary-foreground">TC</div>
-                  <div className="text-xs sm:text-sm text-primary-foreground/80 mt-2">LOGO</div>
-                </div>
-              </div>
-            </div>
-
             <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold">
               <span className="bg-gradient-to-r from-primary via-purple-deep to-primary bg-clip-text text-transparent">
                 TAKĀMUL CUP
@@ -65,26 +55,26 @@ const Home = () => {
             </p>
 
             {/* Event Details Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 max-w-4xl mx-auto">
               <Card className="p-6 bg-card/50 backdrop-blur border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
                 <Calendar className="w-8 h-8 text-gold mx-auto mb-3" />
                 <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Date</p>
-                <p className="text-xl font-bold text-foreground">Sunday</p>
-                <p className="text-2xl font-bold text-primary">Dec 7, 2025</p>
+                <p className="text-xl font-bold text-white">Sunday</p>
+                <p className="text-2xl font-bold text-white">Dec 7, 2025</p>
               </Card>
 
               <Card className="p-6 bg-card/50 backdrop-blur border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
                 <Clock className="w-8 h-8 text-gold mx-auto mb-3" />
                 <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Time</p>
-                <p className="text-2xl font-bold text-foreground">9:00 AM - 5:00 PM</p>
-                <p className="text-lg text-muted-foreground">(GST)</p>
+                <p className="text-2xl font-bold text-white">9:00 AM - 5:00 PM</p>
+                <p className="text-lg text-white/80">(GST)</p>
               </Card>
 
               <Card className="p-6 bg-card/50 backdrop-blur border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
                 <MapPin className="w-8 h-8 text-gold mx-auto mb-3" />
                 <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Venue</p>
-                <p className="text-xl font-bold text-foreground">NYUAD</p>
-                <p className="text-lg text-foreground">C2 West Forum</p>
+                <p className="text-xl font-bold text-white">NYUAD</p>
+                <p className="text-lg text-white/80">C2 West Forum</p>
               </Card>
             </div>
 
