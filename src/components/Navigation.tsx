@@ -9,9 +9,9 @@ const Navigation = () => {
 
   const links = [
     { path: "/", label: "Home" },
+    { path: "/2025-event", label: "2025 Event" },
     { path: "/about", label: "Vision" },
     { path: "/history", label: "Our Journey" },
-    { path: "/2025-event", label: "2025 Event" },
   ];
 
   const isActive = (path: string) => location.pathname === path;

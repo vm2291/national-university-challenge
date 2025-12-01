@@ -253,12 +253,8 @@ const Event2025 = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <h2 className="text-4xl sm:text-5xl font-bold">
-              Be Part of History
+              Join us for the inaugural UAE National Integration Bee and witness mathematical excellence at its finest.
             </h2>
-            <p className="text-xl text-primary-foreground/90">
-              Join us for the inaugural UAE National Integration Bee and witness mathematical 
-              excellence at its finest.
-            </p>
             <div className="pt-6">
               <p className="text-lg">
                 For more information, please contact the organizing committee through NYU Abu Dhabi Math SIG.
