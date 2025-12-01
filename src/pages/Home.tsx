@@ -25,14 +25,12 @@ const Home = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--primary))_0%,transparent_50%)] opacity-20" />
         
         <div className="container mx-auto sm:px-6 lg:px-8 relative z-10 text-center my-0 px-px">
-          <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+          <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 my-[120px]">
             <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold">
-              <span className="bg-gradient-to-r from-primary via-purple-deep to-primary bg-clip-text text-transparent py-0 my-[70px]">
-                TAKĀMUL CUP
-              </span>
+              <span className="bg-gradient-to-r from-primary via-purple-deep to-primary bg-clip-text text-transparent py-0 my-[70px]">TĀKAMUL CUP</span>
             </h1>
             
-            <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground/90">Takamul Cup</p>
+            
 
             <div className="inline-block px-8 py-4 bg-gradient-to-r from-gold to-gold-dark rounded-full">
               <p className="text-xl sm:text-2xl font-bold text-primary">
