@@ -1,39 +1,42 @@
 import { Calendar, Clock, MapPin, Trophy, Target, Users, Zap, Award, BookOpen } from "lucide-react";
 import { Card } from "@/components/ui/card";
-
 const Event2025 = () => {
-  const competitionStructure = [
-    {
-      round: "Round 1",
-      title: "Speed & Accuracy",
-      description: "Initial qualifying round testing fundamental integration techniques across all difficulty levels.",
-      duration: "Morning Session",
-    },
-    {
-      round: "Round 2",
-      title: "Strategic Thinking",
-      description: "Advanced integration problems requiring strategic approaches and deeper mathematical understanding.",
-      duration: "Midday Session",
-    },
-    {
-      round: "Round 3",
-      title: "Championship Finals",
-      description: "The ultimate test where the best competitors face the most challenging integration problems.",
-      duration: "Afternoon Session",
-    },
-  ];
-
-  const universities = [
-    { name: "Abu Dhabi University", abbr: "ADU" },
-    { name: "American University in Dubai", abbr: "AUD" },
-    { name: "Middlesex University Dubai", abbr: "MDX" },
-    { name: "Heriot-Watt University Dubai", abbr: "HWU" },
-    { name: "UAE University", abbr: "UAEU" },
-    { name: "NYU Abu Dhabi", abbr: "NYUAD" },
-  ];
-
-  return (
-    <div className="min-h-screen pt-20">
+  const competitionStructure = [{
+    round: "Round 1",
+    title: "Speed & Accuracy",
+    description: "Initial qualifying round testing fundamental integration techniques across all difficulty levels.",
+    duration: "Morning Session"
+  }, {
+    round: "Round 2",
+    title: "Strategic Thinking",
+    description: "Advanced integration problems requiring strategic approaches and deeper mathematical understanding.",
+    duration: "Midday Session"
+  }, {
+    round: "Round 3",
+    title: "Championship Finals",
+    description: "The ultimate test where the best competitors face the most challenging integration problems.",
+    duration: "Afternoon Session"
+  }];
+  const universities = [{
+    name: "Abu Dhabi University",
+    abbr: "ADU"
+  }, {
+    name: "American University in Dubai",
+    abbr: "AUD"
+  }, {
+    name: "Middlesex University Dubai",
+    abbr: "MDX"
+  }, {
+    name: "Heriot-Watt University Dubai",
+    abbr: "HWU"
+  }, {
+    name: "UAE University",
+    abbr: "UAEU"
+  }, {
+    name: "NYU Abu Dhabi",
+    abbr: "NYUAD"
+  }];
+  return <div className="min-h-screen pt-20">
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gold/20 via-background to-primary/20" />
@@ -45,9 +48,7 @@ const Event2025 = () => {
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-primary via-purple-deep to-gold bg-clip-text text-transparent">
               2025 National Event
             </h1>
-            <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
-              The First UAE National Integration Bee
-            </p>
+            <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">UAE National Integration Bee</p>
           </div>
         </div>
       </section>
@@ -61,23 +62,23 @@ const Event2025 = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card className="p-8 bg-primary-foreground/10 backdrop-blur border-primary-foreground/20 text-center">
                 <Calendar className="w-12 h-12 text-gold mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2">Date</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Date</h3>
                 <p className="text-2xl font-bold text-gold">Sunday</p>
-                <p className="text-xl">December 7, 2025</p>
+                <p className="text-xl text-white">December 7, 2025</p>
               </Card>
 
               <Card className="p-8 bg-primary-foreground/10 backdrop-blur border-primary-foreground/20 text-center">
                 <Clock className="w-12 h-12 text-gold mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2">Time</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Time</h3>
                 <p className="text-2xl font-bold text-gold">9:00 AM - 5:00 PM</p>
-                <p className="text-lg">(Gulf Standard Time)</p>
+                <p className="text-lg text-white">(Gulf Standard Time)</p>
               </Card>
 
               <Card className="p-8 bg-primary-foreground/10 backdrop-blur border-primary-foreground/20 text-center">
                 <MapPin className="w-12 h-12 text-gold mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2">Venue</h3>
-                <p className="text-2xl font-bold text-gold">NYUAD</p>
-                <p className="text-xl">C2 West Forum</p>
+                <h3 className="text-xl font-bold mb-2 text-white">Venue</h3>
+                <p className="text-2xl font-bold text-gold">NYU Abu Dhabi</p>
+                <p className="text-xl text-white">C2 West Forum</p>
               </Card>
             </div>
           </div>
@@ -98,11 +99,7 @@ const Event2025 = () => {
             </div>
 
             <div className="space-y-6">
-              {competitionStructure.map((round, index) => (
-                <Card
-                  key={index}
-                  className="p-8 bg-card border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10"
-                >
+              {competitionStructure.map((round, index) => <Card key={index} className="p-8 bg-card border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10">
                   <div className="flex flex-col sm:flex-row items-start gap-6">
                     <div className="flex-shrink-0">
                       <div className="w-20 h-20 bg-gradient-to-br from-gold to-gold-dark rounded-full flex items-center justify-center">
@@ -125,8 +122,7 @@ const Event2025 = () => {
                       </div>
                     </div>
                   </div>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
@@ -181,19 +177,14 @@ const Event2025 = () => {
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {universities.map((uni, index) => (
-                <Card
-                  key={index}
-                  className="p-6 bg-card border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
-                >
+              {universities.map((uni, index) => <Card key={index} className="p-6 bg-card border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
                   <div className="text-center space-y-2">
                     <div className="w-16 h-16 mx-auto bg-gradient-to-br from-gold to-gold-dark rounded-full flex items-center justify-center mb-3">
                       <span className="text-xl font-bold text-primary">{uni.abbr}</span>
                     </div>
                     <h3 className="text-lg font-semibold text-foreground">{uni.name}</h3>
                   </div>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
@@ -263,8 +254,6 @@ const Event2025 = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Event2025;
