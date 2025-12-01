@@ -18,7 +18,7 @@ const App = () => <QueryClientProvider client={queryClient}>
         <Navigation className="my-0" />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />} className="my-[20px]" />
           <Route path="/history" element={<History />} />
           <Route path="/2025-event" element={<Event2025 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

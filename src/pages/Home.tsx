@@ -27,7 +27,7 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center my-0">
           <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold">
-              <span className="bg-gradient-to-r from-primary via-purple-deep to-primary bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary via-purple-deep to-primary bg-clip-text text-transparent py-0 my-[70px]">
                 TAKĀMUL CUP
               </span>
             </h1>
