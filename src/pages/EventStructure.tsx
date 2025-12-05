@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+
 const EventStructure = () => {
   return (
     <>
@@ -17,9 +19,10 @@ const EventStructure = () => {
         
         .event-structure-body {
           font-family: 'Montserrat', sans-serif;
-          background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-          color: #2c3e50;
+          background: hsl(40 30% 97%);
+          color: hsl(25 45% 15%);
           padding: 20px;
+          padding-top: 80px;
           line-height: 1.6;
         }
         
@@ -28,13 +31,13 @@ const EventStructure = () => {
           margin: 0 auto;
           background: white;
           border-radius: 20px;
-          box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+          box-shadow: 0 20px 60px rgba(147, 70, 11, 0.15);
           overflow: hidden;
         }
         
         .event-structure-header {
-          background: linear-gradient(135deg, #d4af7b 0%, rgb(234, 203, 155) 50%, #f5ddb8 100%);
-          color: #3d2817;
+          background: linear-gradient(135deg, #e7c796 0%, #ddb879 50%, #e7c796 100%);
+          color: #93460b;
           padding: 40px 50px 30px 50px;
           text-align: center;
           position: relative;
@@ -48,7 +51,7 @@ const EventStructure = () => {
           right: -50%;
           width: 200%;
           height: 200%;
-          background: radial-gradient(circle, rgba(212, 145, 90, 0.2) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(147, 70, 11, 0.15) 0%, transparent 70%);
           animation: event-structure-pulse 15s ease-in-out infinite;
         }
         
@@ -72,14 +75,14 @@ const EventStructure = () => {
           height: auto;
           display: block;
           margin: 0 auto;
-          filter: drop-shadow(0 4px 8px rgba(61, 40, 23, 0.4));
+          filter: drop-shadow(0 4px 8px rgba(147, 70, 11, 0.4));
         }
         
         .event-structure-event-subtitle {
           font-family: 'Montserrat', sans-serif;
           font-size: 1.2em;
           font-weight: 700;
-          color: #3d2817;
+          color: #93460b;
           margin-top: 15px;
           margin-bottom: 5px;
           letter-spacing: 1px;
@@ -95,8 +98,8 @@ const EventStructure = () => {
         }
         
         .event-structure-section-title {
-          background: linear-gradient(135deg, #d4af7b 0%, rgb(234, 203, 155) 100%);
-          color: #3d2817;
+          background: linear-gradient(135deg, #e7c796 0%, #ddb879 100%);
+          color: #93460b;
           padding: 12px 20px;
           border-radius: 8px;
           font-size: 1.5em;
@@ -106,18 +109,18 @@ const EventStructure = () => {
         }
         
         .event-structure-subsection-title {
-          color: #3d2817;
+          color: #93460b;
           font-size: 1.2em;
           font-weight: bold;
           margin: 20px 0 10px 0;
-          border-bottom: 2px solid #e8c875;
+          border-bottom: 2px solid #e7c796;
           padding-bottom: 5px;
           page-break-after: avoid;
         }
         
         .event-structure-info-box {
-          background: linear-gradient(135deg, #f9f3d9 0%, #f4e5a8 100%);
-          border-left: 4px solid #d4af37;
+          background: linear-gradient(135deg, #faf6ef 0%, #f5ead8 100%);
+          border-left: 4px solid #93460b;
           padding: 15px;
           margin: 15px 0;
           border-radius: 5px;
@@ -133,8 +136,8 @@ const EventStructure = () => {
         }
         
         .event-structure-stat-box {
-          background: linear-gradient(135deg, #f9f3d9 0%, #f4e5a8 100%);
-          border: 2px solid #e8c875;
+          background: linear-gradient(135deg, #faf6ef 0%, #f5ead8 100%);
+          border: 2px solid #e7c796;
           padding: 15px;
           border-radius: 8px;
           text-align: center;
@@ -142,7 +145,7 @@ const EventStructure = () => {
         
         .event-structure-stat-box .event-structure-number {
           font-size: 2em;
-          color: #3d2817;
+          color: #93460b;
           font-weight: bold;
         }
         
@@ -153,8 +156,8 @@ const EventStructure = () => {
         }
         
         .event-structure-ascii-diagram {
-          background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
-          border: 2px solid #d4af37;
+          background: linear-gradient(135deg, #faf6ef 0%, #f5ead8 100%);
+          border: 2px solid #e7c796;
           padding: 20px;
           margin: 20px 0;
           border-radius: 8px;
@@ -163,7 +166,7 @@ const EventStructure = () => {
           line-height: 1.4;
           white-space: pre;
           overflow-x: auto;
-          color: #2c3e50;
+          color: hsl(25 45% 15%);
           page-break-inside: avoid;
         }
         
@@ -175,17 +178,17 @@ const EventStructure = () => {
         }
         
         .event-structure-schedule-table th {
-          background: linear-gradient(135deg, #d4af7b 0%, rgb(234, 203, 155) 100%);
-          color: #3d2817;
+          background: linear-gradient(135deg, #e7c796 0%, #ddb879 100%);
+          color: #93460b;
           padding: 12px;
           text-align: left;
           font-weight: bold;
-          border: 1px solid #e8c875;
+          border: 1px solid #e7c796;
         }
         
         .event-structure-schedule-table td {
           padding: 10px 12px;
-          border: 1px solid #e8c875;
+          border: 1px solid #e7c796;
           background: white;
         }
         
@@ -194,11 +197,11 @@ const EventStructure = () => {
         }
         
         .event-structure-schedule-table tr:nth-child(even) td {
-          background: #fdfbf7;
+          background: #faf6ef;
         }
         
         .event-structure-time-col {
-          color: #3d2817;
+          color: #93460b;
           font-weight: bold;
           white-space: nowrap;
         }
@@ -210,11 +213,11 @@ const EventStructure = () => {
         
         .event-structure-content li {
           margin: 8px 0;
-          color: #2c3e50;
+          color: hsl(25 45% 15%);
         }
         
         .event-structure-highlight {
-          color: #3d2817;
+          color: #93460b;
           font-weight: bold;
         }
         
@@ -227,10 +230,10 @@ const EventStructure = () => {
         }
         
         .event-structure-university-item {
-          background: linear-gradient(135deg, #f9f3d9 0%, #f4e5a8 100%);
+          background: linear-gradient(135deg, #faf6ef 0%, #f5ead8 100%);
           padding: 10px;
           border-radius: 5px;
-          border-left: 3px solid #d4af37;
+          border-left: 3px solid #93460b;
           font-size: 0.95em;
         }
         
@@ -247,8 +250,8 @@ const EventStructure = () => {
         }
         
         .event-structure-award-box {
-          background: linear-gradient(135deg, #f9f3d9 0%, #f4e5a8 100%);
-          border: 3px solid #d4af37;
+          background: linear-gradient(135deg, #faf6ef 0%, #f5ead8 100%);
+          border: 3px solid #e7c796;
           padding: 20px;
           border-radius: 10px;
           text-align: center;
@@ -256,27 +259,27 @@ const EventStructure = () => {
         
         .event-structure-award-box.champion {
           grid-column: 1 / -1;
-          background: linear-gradient(135deg, #d4915a 0%, #e8a870 100%);
+          background: linear-gradient(135deg, #93460b 0%, #b85a15 100%);
           color: white;
-          border-color: #3d2817;
+          border-color: #93460b;
           border-width: 4px;
         }
         
         .event-structure-award-title {
           font-size: 1.5em;
-          color: #3d2817;
+          color: #93460b;
           font-weight: bold;
           margin-bottom: 10px;
         }
         
         .event-structure-award-box.champion .event-structure-award-title {
-          color: white;
+          color: #e7c796;
           font-size: 1.8em;
         }
         
         .event-structure-award-prize {
           font-size: 2em;
-          color: #3d2817;
+          color: #93460b;
           font-weight: bold;
           margin: 10px 0;
         }
@@ -291,7 +294,7 @@ const EventStructure = () => {
         }
         
         .event-structure-award-box.champion .event-structure-award-items {
-          color: white;
+          color: #e7c796;
           opacity: 0.95;
         }
         
@@ -304,15 +307,15 @@ const EventStructure = () => {
         }
         
         .event-structure-personnel-item {
-          background: linear-gradient(135deg, #f9f3d9 0%, #f4e5a8 100%);
+          background: linear-gradient(135deg, #faf6ef 0%, #f5ead8 100%);
           padding: 12px 15px;
           margin: 8px 0;
           border-radius: 5px;
-          border-left: 3px solid #d4af37;
+          border-left: 3px solid #93460b;
         }
         
         .event-structure-personnel-name {
-          color: #3d2817;
+          color: #93460b;
           font-weight: bold;
         }
         
@@ -740,7 +743,7 @@ Full Audience Viewing
               </div>
             </div>
             
-            <div className="event-structure-section" style={{marginTop: '40px', textAlign: 'center', color: '#3d2817'}}>
+            <div className="event-structure-section" style={{marginTop: '40px', textAlign: 'center', color: '#93460b'}}>
               <p style={{fontSize: '1.2em', fontWeight: 'bold'}}>🦅 TAKĀMUL CUP - FALCON'S TALON EDITION 🦅</p>
               <p style={{marginTop: '10px'}}>Inaugural National UAE Integration Bee Championship</p>
               <p>December 7, 2025 | NYU Abu Dhabi</p>
@@ -752,6 +755,7 @@ Full Audience Viewing
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
