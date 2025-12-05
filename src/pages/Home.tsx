@@ -2,6 +2,7 @@ import { Calendar, Clock, MapPin, Trophy, Users, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import Footer from "@/components/Footer";
 const Home = () => {
   const stats = [{
     icon: Users,
@@ -67,7 +68,7 @@ const Home = () => {
             </div>
 
             <div className="flex flex-col gap-4 justify-center items-center mt-8 sm:flex-row">
-              <Link to="/2025-event">
+              <Link to="/event-structure">
                 <Button size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-gold to-gold-dark hover:shadow-lg hover:shadow-gold/50 transition-all duration-300">
                   Learn More
                 </Button>
@@ -138,33 +139,14 @@ const Home = () => {
             </Link>
             <Link to="/history">
               <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2" style={{ borderColor: 'rgb(148, 69, 10)', color: 'rgb(148, 69, 10)' }} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(148, 69, 10, 0.1)'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}>
-                Explore Our History
+                About Us
               </Button>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 bg-gradient-to-br from-gold to-gold-dark text-foreground border-t border-gold/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <h3 className="text-xl font-bold" style={{ color: 'rgb(61, 40, 23)' }}>Dr. Dania Zantout</h3>
-          <p className="text-foreground/90 text-sm sm:text-base">
-            Founding and Executive Director, Takāmul Cup (Inaugural Edition)
-          </p>
-          <p className="text-foreground/80 text-sm sm:text-base">
-            Math Program, Division of Science • NYU Abu Dhabi
-          </p>
-          <p className="text-foreground/80 text-sm sm:text-base">
-            In collaboration with NYU Abu Dhabi Math SIG
-          </p>
-          <div className="pt-6 border-t border-foreground/20 mt-8">
-            <p className="text-xs sm:text-sm text-foreground/70">
-              © 2025 Takāmul Cup. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>;
 };
 export default Home;

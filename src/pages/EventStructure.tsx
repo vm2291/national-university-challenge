@@ -335,10 +335,6 @@ const EventStructure = () => {
         <div className="event-structure-container">
           <div className="event-structure-header">
             <div className="event-structure-header-content">
-              <div className="event-structure-logo-container">
-                <img src="https://d41chssnpqdne.cloudfront.net/user_upload_by_module/chat_bot/files/2335487/86o0tc67DAlYkDBT.png?Expires=1766151360&Signature=GcKsZ7BR0ppRmM9gEg9-mg--RRyv~Du03qnRF3FegugeR0A3H7X9p2g0x-zX3cPbdDjpB9xwDYyiYg6n0Z9zw7T6ys6GWyCo9t3SoL7cld4mgN6w~25yHVBPmBYQ7aJWRo2SAEbdEoUeozV6SbO6s6vvf5Cwk6B6cS-Z5dIghQ9-oSG2kaYsl6UBI-6jwJGESHoVPbIjUqqE1MCjhJKXjTu9wFC5yqAxLeoP6uQjSPgtsOQGZVl8fFB3f1x8LyzEGf55SDTc0a8dCrxrCEBBfowdb5XVHD0INilw~Pl7QDJciwe6PNIIb-Zg0DFwpWoq8qhFwZSCvmHmeOjbHDGC~Q__&Key-Pair-Id=K3USGZIKWMDCSX" alt="Takāmul Cup Logo" className="event-structure-logo-image" />
-              </div>
-              
               <p className="event-structure-event-subtitle">NYU Abu Dhabi • December 7, 2025</p>
               <p className="event-structure-event-subtitle">9:00 AM – 5:00 PM (GST)</p>
             </div>

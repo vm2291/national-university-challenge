@@ -9,11 +9,10 @@ const Navigation = () => {
   
   const links = [
     { path: "/", label: "Home" },
-    { path: "/2025-event", label: "2025 Event" },
-    { path: "/competition-structure", label: "Structure" },
+    { path: "/competition-structure", label: "Coordinators" },
     { path: "/event-structure", label: "Schedule" },
     { path: "/about", label: "Vision" },
-    { path: "/history", label: "History" }
+    { path: "/history", label: "About Us" }
   ];
   
   const isActive = (path: string) => location.pathname === path;

@@ -514,9 +514,6 @@ const CompetitionStructure = () => {
         <div className="competition-structure-container">
           <div className="competition-structure-header">
             <div className="competition-structure-header-content">
-              <div className="competition-structure-logo-container">
-                <img src="https://d41chssnpqdne.cloudfront.net/user_upload_by_module/chat_bot/files/2335487/ZJpXRAk9NmzXvzrU.png?Expires=1765988981&Signature=Td7mWYYY1CNIWMastian0qFk-9RY5iN2h0YrcfGFU30YCNbYyiHLE0EbsQoaWA5xD3A2gF4g6PBQRsa1RQl5kbstrZjttSbuI~6MglsOaxdLGTi8Fs9-QVcUl7zSEpONYqbaNf431pEGaC0JnoKqzDrHNTxlJQJ5c4Vd2ySLmhQixxI9-p9cy2FtcpK5eEIpL9Woh-xjE0TD-FIj-NfwNkbeaHFQJkZsqmk3XK0kz28WM4koDgHjVOz4FPlO8dpcKJVXZJwHXqbWtrDo0GMXHeyrfdYuL5lmqfDizjhoNfXIASpD0XFY6j5uym~U3cetwz6sCzle7CutkHi3vRgpeA__&Key-Pair-Id=K3USGZIKWMDCSX" alt="Takāmul Cup Logo" className="competition-structure-logo-image" />
-              </div>
               <p className="competition-structure-event-subtitle">UAE University Level Integration Bee</p>
               <span className="competition-structure-for-coordinators">📋 Competition Structure for Coordinators</span>
             </div>

@@ -1,5 +1,6 @@
 import { Calendar, Users, Award, Sparkles, BookOpen, TrendingUp } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import Footer from "@/components/Footer";
 
 const History = () => {
   const milestones = [
@@ -34,7 +35,7 @@ const History = () => {
               <BookOpen className="w-16 h-16 text-gold" />
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-gold via-gold-dark to-gold bg-clip-text text-transparent">
-              Our Journey
+              About Us
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
               From NYU Abu Dhabi to a national stage
@@ -180,6 +181,8 @@ const History = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

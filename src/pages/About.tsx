@@ -1,5 +1,6 @@
 import { Target, Lightbulb, Users, Trophy, Sparkles, Brain } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import Footer from "@/components/Footer";
 
 const About = () => {
   const visionPoints = [
@@ -150,6 +151,8 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
