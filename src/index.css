@@ -10,55 +10,58 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
 @layer base {
   :root {
     --background: 40 30% 97%;
-    --foreground: 25 45% 15%;
+    --foreground: 16 100% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 25 45% 15%;
+    --card-foreground: 16 100% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 25 45% 15%;
+    --popover-foreground: 16 100% 11%;
 
-    /* Primary: #93460b - burnt orange */
-    --primary: 25 86% 31%;
-    --primary-foreground: 40 30% 97%;
+    /* Primary: #e7c595 - warm beige (most prominent) */
+    --primary: 36 68% 74%;
+    --primary-foreground: 16 100% 11%;
 
-    /* Secondary: #e7c796 - warm beige */
-    --secondary: 36 65% 75%;
-    --secondary-foreground: 25 45% 15%;
+    /* Secondary: #93460b - burnt orange */
+    --secondary: 25 86% 31%;
+    --secondary-foreground: 40 30% 97%;
+
+    /* Tertiary: #381200 - deep brown */
+    --tertiary: 16 100% 11%;
+    --tertiary-foreground: 36 68% 74%;
 
     --muted: 36 30% 92%;
-    --muted-foreground: 25 30% 45%;
+    --muted-foreground: 16 50% 30%;
 
-    --accent: 36 65% 75%;
-    --accent-foreground: 25 45% 15%;
+    --accent: 25 86% 31%;
+    --accent-foreground: 40 30% 97%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 36 30% 85%;
-    --input: 36 30% 85%;
+    --border: 36 40% 80%;
+    --input: 36 40% 80%;
     --ring: 25 86% 31%;
 
     --radius: 0.75rem;
     
     /* Custom design tokens - Brand colors */
-    --gold: 36 65% 75%;
+    --gold: 36 68% 74%;
     --gold-dark: 25 86% 31%;
-    --beige-bg: 36 65% 75%;
-    --beige-bg-dark: 36 55% 66%;
-    --brown-deep: 25 86% 31%;
+    --beige: 36 68% 74%;
+    --burnt-orange: 25 86% 31%;
+    --deep-brown: 16 100% 11%;
     --brown-light: 25 70% 45%;
-    --navy: 25 45% 15%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(36 65% 75%) 0%, hsl(25 86% 31%) 100%);
-    --gradient-beige: linear-gradient(135deg, hsl(36 65% 80%) 0%, hsl(36 55% 70%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(36 65% 80%) 0%, hsl(36 55% 70%) 50%, hsl(25 70% 40%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(36 68% 74%) 0%, hsl(25 86% 31%) 100%);
+    --gradient-beige: linear-gradient(135deg, hsl(36 68% 80%) 0%, hsl(36 55% 70%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(36 68% 80%) 0%, hsl(25 86% 31%) 50%, hsl(16 100% 11%) 100%);
     
     /* Shadows */
     --shadow-primary: 0 10px 40px -10px hsl(25 86% 31% / 0.4);
-    --shadow-beige: 0 10px 40px -10px hsl(36 65% 75% / 0.5);
-    --shadow-elegant: 0 20px 60px -15px hsl(25 45% 15% / 0.2);
+    --shadow-beige: 0 10px 40px -10px hsl(36 68% 74% / 0.5);
+    --shadow-elegant: 0 20px 60px -15px hsl(16 100% 11% / 0.2);
     
     /* Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -75,41 +78,43 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
   }
 
   .dark {
-    --background: 25 40% 8%;
-    --foreground: 36 30% 95%;
+    --background: 16 60% 8%;
+    --foreground: 36 68% 90%;
 
-    --card: 25 35% 12%;
-    --card-foreground: 36 30% 95%;
+    --card: 16 50% 12%;
+    --card-foreground: 36 68% 90%;
 
-    --popover: 25 35% 12%;
-    --popover-foreground: 36 30% 95%;
+    --popover: 16 50% 12%;
+    --popover-foreground: 36 68% 90%;
 
-    --primary: 36 65% 75%;
-    --primary-foreground: 25 45% 15%;
+    --primary: 36 68% 74%;
+    --primary-foreground: 16 100% 11%;
 
     --secondary: 25 86% 31%;
-    --secondary-foreground: 36 30% 95%;
+    --secondary-foreground: 36 68% 90%;
 
-    --muted: 25 30% 20%;
-    --muted-foreground: 36 20% 65%;
+    --tertiary: 16 100% 11%;
+    --tertiary-foreground: 36 68% 74%;
 
-    --accent: 36 55% 65%;
-    --accent-foreground: 25 45% 15%;
+    --muted: 16 30% 20%;
+    --muted-foreground: 36 30% 65%;
+
+    --accent: 25 86% 31%;
+    --accent-foreground: 36 68% 90%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 25 25% 25%;
-    --input: 25 25% 25%;
-    --ring: 36 65% 75%;
+    --border: 16 25% 25%;
+    --input: 16 25% 25%;
+    --ring: 36 68% 74%;
     
-    --gold: 36 65% 75%;
+    --gold: 36 68% 74%;
     --gold-dark: 25 86% 31%;
-    --beige-bg: 36 65% 75%;
-    --beige-bg-dark: 36 55% 66%;
-    --brown-deep: 25 86% 31%;
+    --beige: 36 68% 74%;
+    --burnt-orange: 25 86% 31%;
+    --deep-brown: 16 100% 11%;
     --brown-light: 25 70% 45%;
-    --navy: 36 30% 95%;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;

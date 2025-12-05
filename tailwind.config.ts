@@ -52,14 +52,18 @@ export default {
           dark: "hsl(var(--gold-dark))",
         },
         beige: {
-          bg: "hsl(var(--beige-bg))",
-          "bg-dark": "hsl(var(--beige-bg-dark))",
+          DEFAULT: "hsl(var(--beige))",
         },
-        purple: {
-          deep: "hsl(var(--purple-deep))",
-          light: "hsl(var(--purple-light))",
+        "burnt-orange": {
+          DEFAULT: "hsl(var(--burnt-orange))",
         },
-        navy: "hsl(var(--navy))",
+        "deep-brown": {
+          DEFAULT: "hsl(var(--deep-brown))",
+        },
+        tertiary: {
+          DEFAULT: "hsl(var(--tertiary))",
+          foreground: "hsl(var(--tertiary-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

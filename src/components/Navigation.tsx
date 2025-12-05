@@ -18,7 +18,7 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
   
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-lg border-b border-secondary/30 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-lg border-b border-primary/30 shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -28,7 +28,7 @@ const Navigation = () => {
               alt="Takāmul Cup Logo" 
               className="h-12 w-auto object-contain transform transition-transform group-hover:scale-105"
             />
-            <span className="text-lg font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hidden sm:block">
+            <span className="text-lg font-bold bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent hidden sm:block">
               Takāmul Cup
             </span>
           </Link>
@@ -41,8 +41,8 @@ const Navigation = () => {
                 to={link.path}
                 className={`px-4 py-2 rounded-md font-medium text-sm transition-all duration-200 ${
                   isActive(link.path)
-                    ? "bg-primary text-primary-foreground shadow-md"
-                    : "text-foreground hover:bg-secondary/20 hover:text-primary"
+                    ? "bg-secondary text-secondary-foreground shadow-md"
+                    : "text-foreground hover:bg-primary/30 hover:text-secondary"
                 }`}
               >
                 {link.label}
@@ -63,7 +63,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4 space-y-1 border-t border-secondary/30 mt-2 pt-2">
+          <div className="md:hidden pb-4 space-y-1 border-t border-primary/30 mt-2 pt-2">
             {links.map(link => (
               <Link
                 key={link.path}
@@ -71,8 +71,8 @@ const Navigation = () => {
                 onClick={() => setIsOpen(false)}
                 className={`block px-4 py-2 rounded-md font-medium text-sm transition-all duration-200 ${
                   isActive(link.path)
-                    ? "bg-primary text-primary-foreground shadow-md"
-                    : "text-foreground hover:bg-secondary/20"
+                    ? "bg-secondary text-secondary-foreground shadow-md"
+                    : "text-foreground hover:bg-primary/30"
                 }`}
               >
                 {link.label}
