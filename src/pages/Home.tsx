@@ -40,7 +40,7 @@ const Home = () => {
             </div>
 
             <p className="text-base sm:text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed mb-12">
-              The UAE's premier integration competition where the nation's brightest mathematical minds compete in speed, accuracy, and strategic problem-solving!
+The UAE’s premier integration competition for university students, where the brightest mathematical minds compete in speed, accuracy, and strategic problem-solving
             </p>
 
             {/* Event Details Cards */}
