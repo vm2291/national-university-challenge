@@ -9,8 +9,8 @@ const Navigation = () => {
   
   const links = [
     { path: "/", label: "Home" },
-    { path: "/competition-structure", label: "Coordinators" },
-    { path: "/event-structure", label: "Schedule" },
+    { path: "/event-structure", label: "2025 Event Details" },
+    { path: "/competition-structure", label: "Coordinators Info" },
     { path: "/about", label: "Vision" },
     { path: "/history", label: "About Us" }
   ];
