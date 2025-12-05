@@ -12,6 +12,9 @@ const Navigation = () => {
     path: "/2025-event",
     label: "2025 Event"
   }, {
+    path: "/competition-structure",
+    label: "Structure"
+  }, {
     path: "/about",
     label: "Vision"
   }, {
