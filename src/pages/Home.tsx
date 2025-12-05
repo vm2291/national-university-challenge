@@ -7,17 +7,17 @@ const Home = () => {
   const stats = [{
     icon: Users,
     label: "Competitors",
-    value: "30+"
+    value: "35+"
   }, {
     icon: Trophy,
     label: "Universities",
-    value: "6"
+    value: "7"
   }, {
     icon: Target,
-    label: "Rounds",
-    value: "3"
+    label: "Stages",
+    value: "5"
   }];
-  const universities = ["Abu Dhabi University", "American University in Dubai", "Middlesex University Dubai", "Heriot-Watt University Dubai", "UAE University", "NYU Abu Dhabi"];
+  const universities = ["Abu Dhabi University", "American University in Dubai", "Middlesex University Dubai", "Heriot-Watt University Dubai", "UAE University", "NYU Abu Dhabi", "Mohamed bin Zayed University of Artificial Intelligence"];
   return <div className="min-h-screen pt-16">
       {/* Hero Section */}
       <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden pt-16">
