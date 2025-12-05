@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+
 const CompetitionStructure = () => {
   return (
     <>
@@ -12,10 +14,11 @@ const CompetitionStructure = () => {
         
         .competition-structure-body {
             font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            color: #2c3e50;
+            background: hsl(40 30% 97%);
+            color: hsl(25 45% 15%);
             line-height: 1.6;
             padding: 30px 20px;
+            padding-top: 80px;
         }
         
         .competition-structure-container {
@@ -23,13 +26,13 @@ const CompetitionStructure = () => {
             margin: 0 auto;
             background: white;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            box-shadow: 0 20px 60px rgba(147, 70, 11, 0.15);
             overflow: hidden;
         }
         
         .competition-structure-header {
-            background: linear-gradient(135deg, #d4af7b 0%, rgb(234, 203, 155) 50%, #f5ddb8 100%);
-            color: #3d2817;
+            background: linear-gradient(135deg, #e7c796 0%, #ddb879 50%, #e7c796 100%);
+            color: #93460b;
             padding: 40px 50px 30px 50px;
             text-align: center;
             position: relative;
@@ -43,7 +46,7 @@ const CompetitionStructure = () => {
             right: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(212, 145, 90, 0.2) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(147, 70, 11, 0.15) 0%, transparent 70%);
             animation: pulse 15s ease-in-out infinite;
         }
         
@@ -67,14 +70,14 @@ const CompetitionStructure = () => {
             height: auto;
             display: block;
             margin: 0 auto;
-            filter: drop-shadow(0 4px 8px rgba(61, 40, 23, 0.4));
+            filter: drop-shadow(0 4px 8px rgba(147, 70, 11, 0.4));
         }
         
         .competition-structure-event-subtitle {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.2em;
             font-weight: 700;
-            color: #3d2817;
+            color: #93460b;
             margin-top: 15px;
             margin-bottom: 5px;
             letter-spacing: 1px;
@@ -82,15 +85,15 @@ const CompetitionStructure = () => {
         
         .competition-structure-for-coordinators {
             display: inline-block;
-            background: rgba(61, 40, 23, 0.85);
-            color: #f5ddb8;
+            background: rgba(147, 70, 11, 0.9);
+            color: #e7c796;
             padding: 8px 20px;
             border-radius: 25px;
             font-weight: 700;
             font-size: 0.9em;
             margin-top: 10px;
             letter-spacing: 1px;
-            box-shadow: 0 2px 8px rgba(61, 40, 23, 0.3);
+            box-shadow: 0 2px 8px rgba(147, 70, 11, 0.3);
         }
         
         .competition-structure-content {
@@ -971,6 +974,7 @@ Final: Winner SF1 vs Winner SF2`}
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
