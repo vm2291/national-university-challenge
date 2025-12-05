@@ -29,7 +29,7 @@ const Home = () => {
           <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 py-12">
             <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-6">
               <span className="bg-gradient-to-r from-gold via-gold-dark to-gold bg-clip-text text-transparent">
-                TĀKAMUL CUP
+                Takãmul Cup
               </span>
             </h1>
 
