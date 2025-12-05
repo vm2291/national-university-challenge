@@ -24,16 +24,16 @@ const History = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-16">
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-gold/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-gold/10 via-background to-gold/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <div className="flex justify-center mb-6">
               <BookOpen className="w-16 h-16 text-gold" />
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-primary via-purple-deep to-gold bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-gold via-gold-dark to-gold bg-clip-text text-transparent">
               Our Journey
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
@@ -48,7 +48,7 @@ const History = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-12">
             <div className="text-center space-y-6">
-              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-primary to-purple-deep bg-clip-text text-transparent">
+              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-gold to-gold-dark bg-clip-text text-transparent">
                 Where It All Started
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
@@ -57,7 +57,7 @@ const History = () => {
               </p>
             </div>
 
-            <Card className="p-10 bg-gradient-to-br from-primary/5 to-gold/5 border-primary/30">
+            <Card className="p-10 bg-gradient-to-br from-gold/5 to-gold/5 border-gold/30">
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <Calendar className="w-8 h-8 text-gold flex-shrink-0" />
@@ -81,7 +81,7 @@ const History = () => {
       {/* Milestones */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-primary to-purple-deep bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-gold to-gold-dark bg-clip-text text-transparent">
             Key Milestones
           </h2>
 
@@ -89,12 +89,12 @@ const History = () => {
             {milestones.map((milestone, index) => (
               <Card
                 key={index}
-                className="p-8 bg-card border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10"
+                className="p-8 bg-card border-gold/20 hover:border-gold/40 transition-all duration-300 hover:shadow-xl hover:shadow-gold/10"
               >
                 <div className="flex flex-col sm:flex-row items-start gap-6">
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 bg-gradient-to-br from-gold to-gold-dark rounded-full flex items-center justify-center">
-                      <milestone.icon className="w-8 h-8 text-primary" />
+                      <milestone.icon className="w-8 h-8" style={{ color: 'rgb(148, 69, 10)' }} />
                     </div>
                   </div>
                   <div className="flex-1 space-y-2">
@@ -117,12 +117,12 @@ const History = () => {
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-12">
-            <h2 className="text-4xl sm:text-5xl font-bold text-center bg-gradient-to-r from-primary to-purple-deep bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl font-bold text-center bg-gradient-to-r from-gold to-gold-dark bg-clip-text text-transparent">
               2024 Event Highlights
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="p-8 bg-card border-primary/20">
+              <Card className="p-8 bg-card border-gold/20">
                 <Users className="w-10 h-10 text-gold mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-3">Student Participation</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -131,7 +131,7 @@ const History = () => {
                 </p>
               </Card>
 
-              <Card className="p-8 bg-card border-primary/20">
+              <Card className="p-8 bg-card border-gold/20">
                 <Award className="w-10 h-10 text-gold mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-3">Challenging Problems</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -142,7 +142,7 @@ const History = () => {
             </div>
 
             {/* Photo Placeholder */}
-            <Card className="p-12 bg-gradient-to-br from-primary/5 to-gold/5 border-primary/30">
+            <Card className="p-12 bg-gradient-to-br from-gold/5 to-gold/5 border-gold/30">
               <div className="text-center space-y-4">
                 <div className="w-full h-64 bg-muted/50 rounded-lg flex items-center justify-center">
                   <div className="text-center">
@@ -160,10 +160,10 @@ const History = () => {
       </section>
 
       {/* Growth Section */}
-      <section className="py-20 bg-gradient-to-br from-gold/10 to-primary/10">
+      <section className="py-20 bg-gradient-to-br from-gold/10 to-gold/10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-primary to-purple-deep bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-gold to-gold-dark bg-clip-text text-transparent">
               Growing Beyond Campus
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed">

@@ -2,7 +2,7 @@ const CompetitionStructure = () => {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Lato:wght@400;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
         
         * {
             margin: 0;
@@ -11,7 +11,7 @@ const CompetitionStructure = () => {
         }
         
         .competition-structure-body {
-            font-family: 'Lato', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             color: #2c3e50;
             line-height: 1.6;
@@ -28,7 +28,7 @@ const CompetitionStructure = () => {
         }
         
         .competition-structure-header {
-            background: linear-gradient(135deg, #d4af7b 0%, #e8c895 50%, #f5ddb8 100%);
+            background: linear-gradient(135deg, #d4af7b 0%, rgb(234, 203, 155) 50%, #f5ddb8 100%);
             color: #3d2817;
             padding: 40px 50px 30px 50px;
             text-align: center;
@@ -264,7 +264,7 @@ const CompetitionStructure = () => {
             border-radius: 12px;
             margin: 20px 0;
             border: 2px solid #d4af37;
-            font-family: 'Source Serif Pro', serif;
+            font-family: 'Montserrat', sans-serif;
             overflow-x: auto;
         }
         

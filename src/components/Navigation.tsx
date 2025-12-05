@@ -2,58 +2,98 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const links = [{
-    path: "/",
-    label: "Home"
-  }, {
-    path: "/2025-event",
-    label: "2025 Event"
-  }, {
-    path: "/competition-structure",
-    label: "Structure"
-  }, {
-    path: "/about",
-    label: "Vision"
-  }, {
-    path: "/history",
-    label: "Our Journey"
-  }];
+  
+  const links = [
+    { path: "/", label: "Home" },
+    { path: "/2025-event", label: "2025 Event" },
+    { path: "/competition-structure", label: "Structure" },
+    { path: "/event-structure", label: "Schedule" },
+    { path: "/about", label: "Vision" },
+    { path: "/history", label: "History" }
+  ];
+  
   const isActive = (path: string) => location.pathname === path;
-  return <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
+  
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-gold/20 shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 my-[2px]">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-12 h-12 bg-gradient-to-br from-gold to-gold-dark rounded-lg flex items-center justify-center transform transition-transform group-hover:scale-110">
-              <span className="text-2xl font-bold text-primary">TC</span>
-            </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-primary to-purple-deep bg-clip-text text-transparent hidden sm:block">
+            <img 
+              src="/WhatsApp Image 2025-12-05 at 12.26.39.jpeg" 
+              alt="Takāmul Cup Logo" 
+              className="h-12 w-auto object-contain transform transition-transform group-hover:scale-105"
+            />
+            <span className="text-lg font-bold bg-gradient-to-r from-gold to-gold-dark bg-clip-text text-transparent hidden sm:block">
               Takāmul Cup
             </span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
-            {links.map(link => <Link key={link.path} to={link.path} className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${isActive(link.path) ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-muted"}`}>
+            {links.map(link => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`px-4 py-2 rounded-md font-medium text-sm transition-all duration-200 ${
+                  isActive(link.path)
+                    ? "text-white shadow-md"
+                    : "text-foreground hover:bg-gold/10 hover:text-gold"
+                }`}
+                style={
+                  isActive(link.path)
+                    ? { backgroundColor: 'rgb(148, 69, 10)' }
+                    : {}
+                }
+              >
                 {link.label}
-              </Link>)}
+              </Link>
+            ))}
           </div>
 
           {/* Mobile Menu Button */}
-          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
 
         {/* Mobile Navigation */}
-        {isOpen && <div className="md:hidden pb-4 space-y-2">
-            {links.map(link => <Link key={link.path} to={link.path} onClick={() => setIsOpen(false)} className={`block px-4 py-3 rounded-lg font-medium transition-all duration-300 ${isActive(link.path) ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-muted"}`}>
+        {isOpen && (
+          <div className="md:hidden pb-4 space-y-1 border-t border-gold/20 mt-2 pt-2">
+            {links.map(link => (
+              <Link
+                key={link.path}
+                to={link.path}
+                onClick={() => setIsOpen(false)}
+                className={`block px-4 py-2 rounded-md font-medium text-sm transition-all duration-200 ${
+                  isActive(link.path)
+                    ? "text-white shadow-md"
+                    : "text-foreground hover:bg-gold/10"
+                }`}
+                style={
+                  isActive(link.path)
+                    ? { backgroundColor: 'rgb(148, 69, 10)' }
+                    : {}
+                }
+              >
                 {link.label}
-              </Link>)}
-          </div>}
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
-    </nav>;
+    </nav>
+  );
 };
+
 export default Navigation;

@@ -9,41 +9,43 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 270 50% 15%;
+    --foreground: 25 50% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 270 50% 15%;
+    --card-foreground: 25 50% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 270 50% 15%;
+    --popover-foreground: 25 50% 15%;
 
-    --primary: 271 43% 35%;
+    --primary: 25 87% 31%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 45 70% 60%;
-    --secondary-foreground: 270 50% 15%;
+    --secondary-foreground: 25 50% 15%;
 
     --muted: 270 20% 96%;
-    --muted-foreground: 270 15% 45%;
+    --muted-foreground: 25 30% 45%;
 
     --accent: 45 85% 65%;
-    --accent-foreground: 270 50% 15%;
+    --accent-foreground: 25 50% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 270 15% 90%;
     --input: 270 15% 90%;
-    --ring: 271 43% 35%;
+    --ring: 25 87% 31%;
 
     --radius: 0.75rem;
     
     /* Custom design tokens */
     --gold: 45 85% 65%;
     --gold-dark: 45 70% 55%;
+    --beige-bg: 36 65% 76%;
+    --beige-bg-dark: 36 55% 66%;
     --purple-deep: 271 43% 35%;
     --purple-light: 270 30% 55%;
-    --navy: 270 50% 15%;
+    --navy: 25 50% 15%;
     
     /* Gradients */
     --gradient-gold: linear-gradient(135deg, hsl(45 85% 65%) 0%, hsl(45 70% 55%) 100%);
@@ -107,6 +109,8 @@ All colors MUST be HSL.
     
     --gold: 45 85% 65%;
     --gold-dark: 45 70% 55%;
+    --beige-bg: 36 65% 76%;
+    --beige-bg-dark: 36 55% 66%;
     --purple-deep: 271 43% 35%;
     --purple-light: 270 30% 55%;
     --navy: 270 50% 95%;
@@ -128,11 +132,27 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  * {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  /* Consistent section spacing */
+  section {
+    @apply w-full;
+  }
+
+  /* Smooth transitions for interactive elements */
+  a, button {
+    @apply transition-all duration-200;
   }
 }

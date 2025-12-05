@@ -8,6 +8,7 @@ import About from "./pages/About";
 import History from "./pages/History";
 import Event2025 from "./pages/Event2025";
 import CompetitionStructure from "./pages/CompetitionStructure";
+import EventStructure from "./pages/EventStructure";
 import NotFound from "./pages/NotFound";
 import Navigation from "./components/Navigation";
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => <QueryClientProvider client={queryClient}>
           <Route path="/history" element={<History />} />
           <Route path="/2025-event" element={<Event2025 />} />
           <Route path="/competition-structure" element={<CompetitionStructure />} />
+          <Route path="/event-structure" element={<EventStructure />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
