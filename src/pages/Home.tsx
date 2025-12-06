@@ -28,7 +28,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-background to-primary/20" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--primary))_0%,transparent_50%)] opacity-20" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--secondary))_0%,transparent_50%)] opacity-10" />
-
+        
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 py-12">
             <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-6">
@@ -126,7 +126,7 @@ const Home = () => {
               <Brain className="w-10 h-10 text-secondary mr-3" />
               <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
                 Competition Philosophy
-              </h2>
+          </h2>
             </div>
             
             <Card className="p-8 bg-primary border-secondary/30 mb-6">
@@ -134,7 +134,7 @@ const Home = () => {
                 <Sparkles className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
                 <p className="text-lg text-tertiary leading-relaxed">
                   The <strong>Takãmul Cup</strong> celebrates <strong>mathematical excellence in the AI era</strong> by honoring the irreplaceable power of human cognition. In an age where artificial intelligence can solve complex problems instantly, we create a space that celebrates <strong>the brain</strong>—its creativity, procedural fluency, pattern recognition, and deep mathematical reasoning.
-                </p>
+          </p>
               </div>
             </Card>
             
