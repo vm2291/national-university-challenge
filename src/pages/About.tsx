@@ -2,6 +2,7 @@ import { Target, Lightbulb, Users, Trophy, Sparkles, Brain, Calendar, Award, Boo
 import { Card } from "@/components/ui/card";
 import Footer from "@/components/Footer";
 
+
 const About = () => {
   const visionPoints = [
     {
