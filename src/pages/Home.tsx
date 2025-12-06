@@ -39,7 +39,7 @@ const Home = () => {
 
             <div className="inline-block px-6 py-3 bg-secondary rounded-full shadow-lg mb-6">
               <p className="text-lg sm:text-xl font-bold text-secondary-foreground">
-                UAE National Integration Bee
+                National University Level Integration Bee
               </p>
             </div>
 
