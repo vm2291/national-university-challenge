@@ -880,9 +880,6 @@ Full Audience Viewing
               </div>
             </div>
             
-            <div className="event-structure-section" style={{marginTop: '40px', textAlign: 'center', color: '#3d2817'}}>
-              <p style={{fontSize: '1.2em', fontWeight: 'bold'}}>🦅 Takãmul Cup - Falcon's Talon Edition 🦅</p>
-              <p style={{marginTop: '10px'}}>Inaugural National UAE Integration Bee Championship</p>
             <div className="event-structure-section" style={{
             marginTop: '40px',
             textAlign: 'center',
@@ -891,18 +888,11 @@ Full Audience Viewing
               <p style={{
               fontSize: '1.2em',
               fontWeight: 'bold'
-            }}>🦅 TAKĀMUL CUP - FALCON'S TALON EDITION 🦅</p>
+            }}>🦅 Takãmul Cup - Falcon's Talon Edition 🦅</p>
               <p style={{
               marginTop: '10px'
-            }}>​Inaugural National UAE Integration Bee Championship</p>
+            }}>Inaugural National UAE Integration Bee Championship</p>
               <p>December 7, 2025 | NYU Abu Dhabi</p>
-              <p style={{
-              marginTop: '15px',
-              fontSize: '0.95em',
-              color: '#5a3a1f'
-            }}>​ ​<br />
-                ​
-              </p>
             </div>
           </div>
         </div>

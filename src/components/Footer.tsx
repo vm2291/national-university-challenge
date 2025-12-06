@@ -38,10 +38,8 @@ const Footer = () => {
           {/* Divider */}
           <div className="border-t border-tertiary/20 pt-6 mt-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-xs text-foreground/70 text-center md:text-left">
-                © 2025 Takãmul Cup. All rights reserved.
               <p className="text-xs text-tertiary/60 text-center md:text-left">
-                © 2025 Takāmul Cup. All rights reserved.
+                © 2025 Takãmul Cup. All rights reserved.
               </p>
               <p className="text-xs text-tertiary/60 text-center md:text-right">
                 In collaboration with NYU Abu Dhabi Math SIG
