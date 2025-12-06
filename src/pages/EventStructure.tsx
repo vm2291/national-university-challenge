@@ -326,6 +326,34 @@ const EventStructure = () => {
           font-size: 0.95em;
         }
         
+        .event-structure-map-container {
+          background: linear-gradient(135deg, #faf6ef 0%, #f5ead8 100%);
+          border: 2px solid #e7c796;
+          border-radius: 10px;
+          padding: 20px;
+          margin: 20px 0;
+          page-break-inside: avoid;
+        }
+        
+        .event-structure-map-wrapper {
+          position: relative;
+          width: 100%;
+          height: 0;
+          padding-bottom: 45%;
+          overflow: hidden;
+          border-radius: 8px;
+          margin-top: 15px;
+        }
+        
+        .event-structure-map-wrapper iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+        
         @media (max-width: 768px) {
           .event-structure-body {
             padding: 10px;
@@ -413,6 +441,15 @@ const EventStructure = () => {
           .event-structure-info-box {
             padding: 12px;
             font-size: 0.95em;
+          }
+          
+          .event-structure-map-container {
+            padding: 15px;
+            margin: 15px 0;
+          }
+          
+          .event-structure-map-wrapper {
+            padding-bottom: 60%;
           }
         }
         
@@ -844,6 +881,24 @@ Full Audience Viewing
             }}>Inaugural National UAE Integration Bee Championship</p>
               <p>December 7, 2025 | NYU Abu Dhabi</p>
             </div>
+            
+            <div className="event-structure-section">
+              <div className="event-structure-map-container">
+                <div className="event-structure-subsection-title" style={{marginTop: '0', textAlign: 'center'}}>Location</div>
+                <p style={{color: '#5a3a1f', marginBottom: '10px', textAlign: 'center', fontWeight: 'bold'}}>NYU Abu Dhabi</p>
+                <p style={{color: '#5a3a1f', marginBottom: '15px', textAlign: 'center'}}>C2 West Forum</p>
+                <div className="event-structure-map-wrapper">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3629.8896745316606!2d54.431980876576255!3d24.52389965864014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e5d876232c3eb%3A0x14e8727ec5ee2be1!2sNew%20York%20University%20Abu%20Dhabi!5e0!3m2!1sen!2sae!4v1765008576893!5m2!1sen!2sae"
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="NYU Abu Dhabi Location"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
