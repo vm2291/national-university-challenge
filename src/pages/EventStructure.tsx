@@ -168,10 +168,14 @@ const EventStructure = () => {
           page-break-inside: avoid;
         }
         
+        .event-structure-schedule-table-wrapper {
+          width: 100%;
+          margin: 20px 0;
+        }
+        
         .event-structure-schedule-table {
           width: 100%;
           border-collapse: collapse;
-          margin: 20px 0;
           page-break-inside: auto;
         }
         
@@ -320,6 +324,120 @@ const EventStructure = () => {
         .event-structure-personnel-role {
           color: #5a3a1f;
           font-size: 0.95em;
+        }
+        
+        @media (max-width: 768px) {
+          .event-structure-body {
+            padding: 10px;
+            padding-top: 80px;
+          }
+          
+          .event-structure-container {
+            border-radius: 10px;
+          }
+          
+          .event-structure-header {
+            padding: 30px 20px 25px 20px;
+          }
+          
+          .event-structure-header h1 {
+            font-size: 1.8em !important;
+            letter-spacing: 1px !important;
+            margin-bottom: 10px !important;
+          }
+          
+          .event-structure-event-subtitle {
+            font-size: 1em;
+            margin-top: 10px;
+            margin-bottom: 3px;
+          }
+          
+          .event-structure-content {
+            padding: 20px 15px;
+          }
+          
+          .event-structure-section-title {
+            font-size: 1.2em;
+            padding: 10px 15px;
+          }
+          
+          .event-structure-subsection-title {
+            font-size: 1.1em;
+          }
+          
+          .event-structure-stats-grid {
+            grid-template-columns: 1fr;
+            gap: 10px;
+          }
+          
+          .event-structure-university-list {
+            grid-template-columns: 1fr;
+          }
+          
+          .event-structure-awards-grid {
+            grid-template-columns: 1fr;
+          }
+          
+          .event-structure-award-box.champion {
+            grid-column: 1;
+          }
+          
+          .event-structure-schedule-table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 20px -15px;
+            padding: 0 15px;
+          }
+          
+          .event-structure-schedule-table {
+            min-width: 600px;
+          }
+          
+          .event-structure-schedule-table th,
+          .event-structure-schedule-table td {
+            padding: 8px 10px;
+            font-size: 0.9em;
+          }
+          
+          .event-structure-time-col {
+            font-size: 0.85em;
+            white-space: nowrap;
+          }
+          
+          .event-structure-ascii-diagram {
+            font-size: 0.75em;
+            padding: 15px;
+            overflow-x: auto;
+          }
+          
+          .event-structure-info-box {
+            padding: 12px;
+            font-size: 0.95em;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .event-structure-body {
+            padding: 5px;
+            padding-top: 80px;
+          }
+          
+          .event-structure-header {
+            padding: 20px 15px 20px 15px;
+          }
+          
+          .event-structure-header h1 {
+            font-size: 1.5em !important;
+          }
+          
+          .event-structure-content {
+            padding: 15px 10px;
+          }
+          
+          .event-structure-section-title {
+            font-size: 1.1em;
+            padding: 8px 12px;
+          }
         }
         
         @media print {
@@ -549,7 +667,8 @@ Full Audience Viewing
             <div className="event-structure-section">
               <div className="event-structure-section-title">MASTER EVENT SCHEDULE</div>
               
-              <table className="event-structure-schedule-table">
+              <div className="event-structure-schedule-table-wrapper">
+                <table className="event-structure-schedule-table">
                 <thead>
                   <tr>
                     <th style={{
@@ -654,6 +773,7 @@ Full Audience Viewing
                   </tr>
                 </tbody>
               </table>
+              </div>
             </div>
             
             <div className="event-structure-page-break"></div>
