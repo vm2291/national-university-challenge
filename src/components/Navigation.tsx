@@ -11,6 +11,7 @@ const Navigation = () => {
     { path: "/", label: "Home" },
     { path: "/event-structure", label: "Event Details"},
     { path: "/competition-structure", label: "Coordinators Info" },
+    { path: "/prizes", label: "Prizes" },
     { path: "/about", label: "About Us" }
   ];
   
