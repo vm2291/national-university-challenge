@@ -1,8 +1,9 @@
-import { Calendar, Clock, MapPin, Trophy, Users, Target } from "lucide-react";
+import { Calendar, Clock, MapPin, Trophy, Users, Target, Brain, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+
 const Home = () => {
   const stats = [{
     icon: Users,
@@ -17,7 +18,9 @@ const Home = () => {
     label: "Stages",
     value: "5"
   }];
+  
   const universities = ["Abu Dhabi University", "American University in Dubai", "Middlesex University Dubai", "Heriot-Watt University Dubai", "UAE University", "NYU Abu Dhabi", "Mohamed bin Zayed University of Artificial Intelligence"];
+  
   return <div className="min-h-screen pt-16">
       {/* Hero Section */}
       <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden pt-16">
@@ -75,7 +78,7 @@ const Home = () => {
               </Link>
               <Link to="/about">
                 <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 border-secondary text-secondary hover:bg-secondary/10">
-                  Our Vision
+                  About Us
                 </Button>
               </Link>
             </div>
@@ -83,23 +86,55 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-secondary text-secondary-foreground">
+      {/* Battle of Mathematical Excellence Section */}
+      <section className="py-16 bg-primary text-tertiary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-primary">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-tertiary">
             Battle of Mathematical Excellence
           </h2>
-          <p className="text-center text-lg text-secondary-foreground/90 mb-12 max-w-3xl mx-auto">
+          <p className="text-center text-lg text-tertiary/90 mb-12 max-w-3xl mx-auto">
             Join the UAE's premier integration competition where the nation's brightest 
             mathematical minds compete in speed, accuracy, and strategic problem-solving!
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {stats.map((stat, index) => <div key={index} className="text-center p-8 bg-secondary-foreground/10 backdrop-blur rounded-2xl border border-secondary-foreground/20 hover:bg-secondary-foreground/20 transition-all duration-300">
-                <stat.icon className="w-12 h-12 mx-auto mb-4 text-primary" />
-                <div className="text-5xl font-bold mb-2 text-primary">{stat.value}</div>
-                <div className="text-xl font-semibold uppercase tracking-wide text-secondary-foreground">{stat.label}</div>
+            {stats.map((stat, index) => <div key={index} className="text-center p-8 bg-tertiary/10 backdrop-blur rounded-2xl border border-tertiary/20 hover:bg-tertiary/20 transition-all duration-300">
+                <stat.icon className="w-12 h-12 mx-auto mb-4 text-secondary" />
+                <div className="text-5xl font-bold mb-2 text-secondary">{stat.value}</div>
+                <div className="text-xl font-semibold uppercase tracking-wide text-tertiary">{stat.label}</div>
               </div>)}
+          </div>
+        </div>
+      </section>
+
+      {/* Competition Philosophy Section */}
+      <section className="py-16 bg-primary/20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center justify-center mb-8">
+              <Brain className="w-10 h-10 text-secondary mr-3" />
+              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
+                Competition Philosophy
+              </h2>
+            </div>
+            
+            <Card className="p-8 bg-primary border-secondary/30 mb-6">
+              <div className="flex items-start gap-4">
+                <Sparkles className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
+                <p className="text-lg text-tertiary leading-relaxed">
+                  The <strong>Takāmul Cup</strong> celebrates <strong>mathematical excellence in the AI era</strong> by honoring the irreplaceable power of human cognition. In an age where artificial intelligence can solve complex problems instantly, we create a space that celebrates <strong>the brain</strong>—its creativity, procedural fluency, pattern recognition, and deep mathematical reasoning.
+                </p>
+              </div>
+            </Card>
+            
+            <Card className="p-8 bg-primary border-secondary/30">
+              <div className="flex items-start gap-4">
+                <Brain className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
+                <p className="text-lg text-tertiary leading-relaxed">
+                  The Takāmul Cup fosters an environment where <strong>cognitive skills</strong> and <strong>procedural fluency</strong> are not just valued but celebrated. It's a reminder that while technology advances, the human capacity for mathematical thought remains extraordinary and worth cultivating.
+                </p>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
@@ -122,30 +157,6 @@ const Home = () => {
             <Card className="p-6 text-center bg-card hover:bg-primary/10 border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10 sm:col-span-2">
               <p className="text-lg font-semibold text-foreground">{universities[6]}</p>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 bg-primary/20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
-            Ready to Compete?
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Discover more about the competition, its vision, and how you can be part of this historic event.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/about">
-              <Button size="lg" className="text-lg px-8 py-6 bg-secondary hover:bg-secondary/90 text-secondary-foreground">
-                Learn About Our Vision
-              </Button>
-            </Link>
-            <Link to="/history">
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 border-secondary text-secondary hover:bg-secondary/10">
-                About Us
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
