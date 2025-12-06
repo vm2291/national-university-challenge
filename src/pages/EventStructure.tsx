@@ -463,6 +463,17 @@ const EventStructure = () => {
           </div>
           
           <div className="event-structure-content">
+            <div className="event-structure-section">
+              <div className="event-structure-subsection-title">Competition Structure</div>
+              <ul>
+                <li><span className="event-structure-highlight">Stage 1 (Qualifiers):</span> All 35 participants → Select TOP 16</li>
+                <li><span className="event-structure-highlight">Stage 2 (Round of 16):</span> TOP 16 → 8 head-to-head matches → TOP 8</li>
+                <li><span className="event-structure-highlight">Stage 3 (Quarterfinals):</span> TOP 8 → 4 matches → TOP 4</li>
+                <li><span className="event-structure-highlight">Stage 4 (Semifinals):</span> TOP 4 → 2 matches on whiteboards → TOP 2</li>
+                <li><span className="event-structure-highlight">Stage 5 (Championship):</span> TOP 2 → Grand Final on whiteboard → CHAMPION</li>
+              </ul>
+            </div>
+            
             <div className="event-structure-page-break"></div>
             
             <div className="event-structure-section">
