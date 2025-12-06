@@ -487,8 +487,39 @@ const CompetitionStructure = () => {
         }
         
         @media (max-width: 768px) {
+            .competition-structure-body {
+                padding: 10px;
+                padding-top: 80px;
+            }
+            
+            .competition-structure-container {
+                border-radius: 10px;
+            }
+            
+            .competition-structure-header {
+                padding: 30px 20px 25px 20px;
+            }
+            
+            .competition-structure-header h1 {
+                font-size: 1.8em !important;
+                letter-spacing: 1px !important;
+                margin-bottom: 10px !important;
+            }
+            
+            .competition-structure-event-subtitle {
+                font-size: 1em;
+                margin-top: 10px;
+                margin-bottom: 3px;
+            }
+            
+            .competition-structure-for-coordinators {
+                font-size: 0.8em;
+                padding: 6px 15px;
+                margin-top: 8px;
+            }
+            
             .competition-structure-content {
-                padding: 30px 25px;
+                padding: 20px 15px;
             }
             
             .competition-structure-logo-image {
@@ -497,6 +528,10 @@ const CompetitionStructure = () => {
             
             .competition-structure-stage-header {
                 font-size: 1.5em;
+            }
+            
+            .competition-structure-subsection-title {
+                font-size: 1.1em;
             }
             
             .competition-structure-timing-grid {
@@ -509,6 +544,39 @@ const CompetitionStructure = () => {
             
             .competition-structure-awards-grid {
                 grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .competition-structure-body {
+                padding: 5px;
+                padding-top: 80px;
+            }
+            
+            .competition-structure-header {
+                padding: 20px 15px 20px 15px;
+            }
+            
+            .competition-structure-header h1 {
+                font-size: 1.5em !important;
+                letter-spacing: 0.5px !important;
+            }
+            
+            .competition-structure-for-coordinators {
+                font-size: 0.75em;
+                padding: 5px 12px;
+            }
+            
+            .competition-structure-content {
+                padding: 15px 10px;
+            }
+            
+            .competition-structure-stage-header {
+                font-size: 1.3em;
+            }
+            
+            .competition-structure-subsection-title {
+                font-size: 1em;
             }
         }
       `}</style>
