@@ -409,12 +409,12 @@ const CompetitionStructure = () => {
         }
         
         .competition-structure-summary-section {
-            background: linear-gradient(135deg, #381200 0%, #5a2810 100%);
-            color: #e7c595;
+            background: #e7c595;
+            color: #381200;
             padding: 40px;
             margin-top: 50px;
             border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(56, 18, 0, 0.4);
+            box-shadow: 0 8px 25px rgba(147, 70, 11, 0.3);
         }
         
         .competition-structure-summary-section h2 {
@@ -423,7 +423,7 @@ const CompetitionStructure = () => {
             font-weight: 800;
             margin-bottom: 25px;
             text-align: center;
-            color: #e7c595;
+            color: #381200;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
@@ -438,14 +438,14 @@ const CompetitionStructure = () => {
             padding-left: 35px;
             position: relative;
             line-height: 1.7;
-            color: #e7c595;
+            color: #381200;
         }
         
         .competition-structure-summary-section ul li::before {
             content: '⚡';
             position: absolute;
             left: 5px;
-            color: #e7c595;
+            color: #93460b;
             font-size: 1.2em;
         }
         
@@ -456,7 +456,7 @@ const CompetitionStructure = () => {
         
         .competition-structure-summary-section ul ul li::before {
             content: '•';
-            color: #e7c595;
+            color: #93460b;
             font-size: 1em;
         }
         

@@ -5,12 +5,13 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import History from "./pages/History";
 import CompetitionStructure from "./pages/CompetitionStructure";
 import EventStructure from "./pages/EventStructure";
 import NotFound from "./pages/NotFound";
 import Navigation from "./components/Navigation";
+
 const queryClient = new QueryClient();
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -21,7 +22,6 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/history" element={<History />} />
           <Route path="/competition-structure" element={<CompetitionStructure />} />
           <Route path="/event-structure" element={<EventStructure />} />
           <Route path="*" element={<NotFound />} />
@@ -30,4 +30,5 @@ const App = () => (
     </TooltipProvider>
   </QueryClientProvider>
 );
+
 export default App;
