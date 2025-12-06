@@ -3,26 +3,22 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
-
 const Home = () => {
-  const stats = [
-    { icon: Users, label: "Competitors", value: "35+" },
-    { icon: Trophy, label: "Universities", value: "7" },
-    { icon: Target, label: "Stages", value: "5" },
-  ];
-
-  const universities = [
-    "Abu Dhabi University",
-    "American University in Dubai",
-    "Middlesex University Dubai",
-    "Heriot-Watt University Dubai",
-    "UAE University",
-    "NYU Abu Dhabi",
-    "Mohamed bin Zayed University of Artificial Intelligence",
-  ];
-
-  return (
-    <div className="min-h-screen pt-16">
+  const stats = [{
+    icon: Users,
+    label: "Competitors",
+    value: "35+"
+  }, {
+    icon: Trophy,
+    label: "Universities",
+    value: "7"
+  }, {
+    icon: Target,
+    label: "Stages",
+    value: "5"
+  }];
+  const universities = ["Abu Dhabi University", "American University in Dubai", "Middlesex University Dubai", "Heriot-Watt University Dubai", "UAE University", "NYU Abu Dhabi", "Mohamed bin Zayed University of Artificial Intelligence"];
+  return <div className="min-h-screen pt-16">
       {/* Hero Section */}
       <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden pt-16">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-background to-primary/20" />
@@ -66,7 +62,7 @@ const Home = () => {
               <Card className="p-6 bg-card backdrop-blur border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20">
                 <MapPin className="w-8 h-8 text-secondary mx-auto mb-3" />
                 <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Venue</p>
-                <p className="text-xl font-bold text-foreground">NYUAD</p>
+                <p className="text-xl font-bold text-foreground">NYU Abu Dhabi</p>
                 <p className="text-lg text-foreground">C2 West Forum</p>
               </Card>
             </div>
@@ -99,16 +95,11 @@ const Home = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {stats.map((stat, index) => (
-              <div
-                key={index}
-                className="text-center p-8 bg-secondary-foreground/10 backdrop-blur rounded-2xl border border-secondary-foreground/20 hover:bg-secondary-foreground/20 transition-all duration-300"
-              >
+            {stats.map((stat, index) => <div key={index} className="text-center p-8 bg-secondary-foreground/10 backdrop-blur rounded-2xl border border-secondary-foreground/20 hover:bg-secondary-foreground/20 transition-all duration-300">
                 <stat.icon className="w-12 h-12 mx-auto mb-4 text-primary" />
                 <div className="text-5xl font-bold mb-2 text-primary">{stat.value}</div>
                 <div className="text-xl font-semibold uppercase tracking-wide text-secondary-foreground">{stat.label}</div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -124,14 +115,9 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {universities.slice(0, 6).map((university, index) => (
-              <Card
-                key={index}
-                className="p-6 text-center bg-card hover:bg-primary/10 border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10"
-              >
+            {universities.slice(0, 6).map((university, index) => <Card key={index} className="p-6 text-center bg-card hover:bg-primary/10 border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10">
                 <p className="text-lg font-semibold text-foreground">{university}</p>
-              </Card>
-            ))}
+              </Card>)}
             {/* Last university - full width centered */}
             <Card className="p-6 text-center bg-card hover:bg-primary/10 border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10 sm:col-span-2">
               <p className="text-lg font-semibold text-foreground">{universities[6]}</p>
@@ -165,8 +151,6 @@ const Home = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
