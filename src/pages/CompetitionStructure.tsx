@@ -29,9 +29,9 @@ const CompetitionStructure = () => {
         }
         
         .competition-structure-header {
-            background: linear-gradient(135deg, #e7c796 0%, #ddb879 50%, #e7c796 100%);
+            background: linear-gradient(135deg, hsl(40 30% 90%) 0%, hsl(35 45% 80%) 50%, hsl(40 30% 90%) 100%);
             color: #93460b;
-            padding: 40px 50px 30px 50px;
+            padding: 60px 50px 40px 50px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -343,12 +343,12 @@ const CompetitionStructure = () => {
         }
         
         .competition-structure-awards-section {
-            background: linear-gradient(135deg, #3d2817 0%, #5a3a1f 100%);
-            color: white;
+            background: #e7c595;
+            color: #381200;
             padding: 40px;
             border-radius: 15px;
             margin: 30px 0;
-            box-shadow: 0 8px 25px rgba(61, 40, 23, 0.4);
+            box-shadow: 0 8px 25px rgba(147, 70, 11, 0.2);
         }
         
         .competition-structure-awards-section h3 {
@@ -359,7 +359,7 @@ const CompetitionStructure = () => {
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: #d4af37;
+            color: #93460b;
         }
         
         .competition-structure-awards-grid {
@@ -370,12 +370,12 @@ const CompetitionStructure = () => {
         }
         
         .competition-structure-award-card {
-            background: rgba(212, 175, 55, 0.15);
+            background: rgba(255, 255, 255, 0.6);
             backdrop-filter: blur(10px);
             padding: 25px;
             border-radius: 12px;
             text-align: center;
-            border: 2px solid rgba(212, 175, 55, 0.3);
+            border: 2px solid #93460b;
         }
         
         .competition-structure-award-card.full-width {
@@ -398,12 +398,12 @@ const CompetitionStructure = () => {
             margin-bottom: 5px;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #d4af37;
+            color: #93460b;
         }
         
         .competition-structure-award-subtitle {
             font-size: 0.85em;
-            opacity: 0.9;
+            color: #381200;
         }
         
         .competition-structure-summary-section {
@@ -516,7 +516,9 @@ const CompetitionStructure = () => {
         <div className="competition-structure-container">
           <div className="competition-structure-header">
             <div className="competition-structure-header-content">
-              
+              <h1 style={{ fontSize: '2.5em', fontWeight: 800, marginBottom: '15px', color: '#93460b', letterSpacing: '2px' }}>
+                COORDINATORS INFO
+              </h1>
               <span className="competition-structure-for-coordinators">📋 Competition Structure for Coordinators</span>
             </div>
           </div>

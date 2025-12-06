@@ -34,9 +34,9 @@ const EventStructure = () => {
         }
         
         .event-structure-header {
-          background: linear-gradient(135deg, #e7c796 0%, #ddb879 50%, #e7c796 100%);
+          background: linear-gradient(135deg, hsl(40 30% 90%) 0%, hsl(35 45% 80%) 50%, hsl(40 30% 90%) 100%);
           color: #93460b;
-          padding: 40px 50px 30px 50px;
+          padding: 60px 50px 40px 50px;
           text-align: center;
           position: relative;
           overflow: hidden;
@@ -336,6 +336,9 @@ const EventStructure = () => {
         <div className="event-structure-container">
           <div className="event-structure-header">
             <div className="event-structure-header-content">
+              <h1 style={{ fontSize: '2.5em', fontWeight: 800, marginBottom: '15px', color: '#93460b', letterSpacing: '2px' }}>
+                EVENT DETAILS
+              </h1>
               <p className="event-structure-event-subtitle">NYU Abu Dhabi • December 7, 2025</p>
               <p className="event-structure-event-subtitle">9:00 AM – 5:00 PM (GST)</p>
             </div>
@@ -734,30 +737,6 @@ Full Audience Viewing
             </div>
             
             <div className="event-structure-page-break"></div>
-            
-            <div className="event-structure-section">
-              <div className="event-structure-section-title">COMPETITION PHILOSOPHY</div>
-              
-              <div className="event-structure-info-box">
-                <p style={{
-                fontSize: '1.05em',
-                lineHeight: '1.8'
-              }}>
-                  The <strong>Takāmul Cup</strong> celebrates <strong>mathematical excellence in the AI era</strong> by honoring the irreplaceable power of human cognition. In an age where artificial intelligence can solve complex problems instantly, we create a space that celebrates <strong>the brain</strong>—its creativity, procedural fluency, pattern recognition, and deep mathematical reasoning.
-                </p>
-              </div>
-              
-              
-              
-              <div className="event-structure-info-box">
-                <p style={{
-                fontSize: '1.05em',
-                lineHeight: '1.8'
-              }}>
-                  The Takāmul Cup fosters an environment where <strong>cognitive skills</strong> and <strong>procedural fluency</strong> are not just valued but celebrated. It's a reminder that while technology advances, the human capacity for mathematical thought remains extraordinary and worth cultivating.
-                </p>
-              </div>
-            </div>
             
             <div className="event-structure-section" style={{
             marginTop: '40px',

@@ -70,18 +70,6 @@ const Home = () => {
               </Card>
             </div>
 
-            <div className="flex flex-col gap-4 justify-center items-center mt-8 sm:flex-row mb-20">
-              <Link to="/event-structure">
-                <Button size="lg" className="text-lg px-8 py-6 bg-secondary hover:bg-secondary/90 text-secondary-foreground hover:shadow-lg hover:shadow-secondary/50 transition-all duration-300">
-                  Learn More
-                </Button>
-              </Link>
-              <Link to="/about">
-                <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 border-secondary text-secondary hover:bg-secondary/10">
-                  About Us
-                </Button>
-              </Link>
-            </div>
           </div>
         </div>
       </section>
@@ -103,6 +91,28 @@ const Home = () => {
                 <div className="text-5xl font-bold mb-2 text-secondary">{stat.value}</div>
                 <div className="text-xl font-semibold uppercase tracking-wide text-tertiary">{stat.label}</div>
               </div>)}
+          </div>
+        </div>
+      </section>
+
+      {/* Universities Section */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center mb-12">
+            <Trophy className="w-10 h-10 text-secondary mr-3" />
+            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
+              Participating Universities
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {universities.slice(0, 6).map((university, index) => <Card key={index} className="p-6 text-center bg-card hover:bg-primary/10 border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10">
+                <p className="text-lg font-semibold text-foreground">{university}</p>
+              </Card>)}
+            {/* Last university - full width centered */}
+            <Card className="p-6 text-center bg-card hover:bg-primary/10 border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10 sm:col-span-2">
+              <p className="text-lg font-semibold text-foreground">{universities[6]}</p>
+            </Card>
           </div>
         </div>
       </section>
@@ -134,28 +144,6 @@ const Home = () => {
                   The Takāmul Cup fosters an environment where <strong>cognitive skills</strong> and <strong>procedural fluency</strong> are not just valued but celebrated. It's a reminder that while technology advances, the human capacity for mathematical thought remains extraordinary and worth cultivating.
                 </p>
               </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Universities Section */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center mb-12">
-            <Trophy className="w-10 h-10 text-secondary mr-3" />
-            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
-              Participating Universities
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {universities.slice(0, 6).map((university, index) => <Card key={index} className="p-6 text-center bg-card hover:bg-primary/10 border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10">
-                <p className="text-lg font-semibold text-foreground">{university}</p>
-              </Card>)}
-            {/* Last university - full width centered */}
-            <Card className="p-6 text-center bg-card hover:bg-primary/10 border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10 sm:col-span-2">
-              <p className="text-lg font-semibold text-foreground">{universities[6]}</p>
             </Card>
           </div>
         </div>
