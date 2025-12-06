@@ -138,11 +138,20 @@ const Home = () => {
               </div>
             </Card>
             
-            <Card className="p-8 bg-primary border-secondary/30">
+            <Card className="p-8 bg-primary border-secondary/30 mb-6">
               <div className="flex items-start gap-4">
                 <Brain className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
                 <p className="text-lg text-tertiary leading-relaxed">
                   The Takāmul Cup fosters an environment where <strong>cognitive skills</strong> and <strong>procedural fluency</strong> are not just valued but celebrated. It's a reminder that while technology advances, the human capacity for mathematical thought remains extraordinary and worth cultivating.
+                </p>
+              </div>
+            </Card>
+            
+            <Card className="p-8 bg-primary border-secondary/30">
+              <div className="flex items-start gap-4">
+                <Sparkles className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
+                <p className="text-lg text-tertiary leading-relaxed">
+                  This competition is about <strong>living mathematics</strong>—experiencing the thrill of solving integrals with nothing but mental agility, pencil, and paper. We isolate AI outside the room; inside, it's just <strong>your brain, your skills, and your passion for mathematics</strong>.
                 </p>
               </div>
             </Card>
