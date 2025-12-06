@@ -53,7 +53,7 @@ const History = () => {
                 Where It All Started
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                The Takāmul Cup story began in the halls of NYU Abu Dhabi, where a vision 
+                Takãmul Cup Cup story began in the halls of NYU Abu Dhabi, where a vision 
                 to celebrate mathematical excellence took its first steps.
               </p>
             </div>

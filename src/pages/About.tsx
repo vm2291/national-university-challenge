@@ -55,7 +55,7 @@ const About = () => {
               The Battle of Mathematical Excellence
             </h2>
             <p className="text-xl text-foreground/90 leading-relaxed">
-              Takāmul Cup represents more than just a competition—it's a celebration of mathematical 
+              Takãmul Cup represents more than just a competition—it's a celebration of mathematical 
               brilliance, strategic thinking, and academic excellence. We bring together the nation's 
               brightest minds to compete in speed, accuracy, and problem-solving prowess, creating a 
               platform where mathematical talent shines on a national stage.

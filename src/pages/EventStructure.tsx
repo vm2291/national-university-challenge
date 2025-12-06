@@ -564,7 +564,7 @@ Full Audience Viewing
                   <tr>
                     <td className="event-structure-time-col">9:45 - 10:00 AM</td>
                     <td><strong>Welcome Remarks, Briefing & Logistical Structure</strong></td>
-                    <td>Dr. Dania Zantout (Executive Director & Founder, Takāmul Cup) and Narek Galstian (Math SIG President, NYUAD)</td>
+                    <td>Dr. Dania Zantout (Executive Director & Founder, Takãmul Cup) and Narek Galstian (Math SIG President, NYUAD)</td>
                   </tr>
                   <tr>
                     <td className="event-structure-time-col">10:00 - 10:24 AM</td>
@@ -648,7 +648,7 @@ Full Audience Viewing
               <div className="event-structure-personnel-list">
                 <div className="event-structure-personnel-item">
                   <div className="event-structure-personnel-name">Dr. Dania Zantout</div>
-                  <div className="event-structure-personnel-role">Founding & Executive Director, Takāmul Cup | Science Division, Mathematics Program, NYU Abu Dhabi</div>
+                  <div className="event-structure-personnel-role">Founding & Executive Director, Takãmul Cup | Science Division, Mathematics Program, NYU Abu Dhabi</div>
                 </div>
                 
                 <div className="event-structure-personnel-item">
@@ -723,7 +723,7 @@ Full Audience Viewing
               
               <div className="event-structure-info-box">
                 <p style={{fontSize: '1.05em', lineHeight: '1.8'}}>
-                  The <strong>Takāmul Cup</strong> celebrates <strong>mathematical excellence in the AI era</strong> by honoring the irreplaceable power of human cognition. In an age where artificial intelligence can solve complex problems instantly, we create a space that celebrates <strong>the brain</strong>—its creativity, procedural fluency, pattern recognition, and deep mathematical reasoning.
+                  The <strong>Takãmul Cup</strong> celebrates <strong>mathematical excellence in the AI era</strong> by honoring the irreplaceable power of human cognition. In an age where artificial intelligence can solve complex problems instantly, we create a space that celebrates <strong>the brain</strong>—its creativity, procedural fluency, pattern recognition, and deep mathematical reasoning.
                 </p>
               </div>
               
@@ -735,13 +735,13 @@ Full Audience Viewing
               
               <div className="event-structure-info-box">
                 <p style={{fontSize: '1.05em', lineHeight: '1.8'}}>
-                  The Takāmul Cup fosters an environment where <strong>cognitive skills</strong> and <strong>procedural fluency</strong> are not just valued but celebrated. It's a reminder that while technology advances, the human capacity for mathematical thought remains extraordinary and worth cultivating.
+                  The Takãmul Cup fosters an environment where <strong>cognitive skills</strong> and <strong>procedural fluency</strong> are not just valued but celebrated. It's a reminder that while technology advances, the human capacity for mathematical thought remains extraordinary and worth cultivating.
                 </p>
               </div>
             </div>
             
             <div className="event-structure-section" style={{marginTop: '40px', textAlign: 'center', color: '#3d2817'}}>
-              <p style={{fontSize: '1.2em', fontWeight: 'bold'}}>🦅 TAKĀMUL CUP - FALCON'S TALON EDITION 🦅</p>
+              <p style={{fontSize: '1.2em', fontWeight: 'bold'}}>🦅 Takãmul Cup - Falcon's Talon Edition 🦅</p>
               <p style={{marginTop: '10px'}}>Inaugural National UAE Integration Bee Championship</p>
               <p>December 7, 2025 | NYU Abu Dhabi</p>
               <p style={{marginTop: '15px', fontSize: '0.95em', color: '#5a3a1f'}}>
