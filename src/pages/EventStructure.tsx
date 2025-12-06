@@ -343,7 +343,7 @@ const EventStructure = () => {
           
           <div className="event-structure-content">
             <div className="event-structure-section">
-              <div className="event-structure-section-title">EXECUTIVE SUMMARY</div>
+              <div className="event-structure-section-title my-0">EXECUTIVE SUMMARY</div>
               
               <div className="event-structure-stats-grid">
                 <div className="event-structure-stat-box">
@@ -747,14 +747,7 @@ Full Audience Viewing
                 </p>
               </div>
               
-              <div className="event-structure-info-box">
-                <p style={{
-                fontSize: '1.05em',
-                lineHeight: '1.8'
-              }}>
-                  This competition is about <strong>living mathematics</strong>—experiencing the thrill of solving integrals with nothing but mental agility, pencil, and paper. We isolate AI outside the room; inside, it's just <strong>your brain, your skills, and your passion for mathematics</strong>.
-                </p>
-              </div>
+              
               
               <div className="event-structure-info-box">
                 <p style={{
