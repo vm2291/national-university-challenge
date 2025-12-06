@@ -1,6 +1,5 @@
 const Footer = () => {
-  return (
-    <footer className="py-12 bg-tertiary text-primary border-t border-secondary/30 mt-auto">
+  return <footer className="py-12 bg-tertiary text-primary border-t border-secondary/30 mt-auto">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Main Footer Content */}
@@ -37,17 +36,13 @@ const Footer = () => {
             {/* Contact Section */}
             <div className="text-center md:text-right">
               <h3 className="text-lg font-bold mb-4 text-primary">
-                Contact
-              </h3>
+            </h3>
               <p className="text-sm text-primary/80 mb-2">
-                NYU Abu Dhabi Math SIG
-              </p>
+            </p>
               <p className="text-xs text-primary/70">
-                December 7, 2025
-              </p>
+            </p>
               <p className="text-xs text-primary/70">
-                C2 West Forum, NYU Abu Dhabi
-              </p>
+            </p>
             </div>
           </div>
 
@@ -64,8 +59,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
