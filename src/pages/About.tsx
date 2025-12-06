@@ -126,7 +126,7 @@ const About = () => {
               <Card className="p-8 bg-card border-primary/30">
                 <h3 className="text-2xl font-bold text-foreground mb-4">National Expansion</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  The 2025 edition marks a historic milestone as Takāmul Cup expands from its origins 
+                  The 2025 edition marks a historic milestone as Takãmul Cup expands from its origins 
                   at NYU Abu Dhabi to become the UAE's first national integration bee, uniting six 
                   universities in mathematical competition.
                 </p>
@@ -154,7 +154,7 @@ const About = () => {
                 Where It All Started
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                The Takāmul Cup story began in the halls of NYU Abu Dhabi, where a vision 
+                The Takãmul Cup story began in the halls of NYU Abu Dhabi, where a vision 
                 to celebrate mathematical excellence took its first steps.
               </p>
             </div>
@@ -270,7 +270,7 @@ const About = () => {
             </h2>
             <p className="text-xl text-tertiary/90 leading-relaxed">
               The success and enthusiasm from the 2024 event inspired the vision to expand beyond 
-              NYU Abu Dhabi. In 2025, Takāmul Cup takes its place as the UAE's first national 
+              NYU Abu Dhabi. In 2025, Takãmul Cup takes its place as the UAE's first national 
               integration competition, bringing together six universities in a celebration of 
               mathematical excellence that transcends campus boundaries.
             </p>

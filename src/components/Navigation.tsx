@@ -24,11 +24,11 @@ const Navigation = () => {
           <Link to="/" className="flex items-center space-x-3 group">
             <img 
               src="/WhatsApp Image 2025-12-05 at 12.26.39.jpeg" 
-              alt="Takāmul Cup Logo" 
+              alt="Takãmul Cup Logo" 
               className="h-12 w-auto object-contain transform transition-transform group-hover:scale-105"
             />
             <span className="text-lg font-bold bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent hidden sm:block">
-              Takāmul Cup
+              Takãmul Cup
             </span>
           </Link>
 
