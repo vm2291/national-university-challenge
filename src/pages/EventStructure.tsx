@@ -803,7 +803,7 @@ Full Audience Viewing
                 
                 <div className="event-structure-personnel-item">
                   <div className="event-structure-personnel-name">Dr. Karam Fayad</div>
-                  <div className="event-structure-personnel-role">Head Judge</div>
+                  <div className="event-structure-personnel-role">Head Judge and Associate Program Head of Mathematics, NYU Abu Dhabi</div>
                 </div>
                 
                 <div className="event-structure-personnel-item">
