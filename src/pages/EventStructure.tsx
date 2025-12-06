@@ -1,8 +1,6 @@
 import Footer from "@/components/Footer";
-
 const EventStructure = () => {
-  return (
-    <>
+  return <>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
         
@@ -395,7 +393,7 @@ const EventStructure = () => {
                 <strong>Location:</strong> Main competition venue
               </div>
               <div className="event-structure-ascii-diagram">
-{`ALL 35 PARTICIPANTS
+              {`ALL 35 PARTICIPANTS
      ↓
 ROUND A (8 problems × 3:00 each = 24 min)
      ↓
@@ -410,14 +408,16 @@ TOP 16 SELECTED & SEEDED (#1 through #16)`}
               
               <div className="event-structure-subsection-title">BRACKET ROUNDS: STAGES 2-5</div>
               
-              <div className="event-structure-info-box" style={{marginTop: '20px'}}>
+              <div className="event-structure-info-box" style={{
+              marginTop: '20px'
+            }}>
                 <strong>STAGE 2: ROUND OF 16 (11:20 AM - 12:05 PM)</strong><br />
                 <strong>Format:</strong> 8 simultaneous head-to-head matches (paper-based)<br />
                 <strong>Cards:</strong> 3 cards per match (5, 5, 4 minutes)<br />
                 <strong>Advancement:</strong> Winner of each match proceeds
               </div>
               <div className="event-structure-ascii-diagram">
-{`ROUND OF 16 → 8 MATCHES SIMULTANEOUSLY
+              {`ROUND OF 16 → 8 MATCHES SIMULTANEOUSLY
 
 
 
@@ -445,14 +445,16 @@ Match 8: Seed #2  vs Seed #15  →  Winner H
         [Grading & Short Break - 30 minutes]`}
               </div>
               
-              <div className="event-structure-info-box" style={{marginTop: '20px'}}>
+              <div className="event-structure-info-box" style={{
+              marginTop: '20px'
+            }}>
                 <strong>STAGE 3: QUARTERFINALS (12:35 - 1:20 PM)</strong><br />
                 <strong>Format:</strong> 4 simultaneous matches (paper-based)<br />
                 <strong>Cards:</strong> 3 cards per match (6, 5, 5 minutes)<br />
                 <strong>Note:</strong> Lunch break AFTER this stage
               </div>
               <div className="event-structure-ascii-diagram">
-{`QUARTERFINALS → 4 MATCHES SIMULTANEOUSLY
+              {`QUARTERFINALS → 4 MATCHES SIMULTANEOUSLY
 
 
 
@@ -472,14 +474,16 @@ QF Match 4: Winner G  vs  Winner H  →  QF Winner 4
           [LUNCH BREAK & GRADING: 1:20 - 2:20 PM]`}
               </div>
               
-              <div className="event-structure-info-box" style={{marginTop: '20px'}}>
+              <div className="event-structure-info-box" style={{
+              marginTop: '20px'
+            }}>
                 <strong>STAGE 4: SEMIFINALS (2:20 - 3:20 PM)</strong><br />
                 <strong>Format:</strong> 2 matches on WHITEBOARDS (visible to audience!)<br />
                 <strong>Cards:</strong> 4 cards per match (6 minutes each)<br />
                 <strong>Special:</strong> Live problem-solving, audience can watch
               </div>
               <div className="event-structure-ascii-diagram">
-{`SEMIFINALS → 2 MATCHES ON WHITEBOARDS
+              {`SEMIFINALS → 2 MATCHES ON WHITEBOARDS
 
 
 
@@ -499,14 +503,16 @@ SF Match 2: QF Winner 3  vs  QF Winner 4  →  SF Winner 2
           [Brief Break: 3:20 - 3:35 PM]`}
               </div>
               
-              <div className="event-structure-info-box" style={{marginTop: '20px'}}>
+              <div className="event-structure-info-box" style={{
+              marginTop: '20px'
+            }}>
                 <strong>STAGE 5: CHAMPIONSHIP MATCH (3:35 - 4:20 PM)</strong><br />
                 <strong>Format:</strong> THE GRAND FINALE on WHITEBOARD<br />
                 <strong>Cards:</strong> 4 indefinite integrals (6 minutes each)<br />
                 <strong>Stakes:</strong> Winner becomes THE GRAND INTEGRATOR 🥇
               </div>
               <div className="event-structure-ascii-diagram">
-{`👑 CHAMPIONSHIP MATCH 👑
+              {`👑 CHAMPIONSHIP MATCH 👑
 
 
 
@@ -543,8 +549,12 @@ Full Audience Viewing
               <table className="event-structure-schedule-table">
                 <thead>
                   <tr>
-                    <th style={{width: '20%'}}>Time</th>
-                    <th style={{width: '30%'}}>Activity</th>
+                    <th style={{
+                    width: '20%'
+                  }}>Time</th>
+                    <th style={{
+                    width: '30%'
+                  }}>Activity</th>
                     <th>Details</th>
                   </tr>
                 </thead>
@@ -707,9 +717,13 @@ Full Audience Viewing
                 </div>
               </div>
               
-              <div className="event-structure-info-box" style={{marginTop: '30px'}}>
+              <div className="event-structure-info-box" style={{
+              marginTop: '30px'
+            }}>
                 <strong>Additional Recognition:</strong>
-                <ul style={{marginTop: '10px'}}>
+                <ul style={{
+                marginTop: '10px'
+              }}>
                   <li>All 35 official competitors receive <strong>Certificate of Participation + T-shirt</strong></li>
                   <li>TOP 16 qualifiers recognized during bracket announcement</li>
                   <li>TOP 8 quarterfinalists acknowledged during ceremony</li>
@@ -725,40 +739,58 @@ Full Audience Viewing
               <div className="event-structure-section-title">COMPETITION PHILOSOPHY</div>
               
               <div className="event-structure-info-box">
-                <p style={{fontSize: '1.05em', lineHeight: '1.8'}}>
+                <p style={{
+                fontSize: '1.05em',
+                lineHeight: '1.8'
+              }}>
                   The <strong>Takāmul Cup</strong> celebrates <strong>mathematical excellence in the AI era</strong> by honoring the irreplaceable power of human cognition. In an age where artificial intelligence can solve complex problems instantly, we create a space that celebrates <strong>the brain</strong>—its creativity, procedural fluency, pattern recognition, and deep mathematical reasoning.
                 </p>
               </div>
               
               <div className="event-structure-info-box">
-                <p style={{fontSize: '1.05em', lineHeight: '1.8'}}>
+                <p style={{
+                fontSize: '1.05em',
+                lineHeight: '1.8'
+              }}>
                   This competition is about <strong>living mathematics</strong>—experiencing the thrill of solving integrals with nothing but mental agility, pencil, and paper. We isolate AI outside the room; inside, it's just <strong>your brain, your skills, and your passion for mathematics</strong>.
                 </p>
               </div>
               
               <div className="event-structure-info-box">
-                <p style={{fontSize: '1.05em', lineHeight: '1.8'}}>
+                <p style={{
+                fontSize: '1.05em',
+                lineHeight: '1.8'
+              }}>
                   The Takāmul Cup fosters an environment where <strong>cognitive skills</strong> and <strong>procedural fluency</strong> are not just valued but celebrated. It's a reminder that while technology advances, the human capacity for mathematical thought remains extraordinary and worth cultivating.
                 </p>
               </div>
             </div>
             
-            <div className="event-structure-section" style={{marginTop: '40px', textAlign: 'center', color: '#93460b'}}>
-              <p style={{fontSize: '1.2em', fontWeight: 'bold'}}>🦅 TAKĀMUL CUP - FALCON'S TALON EDITION 🦅</p>
-              <p style={{marginTop: '10px'}}>Inaugural National UAE Integration Bee Championship</p>
+            <div className="event-structure-section" style={{
+            marginTop: '40px',
+            textAlign: 'center',
+            color: '#93460b'
+          }}>
+              <p style={{
+              fontSize: '1.2em',
+              fontWeight: 'bold'
+            }}>🦅 TAKĀMUL CUP - FALCON'S TALON EDITION 🦅</p>
+              <p style={{
+              marginTop: '10px'
+            }}>​Inaugural National UAE Integration Bee Championship</p>
               <p>December 7, 2025 | NYU Abu Dhabi</p>
-              <p style={{marginTop: '15px', fontSize: '0.95em', color: '#5a3a1f'}}>
-                <strong>Founding & Executive Director:</strong> Dr. Dania Zantout<br />
-                Science Division, Mathematics Program, NYU Abu Dhabi
+              <p style={{
+              marginTop: '15px',
+              fontSize: '0.95em',
+              color: '#5a3a1f'
+            }}>​ ​<br />
+                ​
               </p>
             </div>
           </div>
         </div>
       </div>
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default EventStructure;
-
