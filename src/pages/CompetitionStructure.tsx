@@ -1,8 +1,6 @@
 import Footer from "@/components/Footer";
-
 const CompetitionStructure = () => {
-  return (
-    <>
+  return <>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
         
@@ -518,7 +516,7 @@ const CompetitionStructure = () => {
         <div className="competition-structure-container">
           <div className="competition-structure-header">
             <div className="competition-structure-header-content">
-              <p className="competition-structure-event-subtitle">UAE University Level Integration Bee</p>
+              
               <span className="competition-structure-for-coordinators">📋 Competition Structure for Coordinators</span>
             </div>
           </div>
@@ -604,7 +602,7 @@ const CompetitionStructure = () => {
                 <div className="competition-structure-bracket-visual">
                   <p><strong>Bracket Structure:</strong></p>
                   <pre>
-{`Round of 16:
+                  {`Round of 16:
 M₁: Seed 1 vs Seed 16        M₂: Seed 8 vs Seed 9
 M₃: Seed 5 vs Seed 12        M₄: Seed 4 vs Seed 13
 M₅: Seed 3 vs Seed 14        M₆: Seed 6 vs Seed 11
@@ -704,13 +702,19 @@ Final: Winner SF1 vs Winner SF2`}
             {/* SUDDEN DEATH TIE-BREAKER */}
             <div className="competition-structure-highlight-box">
               <h3>⚡ Sudden Death Tie-Breaker Protocol</h3>
-              <p style={{marginBottom: '15px', fontSize: '1.05em'}}>The same <strong>sudden death tie-breaker</strong> mechanism is used in <strong>Stages 2, 3, 4, and 5</strong> whenever a match score is tied.</p>
+              <p style={{
+              marginBottom: '15px',
+              fontSize: '1.05em'
+            }}>The same <strong>sudden death tie-breaker</strong> mechanism is used in <strong>Stages 2, 3, 4, and 5</strong> whenever a match score is tied.</p>
               <ul>
                 <li><strong>All tie-breakers are DEFINITE INTEGRALS</strong></li>
                 <li>A tie-breaker integral is revealed to the two tied competitors under the central clock</li>
                 <li><strong>Time limit: 3 minutes (sudden death)</strong></li>
                 <li>During the 3-minute window:
-                  <ul style={{marginTop: '10px', marginLeft: '20px'}}>
+                  <ul style={{
+                  marginTop: '10px',
+                  marginLeft: '20px'
+                }}>
                     <li>The <strong>first competitor to submit a correct answer wins immediately</strong></li>
                     <li>If neither competitor submits a correct answer within 3 minutes → tie remains</li>
                   </ul>
@@ -721,7 +725,9 @@ Final: Winner SF1 vs Winner SF2`}
               
               <div className="competition-structure-sudden-death-box">
                 <p><strong>⚠️ Sudden Death Rules:</strong></p>
-                <ul style={{marginTop: '10px'}}>
+                <ul style={{
+                marginTop: '10px'
+              }}>
                   <li><strong>3-minute clock</strong> for each tie-breaker</li>
                   <li><strong>First correct answer wins</strong></li>
                   <li>If <strong>no correct answer</strong> within 3 minutes → start new tie-breaker</li>
@@ -828,7 +834,9 @@ Final: Winner SF1 vs Winner SF2`}
                     <div className="competition-structure-timing-value">6</div>
                     <div className="competition-structure-timing-detail">Minutes</div>
                     <div className="competition-structure-timing-detail">1 Improper Integral</div>
-                    <div className="competition-structure-timing-detail" style={{fontSize: '0.8em'}}>(definite with infinite limit/singularity)</div>
+                    <div className="competition-structure-timing-detail" style={{
+                    fontSize: '0.8em'
+                  }}>(definite with infinite limit/singularity)</div>
                   </div>
                 </div>
                 
@@ -936,7 +944,10 @@ Final: Winner SF1 vs Winner SF2`}
                 <li><strong>Stage 1</strong> is fully written, fully definite, and entirely scored by Mentimeter. No rubrics or manual scoring rules needed from coordinators beyond ensuring answers entered correctly into system.</li>
                 
                 <li><strong>Stages 2–3</strong> are bracket-based elimination rounds with:
-                  <ul style={{marginTop: '10px', marginLeft: '20px'}}>
+                  <ul style={{
+                  marginTop: '10px',
+                  marginLeft: '20px'
+                }}>
                     <li>Clear match structure per stage</li>
                     <li>Central timing and simultaneous reveal of each card</li>
                     <li>Two judges per match</li>
@@ -946,7 +957,10 @@ Final: Winner SF1 vs Winner SF2`}
                 </li>
                 
                 <li><strong>Stages 4–5</strong> (Semifinals and Championship) use:
-                  <ul style={{marginTop: '10px', marginLeft: '20px'}}>
+                  <ul style={{
+                  marginTop: '10px',
+                  marginLeft: '20px'
+                }}>
                     <li><strong>Whiteboard-based format</strong> — competitors work on whiteboards visible to audience</li>
                     <li>Same timing and judging protocols as earlier stages</li>
                     <li>Enhanced audience engagement through visible work</li>
@@ -958,7 +972,10 @@ Final: Winner SF1 vs Winner SF2`}
                 <li><strong>Laptops and hardware</strong> for scoring and display provided by NYUAD <strong>(Stage 1 only)</strong></li>
                 
                 <li><strong>Coordinators primarily needed to:</strong>
-                  <ul style={{marginTop: '10px', marginLeft: '20px'}}>
+                  <ul style={{
+                  marginTop: '10px',
+                  marginLeft: '20px'
+                }}>
                     <li>Accompany and support their students</li>
                     <li>Serve as judges/proctors in elimination stages (marking correctness and applying sudden death rules)</li>
                     <li>Track submission timing during sudden death tie-breakers</li>
@@ -976,9 +993,6 @@ Final: Winner SF1 vs Winner SF2`}
         </div>
       </div>
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default CompetitionStructure;
-
