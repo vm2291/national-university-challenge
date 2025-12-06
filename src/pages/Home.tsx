@@ -18,6 +18,7 @@ const Home = () => {
     label: "Stages",
     value: "5"
   }];
+
   
   const universities = ["Abu Dhabi University", "American University in Dubai", "Middlesex University Dubai", "Heriot-Watt University Dubai", "UAE University", "NYU Abu Dhabi", "Mohamed bin Zayed University of Artificial Intelligence"];
   
