@@ -887,6 +887,7 @@ Full Audience Viewing
                 <div className="event-structure-subsection-title" style={{marginTop: '0', textAlign: 'center'}}>Location</div>
                 <p style={{color: '#5a3a1f', marginBottom: '10px', textAlign: 'center', fontWeight: 'bold'}}>NYU Abu Dhabi</p>
                 <p style={{color: '#5a3a1f', marginBottom: '15px', textAlign: 'center'}}>C2 West Forum</p>
+                <p style={{color: '#5a3a1f', marginBottom: '15px', textAlign: 'center'}}> Visitor parking is available upon arrival, campus security will direct you to the designated zones. If arriving at the Visitor Center, you will be guided to C2 West Forum. </p>
                 <div className="event-structure-map-wrapper">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3629.8896745316606!2d54.431980876576255!3d24.52389965864014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e5d876232c3eb%3A0x14e8727ec5ee2be1!2sNew%20York%20University%20Abu%20Dhabi!5e0!3m2!1sen!2sae!4v1765008576893!5m2!1sen!2sae"
