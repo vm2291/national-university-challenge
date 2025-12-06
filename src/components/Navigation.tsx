@@ -11,14 +11,13 @@ const Navigation = () => {
     { path: "/", label: "Home" },
     { path: "/event-structure", label: "Event Details"},
     { path: "/competition-structure", label: "Coordinators Info" },
-    { path: "/about", label: "Vision" },
-    { path: "/history", label: "About Us" }
+    { path: "/about", label: "About Us" }
   ];
   
   const isActive = (path: string) => location.pathname === path;
   
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-gold/20 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-lg border-b border-primary/30 shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -28,7 +27,7 @@ const Navigation = () => {
               alt="Takāmul Cup Logo" 
               className="h-12 w-auto object-contain transform transition-transform group-hover:scale-105"
             />
-            <span className="text-lg font-bold bg-gradient-to-r from-gold to-gold-dark bg-clip-text text-transparent hidden sm:block">
+            <span className="text-lg font-bold bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent hidden sm:block">
               Takāmul Cup
             </span>
           </Link>
@@ -41,14 +40,9 @@ const Navigation = () => {
                 to={link.path}
                 className={`px-4 py-2 rounded-md font-medium text-sm transition-all duration-200 ${
                   isActive(link.path)
-                    ? "text-white shadow-md"
-                    : "text-foreground hover:bg-gold/10 hover:text-gold"
+                    ? "bg-secondary text-secondary-foreground shadow-md"
+                    : "text-foreground hover:bg-primary/30 hover:text-secondary"
                 }`}
-                style={
-                  isActive(link.path)
-                    ? { backgroundColor: 'rgb(148, 69, 10)' }
-                    : {}
-                }
               >
                 {link.label}
               </Link>
@@ -68,7 +62,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4 space-y-1 border-t border-gold/20 mt-2 pt-2">
+          <div className="md:hidden pb-4 space-y-1 border-t border-primary/30 mt-2 pt-2">
             {links.map(link => (
               <Link
                 key={link.path}
@@ -76,14 +70,9 @@ const Navigation = () => {
                 onClick={() => setIsOpen(false)}
                 className={`block px-4 py-2 rounded-md font-medium text-sm transition-all duration-200 ${
                   isActive(link.path)
-                    ? "text-white shadow-md"
-                    : "text-foreground hover:bg-gold/10"
+                    ? "bg-secondary text-secondary-foreground shadow-md"
+                    : "text-foreground hover:bg-primary/30"
                 }`}
-                style={
-                  isActive(link.path)
-                    ? { backgroundColor: 'rgb(148, 69, 10)' }
-                    : {}
-                }
               >
                 {link.label}
               </Link>

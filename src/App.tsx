@@ -5,28 +5,30 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import History from "./pages/History";
 import CompetitionStructure from "./pages/CompetitionStructure";
 import EventStructure from "./pages/EventStructure";
 import NotFound from "./pages/NotFound";
 import Navigation from "./components/Navigation";
+
 const queryClient = new QueryClient();
-const App = () => <QueryClientProvider client={queryClient}>
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Navigation className="my-0" />
+        <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} className="my-[20px]" />
-          <Route path="/history" element={<History />} />
+          <Route path="/about" element={<About />} />
           <Route path="/competition-structure" element={<CompetitionStructure />} />
           <Route path="/event-structure" element={<EventStructure />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
-  </QueryClientProvider>;
+  </QueryClientProvider>
+);
+
 export default App;

@@ -1,6 +1,6 @@
+import Footer from "@/components/Footer";
 const CompetitionStructure = () => {
-  return (
-    <>
+  return <>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
         
@@ -12,10 +12,11 @@ const CompetitionStructure = () => {
         
         .competition-structure-body {
             font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            color: #2c3e50;
+            background: hsl(40 30% 97%);
+            color: hsl(25 45% 15%);
             line-height: 1.6;
             padding: 30px 20px;
+            padding-top: 80px;
         }
         
         .competition-structure-container {
@@ -23,14 +24,14 @@ const CompetitionStructure = () => {
             margin: 0 auto;
             background: white;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            box-shadow: 0 20px 60px rgba(147, 70, 11, 0.15);
             overflow: hidden;
         }
         
         .competition-structure-header {
-            background: linear-gradient(135deg, #d4af7b 0%, rgb(234, 203, 155) 50%, #f5ddb8 100%);
-            color: #3d2817;
-            padding: 40px 50px 30px 50px;
+            background: linear-gradient(135deg, hsl(40 30% 90%) 0%, hsl(35 45% 80%) 50%, hsl(40 30% 90%) 100%);
+            color: #93460b;
+            padding: 60px 50px 40px 50px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -43,7 +44,7 @@ const CompetitionStructure = () => {
             right: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(212, 145, 90, 0.2) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(147, 70, 11, 0.15) 0%, transparent 70%);
             animation: pulse 15s ease-in-out infinite;
         }
         
@@ -67,14 +68,14 @@ const CompetitionStructure = () => {
             height: auto;
             display: block;
             margin: 0 auto;
-            filter: drop-shadow(0 4px 8px rgba(61, 40, 23, 0.4));
+            filter: drop-shadow(0 4px 8px rgba(147, 70, 11, 0.4));
         }
         
         .competition-structure-event-subtitle {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.2em;
             font-weight: 700;
-            color: #3d2817;
+            color: #93460b;
             margin-top: 15px;
             margin-bottom: 5px;
             letter-spacing: 1px;
@@ -82,15 +83,15 @@ const CompetitionStructure = () => {
         
         .competition-structure-for-coordinators {
             display: inline-block;
-            background: rgba(61, 40, 23, 0.85);
-            color: #f5ddb8;
+            background: rgba(147, 70, 11, 0.9);
+            color: #e7c796;
             padding: 8px 20px;
             border-radius: 25px;
             font-weight: 700;
             font-size: 0.9em;
             margin-top: 10px;
             letter-spacing: 1px;
-            box-shadow: 0 2px 8px rgba(61, 40, 23, 0.3);
+            box-shadow: 0 2px 8px rgba(147, 70, 11, 0.3);
         }
         
         .competition-structure-content {
@@ -342,12 +343,12 @@ const CompetitionStructure = () => {
         }
         
         .competition-structure-awards-section {
-            background: linear-gradient(135deg, #3d2817 0%, #5a3a1f 100%);
-            color: white;
+            background: #e7c595;
+            color: #381200;
             padding: 40px;
             border-radius: 15px;
             margin: 30px 0;
-            box-shadow: 0 8px 25px rgba(61, 40, 23, 0.4);
+            box-shadow: 0 8px 25px rgba(147, 70, 11, 0.2);
         }
         
         .competition-structure-awards-section h3 {
@@ -358,7 +359,7 @@ const CompetitionStructure = () => {
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: #d4af37;
+            color: #93460b;
         }
         
         .competition-structure-awards-grid {
@@ -369,12 +370,12 @@ const CompetitionStructure = () => {
         }
         
         .competition-structure-award-card {
-            background: rgba(212, 175, 55, 0.15);
+            background: rgba(255, 255, 255, 0.6);
             backdrop-filter: blur(10px);
             padding: 25px;
             border-radius: 12px;
             text-align: center;
-            border: 2px solid rgba(212, 175, 55, 0.3);
+            border: 2px solid #93460b;
         }
         
         .competition-structure-award-card.full-width {
@@ -397,21 +398,21 @@ const CompetitionStructure = () => {
             margin-bottom: 5px;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #d4af37;
+            color: #93460b;
         }
         
         .competition-structure-award-subtitle {
             font-size: 0.85em;
-            opacity: 0.9;
+            color: #381200;
         }
         
         .competition-structure-summary-section {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: white;
+            background: #e7c595;
+            color: #381200;
             padding: 40px;
             margin-top: 50px;
             border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(26, 26, 46, 0.4);
+            box-shadow: 0 8px 25px rgba(147, 70, 11, 0.3);
         }
         
         .competition-structure-summary-section h2 {
@@ -420,7 +421,7 @@ const CompetitionStructure = () => {
             font-weight: 800;
             margin-bottom: 25px;
             text-align: center;
-            color: #d4af37;
+            color: #381200;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
@@ -435,13 +436,14 @@ const CompetitionStructure = () => {
             padding-left: 35px;
             position: relative;
             line-height: 1.7;
+            color: #381200;
         }
         
         .competition-structure-summary-section ul li::before {
             content: '⚡';
             position: absolute;
             left: 5px;
-            color: #d4af37;
+            color: #93460b;
             font-size: 1.2em;
         }
         
@@ -452,7 +454,7 @@ const CompetitionStructure = () => {
         
         .competition-structure-summary-section ul ul li::before {
             content: '•';
-            color: #d4af37;
+            color: #93460b;
             font-size: 1em;
         }
         
@@ -514,7 +516,9 @@ const CompetitionStructure = () => {
         <div className="competition-structure-container">
           <div className="competition-structure-header">
             <div className="competition-structure-header-content">
-              <p className="competition-structure-event-subtitle">UAE University Level Integration Bee</p>
+              <h1 style={{ fontSize: '2.5em', fontWeight: 800, marginBottom: '15px', color: '#93460b', letterSpacing: '2px' }}>
+                COORDINATORS INFO
+              </h1>
               <span className="competition-structure-for-coordinators">📋 Competition Structure for Coordinators</span>
             </div>
           </div>
@@ -600,7 +604,7 @@ const CompetitionStructure = () => {
                 <div className="competition-structure-bracket-visual">
                   <p><strong>Bracket Structure:</strong></p>
                   <pre>
-{`Round of 16:
+                  {`Round of 16:
 M₁: Seed 1 vs Seed 16        M₂: Seed 8 vs Seed 9
 M₃: Seed 5 vs Seed 12        M₄: Seed 4 vs Seed 13
 M₅: Seed 3 vs Seed 14        M₆: Seed 6 vs Seed 11
@@ -700,13 +704,19 @@ Final: Winner SF1 vs Winner SF2`}
             {/* SUDDEN DEATH TIE-BREAKER */}
             <div className="competition-structure-highlight-box">
               <h3>⚡ Sudden Death Tie-Breaker Protocol</h3>
-              <p style={{marginBottom: '15px', fontSize: '1.05em'}}>The same <strong>sudden death tie-breaker</strong> mechanism is used in <strong>Stages 2, 3, 4, and 5</strong> whenever a match score is tied.</p>
+              <p style={{
+              marginBottom: '15px',
+              fontSize: '1.05em'
+            }}>The same <strong>sudden death tie-breaker</strong> mechanism is used in <strong>Stages 2, 3, 4, and 5</strong> whenever a match score is tied.</p>
               <ul>
                 <li><strong>All tie-breakers are DEFINITE INTEGRALS</strong></li>
                 <li>A tie-breaker integral is revealed to the two tied competitors under the central clock</li>
                 <li><strong>Time limit: 3 minutes (sudden death)</strong></li>
                 <li>During the 3-minute window:
-                  <ul style={{marginTop: '10px', marginLeft: '20px'}}>
+                  <ul style={{
+                  marginTop: '10px',
+                  marginLeft: '20px'
+                }}>
                     <li>The <strong>first competitor to submit a correct answer wins immediately</strong></li>
                     <li>If neither competitor submits a correct answer within 3 minutes → tie remains</li>
                   </ul>
@@ -717,7 +727,9 @@ Final: Winner SF1 vs Winner SF2`}
               
               <div className="competition-structure-sudden-death-box">
                 <p><strong>⚠️ Sudden Death Rules:</strong></p>
-                <ul style={{marginTop: '10px'}}>
+                <ul style={{
+                marginTop: '10px'
+              }}>
                   <li><strong>3-minute clock</strong> for each tie-breaker</li>
                   <li><strong>First correct answer wins</strong></li>
                   <li>If <strong>no correct answer</strong> within 3 minutes → start new tie-breaker</li>
@@ -824,7 +836,9 @@ Final: Winner SF1 vs Winner SF2`}
                     <div className="competition-structure-timing-value">6</div>
                     <div className="competition-structure-timing-detail">Minutes</div>
                     <div className="competition-structure-timing-detail">1 Improper Integral</div>
-                    <div className="competition-structure-timing-detail" style={{fontSize: '0.8em'}}>(definite with infinite limit/singularity)</div>
+                    <div className="competition-structure-timing-detail" style={{
+                    fontSize: '0.8em'
+                  }}>(definite with infinite limit/singularity)</div>
                   </div>
                 </div>
                 
@@ -932,7 +946,10 @@ Final: Winner SF1 vs Winner SF2`}
                 <li><strong>Stage 1</strong> is fully written, fully definite, and entirely scored by Mentimeter. No rubrics or manual scoring rules needed from coordinators beyond ensuring answers entered correctly into system.</li>
                 
                 <li><strong>Stages 2–3</strong> are bracket-based elimination rounds with:
-                  <ul style={{marginTop: '10px', marginLeft: '20px'}}>
+                  <ul style={{
+                  marginTop: '10px',
+                  marginLeft: '20px'
+                }}>
                     <li>Clear match structure per stage</li>
                     <li>Central timing and simultaneous reveal of each card</li>
                     <li>Two judges per match</li>
@@ -942,7 +959,10 @@ Final: Winner SF1 vs Winner SF2`}
                 </li>
                 
                 <li><strong>Stages 4–5</strong> (Semifinals and Championship) use:
-                  <ul style={{marginTop: '10px', marginLeft: '20px'}}>
+                  <ul style={{
+                  marginTop: '10px',
+                  marginLeft: '20px'
+                }}>
                     <li><strong>Whiteboard-based format</strong> — competitors work on whiteboards visible to audience</li>
                     <li>Same timing and judging protocols as earlier stages</li>
                     <li>Enhanced audience engagement through visible work</li>
@@ -954,7 +974,10 @@ Final: Winner SF1 vs Winner SF2`}
                 <li><strong>Laptops and hardware</strong> for scoring and display provided by NYUAD <strong>(Stage 1 only)</strong></li>
                 
                 <li><strong>Coordinators primarily needed to:</strong>
-                  <ul style={{marginTop: '10px', marginLeft: '20px'}}>
+                  <ul style={{
+                  marginTop: '10px',
+                  marginLeft: '20px'
+                }}>
                     <li>Accompany and support their students</li>
                     <li>Serve as judges/proctors in elimination stages (marking correctness and applying sudden death rules)</li>
                     <li>Track submission timing during sudden death tie-breakers</li>
@@ -971,9 +994,7 @@ Final: Winner SF1 vs Winner SF2`}
           </div>
         </div>
       </div>
-    </>
-  );
+      <Footer />
+    </>;
 };
-
 export default CompetitionStructure;
-
