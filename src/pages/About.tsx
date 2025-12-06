@@ -1,7 +1,6 @@
-import { Target, Lightbulb, Users, Trophy, Sparkles, Brain, Calendar, Award, BookOpen, TrendingUp, ChevronLeft, ChevronRight } from "lucide-react";
+import { Target, Lightbulb, Users, Trophy, Sparkles, Brain, Calendar, Award, BookOpen, TrendingUp } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Footer from "@/components/Footer";
-import { useState, useEffect } from "react";
 
 const About = () => {
   const eventPhotos = [
@@ -10,24 +9,6 @@ const About = () => {
     "/IMG_9548.jpeg",
     "/IMG_9565.jpeg"
   ];
-
-  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentPhotoIndex((prevIndex) => (prevIndex + 1) % eventPhotos.length);
-    }, 4000); // Change photo every 4 seconds
-
-    return () => clearInterval(interval);
-  }, [eventPhotos.length]);
-
-  const goToPrevious = () => {
-    setCurrentPhotoIndex((prevIndex) => (prevIndex - 1 + eventPhotos.length) % eventPhotos.length);
-  };
-
-  const goToNext = () => {
-    setCurrentPhotoIndex((prevIndex) => (prevIndex + 1) % eventPhotos.length);
-  };
 
   const visionPoints = [
     {
@@ -269,68 +250,30 @@ const About = () => {
               </Card>
             </div>
 
-            {/* Event Photos Slideshow */}
+            {/* Event Photos Grid */}
             <Card className="p-4 sm:p-6 md:p-8 bg-primary/10 border-secondary/30">
               <div className="text-center space-y-4">
                 <h3 className="text-xl sm:text-2xl font-bold text-tertiary mb-2">
                   2024 Event Photos
                 </h3>
-                <p className="text-sm sm:text-base text-tertiary/80 italic mb-4 sm:mb-6">
+                <p className="text-sm sm:text-base text-tertiary/80 italic mb-6">
                   Memorable moments from our inaugural event at NYU Abu Dhabi
                 </p>
                 
-                <div className="relative w-full max-w-4xl mx-auto">
-                  {/* Slideshow Container */}
-                  <div className="relative overflow-hidden rounded-xl bg-muted/20 aspect-[4/3] sm:aspect-[4/3] min-h-[250px] sm:min-h-[350px]">
-                    {/* Images */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
+                  {eventPhotos.map((photo, index) => (
                     <div 
-                      className="flex transition-transform duration-700 ease-in-out h-full"
-                      style={{ transform: `translateX(-${currentPhotoIndex * 100}%)` }}
+                      key={index} 
+                      className="relative overflow-hidden rounded-lg bg-muted/20 aspect-[4/3] shadow-md hover:shadow-lg transition-shadow duration-300"
                     >
-                      {eventPhotos.map((photo, index) => (
-                        <div key={index} className="min-w-full h-full flex-shrink-0 relative flex items-center justify-center bg-muted/10">
-                          <img
-                            src={photo}
-                            alt={`2024 Event Photo ${index + 1}`}
-                            className="w-full h-full object-contain max-w-full max-h-full"
-                            loading={index === 0 ? "eager" : "lazy"}
-                          />
-                        </div>
-                      ))}
+                      <img
+                        src={photo}
+                        alt={`2024 Event Photo ${index + 1}`}
+                        className="w-full h-full object-cover"
+                        loading={index < 2 ? "eager" : "lazy"}
+                      />
                     </div>
-
-                    {/* Navigation Arrows */}
-                    <button
-                      onClick={goToPrevious}
-                      className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-primary/80 hover:bg-primary text-tertiary p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110 z-10"
-                      aria-label="Previous photo"
-                    >
-                      <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
-                    </button>
-                    <button
-                      onClick={goToNext}
-                      className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-primary/80 hover:bg-primary text-tertiary p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110 z-10"
-                      aria-label="Next photo"
-                    >
-                      <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
-                    </button>
-
-                    {/* Dots Indicator */}
-                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-                      {eventPhotos.map((_, index) => (
-                        <button
-                          key={index}
-                          onClick={() => setCurrentPhotoIndex(index)}
-                          className={`h-2 sm:h-2.5 rounded-full transition-all duration-300 ${
-                            index === currentPhotoIndex
-                              ? 'w-8 bg-secondary'
-                              : 'w-2 bg-tertiary/40 hover:bg-tertiary/60'
-                          }`}
-                          aria-label={`Go to photo ${index + 1}`}
-                        />
-                      ))}
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </Card>
