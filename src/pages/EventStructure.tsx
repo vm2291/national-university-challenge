@@ -830,28 +830,6 @@ Full Audience Viewing
             
             <div className="event-structure-page-break"></div>
             
-            <div className="event-structure-section">
-              <div className="event-structure-section-title">COMPETITION PHILOSOPHY</div>
-              
-              <div className="event-structure-info-box">
-                <p style={{fontSize: '1.05em', lineHeight: '1.8'}}>
-                  The <strong>Takãmul Cup</strong> celebrates <strong>mathematical excellence in the AI era</strong> by honoring the irreplaceable power of human cognition. In an age where artificial intelligence can solve complex problems instantly, we create a space that celebrates <strong>the brain</strong>—its creativity, procedural fluency, pattern recognition, and deep mathematical reasoning.
-                </p>
-              </div>
-              
-              <div className="event-structure-info-box">
-                <p style={{fontSize: '1.05em', lineHeight: '1.8'}}>
-                  This competition is about <strong>living mathematics</strong>—experiencing the thrill of solving integrals with nothing but mental agility, pencil, and paper. We isolate AI outside the room; inside, it's just <strong>your brain, your skills, and your passion for mathematics</strong>.
-                </p>
-              </div>
-              
-              <div className="event-structure-info-box">
-                <p style={{fontSize: '1.05em', lineHeight: '1.8'}}>
-                  The Takãmul Cup fosters an environment where <strong>cognitive skills</strong> and <strong>procedural fluency</strong> are not just valued but celebrated. It's a reminder that while technology advances, the human capacity for mathematical thought remains extraordinary and worth cultivating.
-                </p>
-              </div>
-            </div>
-            
             <div className="event-structure-section" style={{
             marginTop: '40px',
             textAlign: 'center',
