@@ -523,7 +523,7 @@ const EventStructure = () => {
                 <strong>Location:</strong> Main competition venue
               </div>
               <div className="event-structure-ascii-diagram">
-              {`ALL 35 PARTICIPANTS
+{`ALL 35 PARTICIPANTS
      ↓
 ROUND A (8 problems × 3:00 each = 24 min)
      ↓
@@ -547,7 +547,7 @@ TOP 16 SELECTED & SEEDED (#1 through #16)`}
                 <strong>Advancement:</strong> Winner of each match proceeds
               </div>
               <div className="event-structure-ascii-diagram">
-              {`ROUND OF 16 → 8 MATCHES SIMULTANEOUSLY
+{`ROUND OF 16 → 8 MATCHES SIMULTANEOUSLY
 
 
 
@@ -584,7 +584,7 @@ Match 8: Seed #2  vs Seed #15  →  Winner H
                 <strong>Note:</strong> Lunch break AFTER this stage
               </div>
               <div className="event-structure-ascii-diagram">
-              {`QUARTERFINALS → 4 MATCHES SIMULTANEOUSLY
+{`QUARTERFINALS → 4 MATCHES SIMULTANEOUSLY
 
 
 
@@ -613,7 +613,7 @@ QF Match 4: Winner G  vs  Winner H  →  QF Winner 4
                 <strong>Special:</strong> Live problem-solving, audience can watch
               </div>
               <div className="event-structure-ascii-diagram">
-              {`SEMIFINALS → 2 MATCHES ON WHITEBOARDS
+{`SEMIFINALS → 2 MATCHES ON WHITEBOARDS
 
 
 
@@ -642,7 +642,7 @@ SF Match 2: QF Winner 3  vs  QF Winner 4  →  SF Winner 2
                 <strong>Stakes:</strong> Winner becomes THE GRAND INTEGRATOR 🥇
               </div>
               <div className="event-structure-ascii-diagram">
-              {`👑 CHAMPIONSHIP MATCH 👑
+{`👑 CHAMPIONSHIP MATCH 👑
 
 
 
@@ -677,7 +677,7 @@ Full Audience Viewing
               <div className="event-structure-section-title">MASTER EVENT SCHEDULE</div>
               
               <div className="event-structure-schedule-table-wrapper">
-                <table className="event-structure-schedule-table">
+              <table className="event-structure-schedule-table">
                 <thead>
                   <tr>
                     <th style={{
@@ -895,7 +895,7 @@ Full Audience Viewing
                     referrerPolicy="no-referrer-when-downgrade"
                     title="NYU Abu Dhabi Location"
                   ></iframe>
-                </div>
+              </div>
               </div>
             </div>
             

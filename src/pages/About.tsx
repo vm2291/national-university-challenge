@@ -270,29 +270,29 @@ const About = () => {
             </div>
 
             {/* Event Photos Slideshow */}
-            <Card className="p-6 sm:p-8 bg-primary/10 border-secondary/30">
+            <Card className="p-4 sm:p-6 md:p-8 bg-primary/10 border-secondary/30">
               <div className="text-center space-y-4">
                 <h3 className="text-xl sm:text-2xl font-bold text-tertiary mb-2">
                   2024 Event Photos
                 </h3>
-                <p className="text-sm sm:text-base text-tertiary/80 italic mb-6">
+                <p className="text-sm sm:text-base text-tertiary/80 italic mb-4 sm:mb-6">
                   Memorable moments from our inaugural event at NYU Abu Dhabi
                 </p>
                 
                 <div className="relative w-full max-w-4xl mx-auto">
                   {/* Slideshow Container */}
-                  <div className="relative overflow-hidden rounded-xl bg-muted/20" style={{ aspectRatio: '16/9' }}>
+                  <div className="relative overflow-hidden rounded-xl bg-muted/20 aspect-[4/3] sm:aspect-[4/3] min-h-[250px] sm:min-h-[350px]">
                     {/* Images */}
                     <div 
                       className="flex transition-transform duration-700 ease-in-out h-full"
                       style={{ transform: `translateX(-${currentPhotoIndex * 100}%)` }}
                     >
                       {eventPhotos.map((photo, index) => (
-                        <div key={index} className="min-w-full h-full flex-shrink-0">
+                        <div key={index} className="min-w-full h-full flex-shrink-0 relative flex items-center justify-center bg-muted/10">
                           <img
                             src={photo}
                             alt={`2024 Event Photo ${index + 1}`}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain max-w-full max-h-full"
                             loading={index === 0 ? "eager" : "lazy"}
                           />
                         </div>
