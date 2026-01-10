@@ -1,4 +1,9 @@
+import { useState } from "react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
+
 const EventGallery = () => {
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  
   const galleryImages = [
     "/event-2025/competition-room.png",
     "/event-2025/organizers-discussion.png",
@@ -12,41 +17,62 @@ const EventGallery = () => {
     "/event-2025/event-tshirt.png"
   ];
 
+  const openLightbox = (index: number) => setSelectedImage(index);
+  const closeLightbox = () => setSelectedImage(null);
+  const goToPrev = () => setSelectedImage(prev => prev !== null ? (prev - 1 + galleryImages.length) % galleryImages.length : null);
+  const goToNext = () => setSelectedImage(prev => prev !== null ? (prev + 1) % galleryImages.length : null);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-background">
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 px-4">
+      <section className="relative pt-24 pb-12 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-secondary via-primary to-secondary bg-clip-text text-transparent">
-              Takãmul Cup 2025
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-4">
-              A Grand Celebration of Mathematical Excellence
-            </p>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              December 7, 2025 • NYU Abu Dhabi • 30+ Competitors • 6 Universities
-            </p>
-          </div>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
+            Takãmul Cup 2025
+          </h1>
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-4">
+            A Grand Celebration of Mathematical Excellence
+          </p>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            December 7, 2025 • NYU Abu Dhabi • 30+ Competitors • 6 Universities
+          </p>
         </div>
       </section>
 
-      {/* Gallery Grid */}
+      {/* Gallery - Masonry-style layout */}
       <section className="px-4 pb-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryImages.map((src, index) => (
+        <div className="max-w-6xl mx-auto">
+          {/* Featured large image */}
+          <div 
+            className="mb-6 cursor-pointer group"
+            onClick={() => openLightbox(0)}
+          >
+            <div className="relative overflow-hidden rounded-3xl border-2 border-primary/20 hover:border-secondary/50 transition-all duration-300 shadow-lg hover:shadow-2xl">
+              <img
+                src={galleryImages[0]}
+                alt="Takãmul Cup 2025 - Featured"
+                className="w-full h-[400px] md:h-[500px] object-cover group-hover:scale-102 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
+          </div>
+
+          {/* Two-column grid for remaining images */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {galleryImages.slice(1).map((src, index) => (
               <div
-                key={index}
-                className="group relative overflow-hidden rounded-2xl bg-card border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20"
+                key={index + 1}
+                className="cursor-pointer group"
+                onClick={() => openLightbox(index + 1)}
               >
-                <div className="aspect-video overflow-hidden">
+                <div className="relative overflow-hidden rounded-2xl border-2 border-primary/20 hover:border-secondary/50 transition-all duration-300 shadow-md hover:shadow-xl">
                   <img
                     src={src}
-                    alt={`Takãmul Cup 2025 - Image ${index + 1}`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    alt={`Takãmul Cup 2025 - Image ${index + 2}`}
+                    className="w-full h-[280px] md:h-[320px] object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
               </div>
             ))}
@@ -54,21 +80,59 @@ const EventGallery = () => {
         </div>
       </section>
 
-      {/* Event Impact Section */}
+      {/* Event Summary */}
       <section className="px-4 pb-20">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-primary to-secondary p-8 md:p-12 rounded-3xl text-white text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              A Resounding Success
-            </h2>
-            <p className="text-lg md:text-xl leading-relaxed opacity-95">
-              The Takãmul Cup 2025 brought together the brightest mathematical minds from across the UAE, 
-              fostering collaboration, competition, and celebration of integration mastery. This event continues 
-              to strengthen the mathematical community and inspire the next generation of problem solvers.
-            </p>
-          </div>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
+            Thank You for Making This Possible
+          </h2>
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            The Takãmul Cup 2025 brought together the brightest mathematical minds from across the UAE, 
+            fostering collaboration, competition, and celebration of integration mastery. We extend our 
+            deepest gratitude to all sponsors, organizers, and participants who made this event a reality.
+          </p>
         </div>
       </section>
+
+      {/* Lightbox */}
+      {selectedImage !== null && (
+        <div 
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
+          onClick={closeLightbox}
+        >
+          <button
+            onClick={(e) => { e.stopPropagation(); closeLightbox(); }}
+            className="absolute top-6 right-6 text-white/80 hover:text-white transition-colors z-50"
+          >
+            <X size={32} />
+          </button>
+          
+          <button
+            onClick={(e) => { e.stopPropagation(); goToPrev(); }}
+            className="absolute left-4 md:left-8 text-white/80 hover:text-white transition-colors p-2 rounded-full bg-white/10 hover:bg-white/20"
+          >
+            <ChevronLeft size={40} />
+          </button>
+          
+          <img
+            src={galleryImages[selectedImage]}
+            alt={`Takãmul Cup 2025 - Image ${selectedImage + 1}`}
+            className="max-w-[90vw] max-h-[85vh] object-contain rounded-lg"
+            onClick={(e) => e.stopPropagation()}
+          />
+          
+          <button
+            onClick={(e) => { e.stopPropagation(); goToNext(); }}
+            className="absolute right-4 md:right-8 text-white/80 hover:text-white transition-colors p-2 rounded-full bg-white/10 hover:bg-white/20"
+          >
+            <ChevronRight size={40} />
+          </button>
+          
+          <div className="absolute bottom-6 text-white/70 text-sm">
+            {selectedImage + 1} / {galleryImages.length}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
