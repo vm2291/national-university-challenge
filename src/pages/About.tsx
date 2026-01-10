@@ -290,8 +290,8 @@ const About = () => {
             </h2>
             <p className="text-xl text-tertiary/90 leading-relaxed">
               The success and enthusiasm from the 2024 event inspired the vision to expand beyond 
-              NYU Abu Dhabi. In 2025, Takãmul Cup takes its place as the UAE's first national 
-              integration competition, bringing together six universities in a celebration of 
+              NYU Abu Dhabi. In 2025, Takãmul Cup takes its place as the UAE's premier national 
+              integration competition, bringing together seven universities in a celebration of 
               mathematical excellence that transcends campus boundaries.
             </p>
             <div className="pt-8">

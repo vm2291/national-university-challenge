@@ -3,7 +3,7 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const EventGallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
-  
+
   const galleryImages = [
     "/event-2025/competition-room.png",
     "/event-2025/organizers-discussion.png",
@@ -14,7 +14,14 @@ const EventGallery = () => {
     "/event-2025/laptop-solving.png",
     "/event-2025/award-ceremony-winner.png",
     "/event-2025/group-photo-winners.png",
-    "/event-2025/event-tshirt.png"
+    "/event-2025/event-tshirt.png",
+    // Added new PNG images in order
+    "/event-2025/11.png",
+    "/event-2025/12.png",
+    "/event-2025/13.png",
+    "/event-2025/14.png",
+    "/event-2025/15.png",
+    "/event-2025/16.png",
   ];
 
   const openLightbox = (index: number) => setSelectedImage(index);
@@ -27,18 +34,15 @@ const EventGallery = () => {
       {/* Hero Section */}
       <section className="relative pt-24 pb-6 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
-            Takãmul Cup 2025
-          </h1>
-          {/* Removed subtitle */}
+          {/* Removed Takãmul Cup 2025 heading */}
           {/* Stats and date */}
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            December 7, 2025 • NYU Abu Dhabi • 35+ Competitors • 7 Universities
+            December 7 • NYU Abu Dhabi • 35+ Competitors • 7 Universities
           </p>
-          {/* Event summary moved here */}
+          {/* Event summary */}
           <div className="max-w-4xl mx-auto text-center mt-6">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              The competition brought together the brightest mathematical minds from across the UAE, 
+              Takãmul Cup 2025 brought together the brightest mathematical minds from across the UAE, 
               fostering collaboration, competition, and celebration of integration mastery. We extend our 
               deepest gratitude to all sponsors, organizers, and participants who made this event a reality.
             </p>
