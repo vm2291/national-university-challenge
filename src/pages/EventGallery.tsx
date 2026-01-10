@@ -38,7 +38,7 @@ const EventGallery = () => {
           {/* Event summary moved here */}
           <div className="max-w-4xl mx-auto text-center mt-6">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              The Takãmul Cup 2025 brought together the brightest mathematical minds from across the UAE, 
+              The competition brought together the brightest mathematical minds from across the UAE, 
               fostering collaboration, competition, and celebration of integration mastery. We extend our 
               deepest gratitude to all sponsors, organizers, and participants who made this event a reality.
             </p>
