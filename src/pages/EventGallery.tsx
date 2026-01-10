@@ -25,50 +25,41 @@ const EventGallery = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-background">
       {/* Hero Section */}
-      <section className="relative pt-24 pb-12 px-4">
+      <section className="relative pt-24 pb-6 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
             Takãmul Cup 2025
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-4">
-            A Grand Celebration of Mathematical Excellence
-          </p>
+          {/* Removed subtitle */}
+          {/* Stats and date */}
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            December 7, 2025 • NYU Abu Dhabi • 30+ Competitors • 6 Universities
+            December 7, 2025 • NYU Abu Dhabi • 35+ Competitors • 7 Universities
           </p>
+          {/* Event summary moved here */}
+          <div className="max-w-4xl mx-auto text-center mt-6">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              The Takãmul Cup 2025 brought together the brightest mathematical minds from across the UAE, 
+              fostering collaboration, competition, and celebration of integration mastery. We extend our 
+              deepest gratitude to all sponsors, organizers, and participants who made this event a reality.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Gallery - Masonry-style layout */}
+      {/* Gallery - Two-column grid for all images */}
       <section className="px-4 pb-20">
         <div className="max-w-6xl mx-auto">
-          {/* Featured large image */}
-          <div 
-            className="mb-6 cursor-pointer group"
-            onClick={() => openLightbox(0)}
-          >
-            <div className="relative overflow-hidden rounded-3xl border-2 border-primary/20 hover:border-secondary/50 transition-all duration-300 shadow-lg hover:shadow-2xl">
-              <img
-                src={galleryImages[0]}
-                alt="Takãmul Cup 2025 - Featured"
-                className="w-full h-[400px] md:h-[500px] object-cover group-hover:scale-102 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </div>
-          </div>
-
-          {/* Two-column grid for remaining images */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {galleryImages.slice(1).map((src, index) => (
+            {galleryImages.map((src, index) => (
               <div
-                key={index + 1}
+                key={index}
                 className="cursor-pointer group"
-                onClick={() => openLightbox(index + 1)}
+                onClick={() => openLightbox(index)}
               >
                 <div className="relative overflow-hidden rounded-2xl border-2 border-primary/20 hover:border-secondary/50 transition-all duration-300 shadow-md hover:shadow-xl">
                   <img
                     src={src}
-                    alt={`Takãmul Cup 2025 - Image ${index + 2}`}
+                    alt={`Takãmul Cup 2025 - Image ${index + 1}`}
                     className="w-full h-[280px] md:h-[320px] object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
@@ -77,20 +68,6 @@ const EventGallery = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Event Summary */}
-      <section className="px-4 pb-20">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
-            Thank You for Making This Possible
-          </h2>
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            The Takãmul Cup 2025 brought together the brightest mathematical minds from across the UAE, 
-            fostering collaboration, competition, and celebration of integration mastery. We extend our 
-            deepest gratitude to all sponsors, organizers, and participants who made this event a reality.
-          </p>
         </div>
       </section>
 
