@@ -32,31 +32,31 @@ const EventGallery = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-background">
       {/* Hero Section */}
-      <section className="relative pt-24 pb-6 px-4">
+      <section className="relative pt-24 pb-8 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          {/* Stats and date - improved layout */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-4">
-            <div className="flex items-center gap-2 text-primary-foreground/90 text-base md:text-lg font-medium">
-              <Calendar className="w-5 h-5 text-secondary" />
+          {/* Stats and date - 2x2 grid on mobile, flex-row on md+ */}
+          <div className="
+            grid grid-cols-2 gap-3 mb-6
+            md:flex md:flex-row md:items-center md:justify-center md:gap-8 md:mb-6
+          ">
+            <div className="flex items-center gap-1 justify-center text-primary-foreground/90 text-base md:text-2xl font-semibold">
+              <Calendar className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
               <span>December 7</span>
             </div>
-            <span className="hidden md:inline text-primary-foreground/40 text-xl">|</span>
-            <div className="flex items-center gap-2 text-primary-foreground/90 text-base md:text-lg font-medium">
-              <MapPin className="w-5 h-5 text-secondary" />
+            <div className="flex items-center gap-1 justify-center text-primary-foreground/90 text-base md:text-2xl font-semibold">
+              <MapPin className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
               <span>NYU Abu Dhabi</span>
             </div>
-            <span className="hidden md:inline text-primary-foreground/40 text-xl">|</span>
-            <div className="flex items-center gap-2 text-primary-foreground/90 text-base md:text-lg font-medium">
-              <Users className="w-5 h-5 text-secondary" />
+            <div className="flex items-center gap-1 justify-center text-primary-foreground/90 text-base md:text-2xl font-semibold">
+              <Users className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
               <span>35+ Competitors</span>
             </div>
-            <span className="hidden md:inline text-primary-foreground/40 text-xl">|</span>
-            <div className="flex items-center gap-2 text-primary-foreground/90 text-base md:text-lg font-medium">
-              <GraduationCap className="w-5 h-5 text-secondary" />
+            <div className="flex items-center gap-1 justify-center text-primary-foreground/90 text-base md:text-2xl font-semibold">
+              <GraduationCap className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
               <span>7 Universities</span>
             </div>
           </div>
-          <div className="border-t border-primary/10 max-w-2xl mx-auto my-6" />
+          <div className="border-t border-primary/10 max-w-2xl mx-auto my-7" />
           {/* Event summary */}
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
@@ -69,7 +69,8 @@ const EventGallery = () => {
       </section>
 
       {/* Gallery - Two-column grid for all images */}
-      <section className="px-4 pb-20">
+      <section className="px-4 pb-20 mt-8">
+        {/* Added mt-8 for more space above gallery */}
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {galleryImages.map((src, index) => (
