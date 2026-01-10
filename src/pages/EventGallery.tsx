@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Calendar, MapPin, Users, GraduationCap } from "lucide-react";
 
 const EventGallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -34,13 +34,31 @@ const EventGallery = () => {
       {/* Hero Section */}
       <section className="relative pt-24 pb-6 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          {/* Removed Takãmul Cup 2025 heading */}
-          {/* Stats and date */}
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            December 7 • NYU Abu Dhabi • 35+ Competitors • 7 Universities
-          </p>
+          {/* Stats and date - improved layout */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-4">
+            <div className="flex items-center gap-2 text-primary-foreground/90 text-base md:text-lg font-medium">
+              <Calendar className="w-5 h-5 text-secondary" />
+              <span>December 7</span>
+            </div>
+            <span className="hidden md:inline text-primary-foreground/40 text-xl">|</span>
+            <div className="flex items-center gap-2 text-primary-foreground/90 text-base md:text-lg font-medium">
+              <MapPin className="w-5 h-5 text-secondary" />
+              <span>NYU Abu Dhabi</span>
+            </div>
+            <span className="hidden md:inline text-primary-foreground/40 text-xl">|</span>
+            <div className="flex items-center gap-2 text-primary-foreground/90 text-base md:text-lg font-medium">
+              <Users className="w-5 h-5 text-secondary" />
+              <span>35+ Competitors</span>
+            </div>
+            <span className="hidden md:inline text-primary-foreground/40 text-xl">|</span>
+            <div className="flex items-center gap-2 text-primary-foreground/90 text-base md:text-lg font-medium">
+              <GraduationCap className="w-5 h-5 text-secondary" />
+              <span>7 Universities</span>
+            </div>
+          </div>
+          <div className="border-t border-primary/10 max-w-2xl mx-auto my-6" />
           {/* Event summary */}
-          <div className="max-w-4xl mx-auto text-center mt-6">
+          <div className="max-w-4xl mx-auto text-center">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Takãmul Cup 2025 brought together the brightest mathematical minds from across the UAE, 
               fostering collaboration, competition, and celebration of integration mastery. We extend our 
