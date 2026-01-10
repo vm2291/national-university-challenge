@@ -9,6 +9,7 @@ const Navigation = () => {
   
   const links = [
     { path: "/", label: "Home" },
+    { path: "/event-gallery", label: "Event 2025" },
     { path: "/event-structure", label: "Event Details"},
     { path: "/competition-structure", label: "Coordinators Info" },
     { path: "/prizes", label: "Prizes" },

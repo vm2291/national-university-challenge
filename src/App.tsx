@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import CompetitionStructure from "./pages/CompetitionStructure";
 import EventStructure from "./pages/EventStructure";
+import EventGallery from "./pages/EventGallery";
 import Prizes from "./pages/Prizes";
 import NotFound from "./pages/NotFound";
 import Navigation from "./components/Navigation";
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/competition-structure" element={<CompetitionStructure />} />
           <Route path="/event-structure" element={<EventStructure />} />
+          <Route path="/event-gallery" element={<EventGallery />} />
           <Route path="/prizes" element={<Prizes />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
