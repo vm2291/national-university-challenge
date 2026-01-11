@@ -33,7 +33,7 @@ const EventGallery = () => {
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-background">
       {/* Hero Section */}
       <section className="relative pt-24 pb-8 px-4">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto text-center"> <br></br>
           {/* Stats and date - 2x2 grid on mobile, flex-row on md+ */}
           <div className="
             grid grid-cols-2 gap-3 mb-6
@@ -56,7 +56,7 @@ const EventGallery = () => {
               <span>7 Universities</span>
             </div>
           </div>
-          <div className="border-t border-primary/10 max-w-2xl mx-auto my-7" />
+          <div className="border-t border-primary/10 max-w-2xl mx-auto my-5" />
           {/* Event summary */}
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
