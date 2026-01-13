@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
-
 const Home = () => {
   const stats = [{
     icon: Users,
@@ -18,10 +17,7 @@ const Home = () => {
     label: "Stages",
     value: "5"
   }];
-
-  
   const universities = ["Abu Dhabi University", "American University in Dubai", "Middlesex University Dubai", "Heriot-Watt University Dubai", "UAE University", "NYU Abu Dhabi", "Mohamed bin Zayed University of Artificial Intelligence"];
-  
   return <div className="min-h-screen pt-16">
       {/* Hero Section */}
       <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden pt-16">
@@ -157,7 +153,7 @@ const Home = () => {
           <div className="text-center">
             <Link to="/testimonials">
               <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground gap-2">
-                Read All Testimonials
+                Read more 
                 <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
