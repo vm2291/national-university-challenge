@@ -22,7 +22,7 @@ const EventGallery = () => {
     "/event-2025/14.png",
     "/event-2025/15.png",
     "/event-2025/16.png",
-    // Additional event photos
+    // Additional event photos - first set
     "/event-2025/DSC_9286.png",
     "/event-2025/DSC_9328.png",
     "/event-2025/DSC_9366.png",
@@ -33,6 +33,15 @@ const EventGallery = () => {
     "/event-2025/IMG_1591.png",
     "/event-2025/DSC_9600.png",
     "/event-2025/IMG_1464.png",
+    // Additional event photos - second set
+    "/event-2025/DSC_9223.png",
+    "/event-2025/DSC_9310.png",
+    "/event-2025/DSC_9451.png",
+    "/event-2025/DSC_9453.png",
+    "/event-2025/DSC_9459.png",
+    "/event-2025/DSC_9490.png",
+    "/event-2025/IMG_1576.png",
+    "/event-2025/DSC_9569.png",
   ];
 
   const openLightbox = (index: number) => setSelectedImage(index);
