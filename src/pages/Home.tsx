@@ -119,46 +119,43 @@ const Home = () => {
       </section>
 
       {/* Featured Testimonials Section */}
-      <section className="py-16 bg-tertiary">
+      <section className="py-16 bg-gradient-to-br from-secondary/10 via-background to-primary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <Quote className="w-10 h-10 text-secondary" />
-            <h2 className="text-4xl sm:text-5xl font-bold text-primary">
-              Voices from 2025
-            </h2>
-          </div>
-          <p className="text-center text-primary/80 mb-12 max-w-2xl mx-auto">
-            Hear what participants had to say about their experience
-          </p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
+            What Participants Had to Say About Their Experience
+          </h2>
           
-          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-10">
-            <Card className="p-6 bg-primary/10 border-primary/20 hover:bg-primary/15 transition-all duration-300">
-              <Quote className="w-8 h-8 text-secondary mb-4" />
-              <blockquote className="text-primary text-lg italic leading-relaxed mb-4">
-                "Takāmul Cup was one of the most exciting competitions I've ever participated in. The fast pace and clear objective leaves you with almost no time to be nervous."
-              </blockquote>
-              <div className="h-1 w-12 bg-secondary rounded-full" />
+          <div className="max-w-4xl mx-auto space-y-6 mb-10">
+            <Card className="p-6 md:p-8 bg-card border-primary/30 hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
+              <div className="flex gap-4">
+                <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <blockquote className="text-foreground/90 text-lg leading-relaxed">
+                  Takāmul Cup was one of the most exciting competitions I've ever participated in. The fast pace and clear objective leaves you with almost no time to be nervous and get straight into solving the problem.
+                </blockquote>
+              </div>
             </Card>
             
-            <Card className="p-6 bg-primary/10 border-primary/20 hover:bg-primary/15 transition-all duration-300">
-              <Quote className="w-8 h-8 text-secondary mb-4" />
-              <blockquote className="text-primary text-lg italic leading-relaxed mb-4">
-                "Math war. Never knew a math competition could be this exciting."
-              </blockquote>
-              <div className="h-1 w-12 bg-secondary rounded-full" />
+            <Card className="p-6 md:p-8 bg-primary/30 border-primary/30 hover:shadow-lg transition-all duration-300 mr-0 md:ml-12">
+              <div className="flex gap-4">
+                <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <blockquote className="text-foreground/90 text-lg leading-relaxed">
+                  Math war. Never knew a math competition could be this exciting.
+                </blockquote>
+              </div>
             </Card>
             
-            <Card className="p-6 bg-primary/10 border-primary/20 hover:bg-primary/15 transition-all duration-300">
-              <Quote className="w-8 h-8 text-secondary mb-4" />
-              <blockquote className="text-primary text-lg italic leading-relaxed mb-4">
-                "Students working on integration problems with no device! That was the highlight of the day, completely relying on their critical thinking."
-              </blockquote>
-              <div className="h-1 w-12 bg-secondary rounded-full" />
+            <Card className="p-6 md:p-8 bg-card border-primary/30 hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
+              <div className="flex gap-4">
+                <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <blockquote className="text-foreground/90 text-lg leading-relaxed">
+                  Students working on integration problems with no device! That was the highlight of the day, completely relying on their critical thinking, problem-solving, and analytical skills.
+                </blockquote>
+              </div>
             </Card>
           </div>
           
           <div className="text-center">
-            <Link to="/voices">
+            <Link to="/testimonials">
               <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground gap-2">
                 Read All Testimonials
                 <ArrowRight className="w-4 h-4" />

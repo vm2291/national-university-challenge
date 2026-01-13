@@ -8,7 +8,7 @@ import About from "./pages/About";
 import CompetitionStructure from "./pages/CompetitionStructure";
 import EventStructure from "./pages/EventStructure";
 import EventGallery from "./pages/EventGallery";
-import Voices from "./pages/Voices";
+import Testimonials from "./pages/Testimonials";
 import Prizes from "./pages/Prizes";
 import NotFound from "./pages/NotFound";
 import Navigation from "./components/Navigation";
@@ -28,7 +28,7 @@ const App = () => (
           <Route path="/competition-structure" element={<CompetitionStructure />} />
           <Route path="/event-structure" element={<EventStructure />} />
           <Route path="/event-gallery" element={<EventGallery />} />
-          <Route path="/voices" element={<Voices />} />
+          <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/prizes" element={<Prizes />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
