@@ -10,7 +10,7 @@ const Navigation = () => {
   const links = [
     { path: "/", label: "Home" },
     { path: "/event-gallery", label: "2025 Gallery" },
-    { path: "/voices", label: "Voices" },
+    { path: "/testimonials", label: "Testimonials" },
     { path: "/event-structure", label: "Event Details"},
     { path: "/competition-structure", label: "Coordinators Info" },
     { path: "/prizes", label: "Prizes" },
