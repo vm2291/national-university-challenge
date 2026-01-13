@@ -1,4 +1,4 @@
-import { Calendar, Clock, MapPin, Trophy, Users, Target, Brain, Sparkles } from "lucide-react";
+import { Calendar, Clock, MapPin, Trophy, Users, Target, Brain, Sparkles, Quote, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -114,6 +114,56 @@ const Home = () => {
             <Card className="p-6 text-center bg-card hover:bg-primary/10 border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10 sm:col-span-2">
               <p className="text-lg font-semibold text-foreground">{universities[6]}</p>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Testimonials Section */}
+      <section className="py-16 bg-tertiary">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <Quote className="w-10 h-10 text-secondary" />
+            <h2 className="text-4xl sm:text-5xl font-bold text-primary">
+              Voices from 2025
+            </h2>
+          </div>
+          <p className="text-center text-primary/80 mb-12 max-w-2xl mx-auto">
+            Hear what participants had to say about their experience
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-10">
+            <Card className="p-6 bg-primary/10 border-primary/20 hover:bg-primary/15 transition-all duration-300">
+              <Quote className="w-8 h-8 text-secondary mb-4" />
+              <blockquote className="text-primary text-lg italic leading-relaxed mb-4">
+                "Takāmul Cup was one of the most exciting competitions I've ever participated in. The fast pace and clear objective leaves you with almost no time to be nervous."
+              </blockquote>
+              <div className="h-1 w-12 bg-secondary rounded-full" />
+            </Card>
+            
+            <Card className="p-6 bg-primary/10 border-primary/20 hover:bg-primary/15 transition-all duration-300">
+              <Quote className="w-8 h-8 text-secondary mb-4" />
+              <blockquote className="text-primary text-lg italic leading-relaxed mb-4">
+                "Math war. Never knew a math competition could be this exciting."
+              </blockquote>
+              <div className="h-1 w-12 bg-secondary rounded-full" />
+            </Card>
+            
+            <Card className="p-6 bg-primary/10 border-primary/20 hover:bg-primary/15 transition-all duration-300">
+              <Quote className="w-8 h-8 text-secondary mb-4" />
+              <blockquote className="text-primary text-lg italic leading-relaxed mb-4">
+                "Students working on integration problems with no device! That was the highlight of the day, completely relying on their critical thinking."
+              </blockquote>
+              <div className="h-1 w-12 bg-secondary rounded-full" />
+            </Card>
+          </div>
+          
+          <div className="text-center">
+            <Link to="/voices">
+              <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground gap-2">
+                Read All Testimonials
+                <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
