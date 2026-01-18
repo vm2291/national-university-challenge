@@ -129,7 +129,7 @@ const Home = () => {
                   <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
                     The Takāmul Cup was an intense but rewarding experience that pushed me to think quickly, collaborate under pressure, and apply integration techniques creatively. Competing at a national level was both challenging and motivating, and it strengthened my confidence in problem-solving beyond the classroom.
                   </blockquote>
-                  <p className="text-sm text-muted-foreground font-medium">- Mohammed Faheem, New York University Abu Dhabi</p>
+                  <p className="text-sm text-muted-foreground font-medium">- Mohammed Faheem, NYU Abu Dhabi</p>
                 </div>
               </div>
             </Card>
@@ -141,7 +141,7 @@ const Home = () => {
                   <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
                     Takāmul Cup was one of the most exciting competitions I've ever participated in. The fast pace and clear objective leaves you with almost no time to be nervous and get straight into solving the problem. The feeling this left me with is unmatched.
                   </blockquote>
-                  <p className="text-sm text-muted-foreground font-medium">- Guram Matcharashvili, MBZUAI</p>
+                  <p className="text-sm text-muted-foreground font-medium">- Guram Matcharashvili, Mohamed bin Zayed University of Artificial Intelligence</p>
                 </div>
               </div>
             </Card>
@@ -153,7 +153,7 @@ const Home = () => {
                   <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
                     Very interesting initiative, as there are not many Mathematics competitions for university students. The event was very well organized; the questions were challenging, and the format was engaging. Looking forward to participating in the next edition!
                   </blockquote>
-                  <p className="text-sm text-muted-foreground font-medium">- Adrian Turcanu, Heriot-Watt University</p>
+                  <p className="text-sm text-muted-foreground font-medium">- Adrian Turcanu, Heriot-Watt University Dubai</p>
                 </div>
               </div>
             </Card>
@@ -165,7 +165,7 @@ const Home = () => {
                   <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
                     It was an amazing experience that allowed me to apply my knowledge in a competitive yet supportive environment. The competition was well organized and provided a great opportunity to learn, connect with peers, and challenge myself.
                   </blockquote>
-                  <p className="text-sm text-muted-foreground font-medium">- Alnoor Ismail, MBZUAI</p>
+                  <p className="text-sm text-muted-foreground font-medium">- Alnoor Ismail, Mohamed bin Zayed University of Artificial Intelligence</p>
                 </div>
               </div>
             </Card>
