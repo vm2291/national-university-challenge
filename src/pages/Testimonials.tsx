@@ -25,12 +25,7 @@ const Testimonials = () => {
       university: "Mohamed bin Zayed University of Artificial Intelligence"
     },
     {
-      quote: "I loved the entire experience! I think it was really nice to have a space to challenge ourselves. As someone without a very heavy math background, the Takamul Cup also gave me a reason to really refine my skills.",
-      name: "Michelle Haguma",
-      university: "Middlesex University Dubai"
-    },
-    {
-      quote: "The entire competition was memorable. I loved how organised the competition was. All of the participants clearly understood the structure and the flow of the different stages. Everyone there was really nice which made competing a lot less stressful.",
+      quote: "I loved the entire experience! I think it was really nice to have a space to challenge ourselves. As someone without a very heavy math background, the Takamul Cup also gave me a reason to really refine my skills. The entire competition was memorable. I loved how organised the competition was. All of the participants clearly understood the structure and the flow of the different stages. Everyone there was really nice which made competing a lot less stressful.",
       name: "Michelle Haguma",
       university: "Middlesex University Dubai"
     },
@@ -40,7 +35,7 @@ const Testimonials = () => {
       university: "Mohamed bin Zayed University of Artificial Intelligence"
     },
     {
-      quote: "Math war. Never knew a math competition could be this exciting.",
+      quote: "Math war. Never knew a math competition could be this exciting. The structure was fun, especially the tie breakers. They were vastly different, you turn from aiming to beat your opponent to pushing yourself to the absolute limit.",
       name: "Islam Aldaraghmeh",
       university: "Mohamed bin Zayed University of Artificial Intelligence"
     },
@@ -93,11 +88,6 @@ const Testimonials = () => {
       quote: "It was an amazing experience and it was really fun to compete with people from different universities across the country!",
       name: "Faris Fayyas",
       university: "NYU Abu Dhabi"
-    },
-    {
-      quote: "The structure was fun, especially the tie breakers. They were vastly different, you turn from aiming to beat your opponent to pushing yourself to the absolute limit.",
-      name: "Islam Aldaraghmeh",
-      university: "Mohamed bin Zayed University of Artificial Intelligence"
     }
   ];
 

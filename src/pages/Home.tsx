@@ -151,9 +151,9 @@ const Home = () => {
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <div>
                   <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
-                    Very interesting initiative, as there are not many Mathematics competitions for university students. The event was very well organized; the questions were challenging, and the format was engaging. Looking forward to participating in the next edition!
+                    I loved the entire experience! I think it was really nice to have a space to challenge ourselves. As someone without a very heavy math background, the Takamul Cup also gave me a reason to really refine my skills. The entire competition was memorable. I loved how organised the competition was. All of the participants clearly understood the structure and the flow of the different stages. Everyone there was really nice which made competing a lot less stressful.
                   </blockquote>
-                  <p className="text-sm text-muted-foreground font-medium">- Adrian Turcanu, Heriot-Watt University Dubai</p>
+                  <p className="text-sm text-muted-foreground font-medium">- Michelle Haguma, Middlesex University Dubai</p>
                 </div>
               </div>
             </Card>
@@ -163,9 +163,9 @@ const Home = () => {
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <div>
                   <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
-                    It was an amazing experience that allowed me to apply my knowledge in a competitive yet supportive environment. The competition was well organized and provided a great opportunity to learn, connect with peers, and challenge myself.
+                    Math war. Never knew a math competition could be this exciting. The structure was fun, especially the tie breakers. They were vastly different, you turn from aiming to beat your opponent to pushing yourself to the absolute limit.
                   </blockquote>
-                  <p className="text-sm text-muted-foreground font-medium">- Alnoor Ismail, Mohamed bin Zayed University of Artificial Intelligence</p>
+                  <p className="text-sm text-muted-foreground font-medium">- Islam Aldaraghmeh, Mohamed bin Zayed University of Artificial Intelligence</p>
                 </div>
               </div>
             </Card>
