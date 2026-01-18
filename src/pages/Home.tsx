@@ -125,27 +125,48 @@ const Home = () => {
             <Card className="p-6 md:p-8 bg-card border-primary/30 hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
-                <blockquote className="text-foreground/90 text-lg leading-relaxed">
-                  Takāmul Cup was one of the most exciting competitions I've ever participated in. The fast pace and clear objective leaves you with almost no time to be nervous and get straight into solving the problem.
-                </blockquote>
+                <div>
+                  <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
+                    The Takāmul Cup was an intense but rewarding experience that pushed me to think quickly, collaborate under pressure, and apply integration techniques creatively. Competing at a national level was both challenging and motivating, and it strengthened my confidence in problem-solving beyond the classroom.
+                  </blockquote>
+                  <p className="text-sm text-muted-foreground font-medium">— Mohammed Faheem, NYU Abu Dhabi</p>
+                </div>
               </div>
             </Card>
             
             <Card className="p-6 md:p-8 bg-primary/30 border-primary/30 hover:shadow-lg transition-all duration-300 mr-0 md:ml-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
-                <blockquote className="text-foreground/90 text-lg leading-relaxed">
-                  Math war. Never knew a math competition could be this exciting.
-                </blockquote>
+                <div>
+                  <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
+                    Takāmul Cup was one of the most exciting competitions I've ever participated in. The fast pace and clear objective leaves you with almost no time to be nervous and get straight into solving the problem. The feeling this left me with is unmatched.
+                  </blockquote>
+                  <p className="text-sm text-muted-foreground font-medium">— Guram Matcharashvili, NYU Abu Dhabi</p>
+                </div>
               </div>
             </Card>
             
             <Card className="p-6 md:p-8 bg-card border-primary/30 hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
-                <blockquote className="text-foreground/90 text-lg leading-relaxed">
-                  Students working on integration problems with no device! That was the highlight of the day, completely relying on their critical thinking, problem-solving, and analytical skills.
-                </blockquote>
+                <div>
+                  <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
+                    Very interesting initiative, as there are not many Mathematics competitions for university students. The event was very well organized; the questions were challenging, and the format was engaging. Looking forward to participating in the next edition!
+                  </blockquote>
+                  <p className="text-sm text-muted-foreground font-medium">— Adrian Turcanu, NYU Abu Dhabi</p>
+                </div>
+              </div>
+            </Card>
+            
+            <Card className="p-6 md:p-8 bg-primary/30 border-primary/30 hover:shadow-lg transition-all duration-300 mr-0 md:ml-12">
+              <div className="flex gap-4">
+                <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <div>
+                  <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
+                    It was an amazing experience that allowed me to apply my knowledge in a competitive yet supportive environment. The competition was well organized and provided a great opportunity to learn, connect with peers, and challenge myself.
+                  </blockquote>
+                  <p className="text-sm text-muted-foreground font-medium">— Alnoor Ismail, NYU Abu Dhabi</p>
+                </div>
               </div>
             </Card>
           </div>
