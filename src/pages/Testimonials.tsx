@@ -21,7 +21,7 @@ const Testimonials = () => {
     },
     {
       quote: "It was an amazing experience that allowed me to apply my knowledge in a competitive yet supportive environment. The competition was well organized and provided a great opportunity to learn, connect with peers, and challenge myself.",
-      name: "Alnoor Ismail",
+      name: "Student Participant",
       university: "Mohamed bin Zayed University of Artificial Intelligence"
     },
     {
@@ -56,7 +56,7 @@ const Testimonials = () => {
     },
     {
       quote: "It was a pretty fun experience for my first integration competition. The coordinators and volunteers were very cheerful and helpful with explaining how everything works and any other queries we had. Overall it was educational and a good experience.",
-      name: "Liya Biju",
+      name: "Student Participant",
       university: "Middlesex University Dubai"
     },
     {
@@ -68,16 +68,6 @@ const Testimonials = () => {
       quote: "I enjoyed testing my skills to solve the challenging integration questions within a short time.",
       name: "Biniam",
       university: "Abu Dhabi University"
-    },
-    {
-      quote: "It was a great and interesting experience. Its style is completely different from classical competitions.",
-      name: "Salem Ben Said",
-      university: "UAE University"
-    },
-    {
-      quote: "It great way to interact with other university students and create a spirit to achieve greater next time.",
-      name: "Pavan Benjamin Philip",
-      university: "Middlesex University Dubai"
     },
     {
       quote: "It was a great experience, Got to learn how to work under pressure, overall a great learning outcome.",
