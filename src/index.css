@@ -10,7 +10,7 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
 @layer base {
   :root {
     /* Desert Clay palette — soft cream backdrop, sandstone + clay accents. */
-    --background: 36 55% 88%;        /* #e7c796 warm desert sand */
+    --background: 37 55% 73%;        /* #e3c692 warm desert sand */
     --foreground: 22 35% 18%;        /* deep clay brown text */
 
     --card: 38 60% 94%;              /* lighter sand for cards */
