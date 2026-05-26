@@ -95,17 +95,19 @@ const Testimonials = () => {
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-background to-secondary/20" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,hsl(var(--secondary))_0%,transparent_50%)] opacity-10" />
-        
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-background to-primary/20" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--primary))_0%,transparent_50%)] opacity-20" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--secondary))_0%,transparent_50%)] opacity-10" />
+
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-secondary via-secondary to-tertiary bg-clip-text text-transparent">
-                Testimonials
-              </span>
+          <div className="max-w-4xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            <div className="flex justify-center mb-6">
+              <Quote className="w-16 h-16 text-secondary" />
+            </div>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-secondary via-secondary to-tertiary bg-clip-text text-transparent">
+              Testimonials
             </h1>
-            <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
+            <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               What participants had to say about their Takāmul Cup experience
             </p>
           </div>
@@ -113,31 +115,23 @@ const Testimonials = () => {
       </section>
 
       {/* Testimonials Grid */}
-      <section className="py-16 bg-primary/20">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto space-y-6">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
             {testimonials.map((testimonial, index) => (
-              <Card 
-                key={index} 
-                className={`p-6 md:p-8 border-primary/30 hover:shadow-lg transition-all duration-300 ${
-                  index % 2 === 0 
-                    ? 'bg-card ml-0 md:mr-12' 
-                    : 'bg-primary/30 mr-0 md:ml-12'
-                }`}
+              <Card
+                key={index}
+                className="p-6 md:p-8 bg-card border-primary/30 hover:border-secondary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="flex gap-4">
-                  <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
-                  <div>
-                    <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
-                      {testimonial.quote}
-                    </blockquote>
-                    {testimonial.name && (
-                      <p className="text-sm text-muted-foreground font-medium">
-                        - {testimonial.name}{testimonial.university && `, ${testimonial.university}`}
-                      </p>
-                    )}
-                  </div>
-                </div>
+                <Quote className="w-6 h-6 text-secondary mb-3" />
+                <blockquote className="text-foreground/90 text-base md:text-lg leading-relaxed mb-4">
+                  {testimonial.quote}
+                </blockquote>
+                {testimonial.name && (
+                  <p className="text-sm text-muted-foreground font-medium border-t border-primary/30 pt-3">
+                    {testimonial.name}{testimonial.university && ` - ${testimonial.university}`}
+                  </p>
+                )}
               </Card>
             ))}
           </div>
