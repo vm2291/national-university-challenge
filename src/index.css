@@ -9,48 +9,52 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
 
 @layer base {
   :root {
-    /* Desert Clay palette — soft cream backdrop, sandstone + clay accents. */
-    --background: 37 45% 86%;        /* softer pale desert sand */
-    --foreground: 22 35% 18%;        /* deep clay brown text */
+    /* Harmonized 3-shade palette built around button color #e9c590.
+       Shade 1: cream background (#fbf4e8)
+       Shade 2: sand accent / buttons (#e9c590)
+       Shade 3: deep brown text & footer (#381200)
+       All foregrounds chosen for WCAG AA contrast. */
 
-    --card: 38 60% 94%;              /* lighter sand for cards */
-    --card-foreground: 22 35% 18%;
+    --background: 38 67% 95%;        /* #fbf4e8 cream */
+    --foreground: 22 70% 11%;        /* #381200 deep brown */
 
-    --popover: 38 60% 94%;
-    --popover-foreground: 22 35% 18%;
+    --card: 0 0% 100%;               /* white card = light shade variant */
+    --card-foreground: 22 70% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 22 70% 11%;
 
     /* Primary: desert sand #e9c590 */
     --primary: 36 67% 74%;
-    --primary-foreground: 22 40% 16%;
+    --primary-foreground: 22 70% 11%;   /* deep brown for AA contrast */
 
-    /* Secondary: desert sand #e9c590 (matches primary per design) */
     --secondary: 36 67% 74%;
-    --secondary-foreground: 22 40% 16%;
+    --secondary-foreground: 22 70% 11%;
 
-    /* Tertiary: deep warm brown #5a3a2a for footer */
-    --tertiary: 22 36% 26%;
-    --tertiary-foreground: 38 50% 92%;
+    /* Tertiary: deep brown for footer */
+    --tertiary: 22 70% 11%;
+    --tertiary-foreground: 38 67% 95%;
 
-    --muted: 34 45% 82%;             /* warm sand muted */
-    --muted-foreground: 24 22% 38%;
+    --muted: 38 55% 92%;             /* very light cream tint */
+    --muted-foreground: 22 40% 28%;  /* darker brown for readable secondary text */
 
-    --accent: 34 50% 78%;
-    --accent-foreground: 22 40% 18%;
+    --accent: 36 67% 74%;
+    --accent-foreground: 22 70% 11%;
 
     --destructive: 0 65% 48%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 32 30% 72%;
-    --input: 32 30% 72%;
-    --ring: 30 50% 60%;
+    --border: 36 40% 82%;
+    --input: 36 40% 82%;
+    --ring: 36 67% 60%;
 
     --radius: 0.75rem;
 
-    --gold: 30 50% 65%;
-    --gold-dark: 26 40% 50%;
+    --gold: 36 67% 74%;
+    --gold-dark: 22 70% 11%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(32 55% 70%) 0%, hsl(22 36% 32%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(36 55% 90%) 0%, hsl(34 55% 80%) 50%, hsl(28 45% 68%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(36 67% 74%) 0%, hsl(22 70% 11%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(38 67% 95%) 0%, hsl(36 67% 88%) 50%, hsl(36 67% 74%) 100%);
 
     --shadow-primary: 0 10px 40px -10px hsl(26 40% 35% / 0.20);
     --shadow-elegant: 0 20px 60px -15px hsl(22 35% 20% / 0.15);
