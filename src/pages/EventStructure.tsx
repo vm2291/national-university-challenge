@@ -136,7 +136,7 @@ Full Audience Viewing
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <div className="flex justify-center mb-6">
-              <Calendar className="w-16 h-16 text-secondary" />
+              <Calendar className="w-16 h-16 text-tertiary" />
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
               Event Details
@@ -153,7 +153,7 @@ Full Audience Viewing
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-10">
-              <ListChecks className="w-10 h-10 text-secondary mr-3" />
+              <ListChecks className="w-10 h-10 text-tertiary mr-3" />
               <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
                 Competition Structure
               </h2>
@@ -162,9 +162,9 @@ Full Audience Viewing
               <ul className="space-y-3">
                 {stages.map((s, i) => (
                   <li key={i} className="flex gap-3 text-foreground/90 text-base sm:text-lg leading-relaxed">
-                    <span className="text-secondary font-bold flex-shrink-0">▸</span>
+                    <span className="text-tertiary font-bold flex-shrink-0">▸</span>
                     <span>
-                      <span className="font-bold text-secondary">{s.label}</span> {s.text}
+                      <span className="font-bold text-tertiary">{s.label}</span> {s.text}
                     </span>
                   </li>
                 ))}
@@ -205,7 +205,7 @@ Full Audience Viewing
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center justify-center mb-10">
-              <Clock className="w-10 h-10 text-secondary mr-3" />
+              <Clock className="w-10 h-10 text-tertiary mr-3" />
               <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
                 Master Event Schedule
               </h2>
@@ -223,7 +223,7 @@ Full Audience Viewing
                   <tbody>
                     {schedule.map((row, i) => (
                       <tr key={i} className={i % 2 === 0 ? "bg-card" : "bg-muted/20"}>
-                        <td className="p-3 sm:p-4 font-bold text-secondary whitespace-nowrap align-top">{row[0]}</td>
+                        <td className="p-3 sm:p-4 font-bold text-tertiary whitespace-nowrap align-top">{row[0]}</td>
                         <td className="p-3 sm:p-4 font-semibold text-foreground align-top">{row[1]}</td>
                         <td className="p-3 sm:p-4 text-foreground/80 align-top">{row[2]}</td>
                       </tr>
@@ -241,7 +241,7 @@ Full Audience Viewing
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-10">
-              <Users2 className="w-10 h-10 text-secondary mr-3" />
+              <Users2 className="w-10 h-10 text-tertiary mr-3" />
               <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
                 Key Personnel
               </h2>
@@ -249,7 +249,7 @@ Full Audience Viewing
             <div className="space-y-4">
               {personnel.map((p, i) => (
                 <Card key={i} className="p-5 sm:p-6 bg-card border-l-4 border-l-secondary border-border hover:shadow-lg transition-all duration-300">
-                  <p className="text-lg font-bold text-secondary">{p.name}</p>
+                  <p className="text-lg font-bold text-tertiary">{p.name}</p>
                   <p className="text-foreground/80 text-sm sm:text-base mt-1">{p.role}</p>
                 </Card>
               ))}
@@ -263,7 +263,7 @@ Full Audience Viewing
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-10">
-              <Trophy className="w-10 h-10 text-secondary mr-3" />
+              <Trophy className="w-10 h-10 text-tertiary mr-3" />
               <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
                 Awards & Recognition
               </h2>
@@ -272,21 +272,21 @@ Full Audience Viewing
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="p-8 bg-card md:col-span-2 border-2 border-secondary/40 text-center hover:border-secondary/70 hover:shadow-xl transition-all duration-300">
-                <Award className="w-12 h-12 mx-auto mb-3 text-secondary" />
+                <Award className="w-12 h-12 mx-auto mb-3 text-tertiary" />
                 <h3 className="text-2xl font-bold mb-2 bg-gradient-to-r from-[#3d2515] to-[#a86b3e] bg-clip-text text-transparent">THE GRAND INTEGRATOR</h3>
                 <p className="text-xl font-semibold mb-2 text-foreground">Championship Winner</p>
                 <p className="text-muted-foreground">Certificate + Amazon Voucher Prize + T-shirt</p>
               </Card>
               <Card className="p-6 bg-card border-border text-center hover:border-secondary/40 hover:shadow-lg transition-all duration-300">
-                <Award className="w-10 h-10 mx-auto mb-3 text-secondary" />
+                <Award className="w-10 h-10 mx-auto mb-3 text-tertiary" />
                 <h3 className="text-xl font-bold text-foreground mb-2">SENIOR INTEGRATOR</h3>
-                <p className="text-lg font-semibold text-secondary mb-2">Championship Runner-Up</p>
+                <p className="text-lg font-semibold text-tertiary mb-2">Championship Runner-Up</p>
                 <p className="text-muted-foreground">Certificate + Amazon Voucher Prize + T-shirt</p>
               </Card>
               <Card className="p-6 bg-card border-border text-center hover:border-secondary/40 hover:shadow-lg transition-all duration-300">
-                <Award className="w-10 h-10 mx-auto mb-3 text-secondary" />
+                <Award className="w-10 h-10 mx-auto mb-3 text-tertiary" />
                 <h3 className="text-xl font-bold text-foreground mb-2">SEMI INTEGRATORS</h3>
-                <p className="text-lg font-semibold text-secondary mb-2">Semifinalists (2 places)</p>
+                <p className="text-lg font-semibold text-tertiary mb-2">Semifinalists (2 places)</p>
                 <p className="text-muted-foreground">Certificate + Amazon Voucher Prize + T-shirt</p>
               </Card>
             </div>
@@ -302,7 +302,7 @@ Full Audience Viewing
                   "Event photos shared with all participating universities",
                 ].map((item, i) => (
                   <li key={i} className="flex gap-3 text-foreground/90">
-                    <span className="text-secondary font-bold">▸</span>
+                    <span className="text-tertiary font-bold">▸</span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -318,7 +318,7 @@ Full Audience Viewing
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-10">
-              <MapPin className="w-10 h-10 text-secondary mr-3" />
+              <MapPin className="w-10 h-10 text-tertiary mr-3" />
               <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
                 Location
               </h2>
@@ -326,7 +326,7 @@ Full Audience Viewing
             <Card className="p-6 sm:p-8 bg-card border-border">
               <div className="text-center space-y-2 mb-6">
                 <p className="text-2xl font-bold text-foreground">NYU Abu Dhabi</p>
-                <p className="text-lg text-secondary font-semibold">C2 West Forum</p>
+                <p className="text-lg text-tertiary font-semibold">C2 West Forum</p>
                 <p className="text-foreground/80 max-w-2xl mx-auto">
                   Visitor parking is available upon arrival, campus security will direct you to the designated zones. If arriving at the Visitor Center, you will be guided to C2 West Forum.
                 </p>

@@ -42,7 +42,7 @@ const Prizes = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <div className="flex justify-center mb-6">
-              <Trophy className="w-16 h-16 text-secondary" />
+              <Trophy className="w-16 h-16 text-tertiary" />
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
               Prizes
@@ -76,7 +76,7 @@ const Prizes = () => {
                     </div>
                     <div className="p-6">
                       <div className="flex items-center gap-3 mb-2">
-                        <Gift className="w-5 h-5 text-secondary" />
+                        <Gift className="w-5 h-5 text-tertiary" />
                         <h3 className="text-xl font-bold text-foreground">{shirt.title}</h3>
                       </div>
                       <p className="text-muted-foreground">{shirt.description}</p>
@@ -104,7 +104,7 @@ const Prizes = () => {
                     </div>
                     <div className="p-4">
                       <div className="flex items-center gap-2 mb-2">
-                        <Award className="w-4 h-4 text-secondary" />
+                        <Award className="w-4 h-4 text-tertiary" />
                         <h3 className="text-lg font-bold text-foreground">{voucher.title}</h3>
                       </div>
                       <p className="text-sm text-muted-foreground">{voucher.description}</p>
@@ -117,24 +117,24 @@ const Prizes = () => {
             {/* Additional Prize Information */}
             <Card className="p-8 bg-muted/20 border-secondary/30">
               <div className="flex items-start gap-4">
-                <Award className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
+                <Award className="w-8 h-8 text-tertiary flex-shrink-0 mt-1" />
                 <div className="space-y-4">
                   <h3 className="text-2xl font-bold text-foreground">Award Categories</h3>
                   <ul className="space-y-2 text-foreground/85">
                     <li className="flex items-start gap-2">
-                      <span className="text-secondary font-bold">🥇</span>
+                      <span className="text-tertiary font-bold">🥇</span>
                       <span><strong>The Grand Integrator:</strong> Championship Winner - Certificate + Amazon Voucher Prize + T-shirt</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-secondary font-bold">🥈</span>
+                      <span className="text-tertiary font-bold">🥈</span>
                       <span><strong>Senior Integrator:</strong> Championship Runner-Up - Certificate + Amazon Voucher Prize + T-shirt</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-secondary font-bold">🥉</span>
+                      <span className="text-tertiary font-bold">🥉</span>
                       <span><strong>Semi Integrators:</strong> Semifinalists (2 places) - Certificate + Amazon Voucher Prize + T-shirt</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-secondary font-bold">📜</span>
+                      <span className="text-tertiary font-bold">📜</span>
                       <span><strong>All Participants:</strong> Certificate of Participation</span>
                     </li>
                   </ul>

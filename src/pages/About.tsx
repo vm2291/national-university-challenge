@@ -62,7 +62,7 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <div className="flex justify-center mb-6">
-              <BookOpen className="w-16 h-16 text-secondary" />
+              <BookOpen className="w-16 h-16 text-tertiary" />
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
               About Us
@@ -78,7 +78,7 @@ const About = () => {
       <section className="py-16 bg-card/40 text-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <Lightbulb className="w-12 h-12 mx-auto text-secondary" />
+            <Lightbulb className="w-12 h-12 mx-auto text-tertiary" />
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
               The Battle of Mathematical Excellence
             </h2>
@@ -105,7 +105,7 @@ const About = () => {
                 key={index}
                 className="p-8 bg-card border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-xl hover:shadow-secondary/10"
               >
-                <point.icon className="w-12 h-12 text-secondary mb-4" />
+                <point.icon className="w-12 h-12 text-tertiary mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-3">{point.title}</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">{point.description}</p>
               </Card>
@@ -169,7 +169,7 @@ const About = () => {
             <Card className="p-10 bg-muted/20 border-secondary/30">
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <Calendar className="w-8 h-8 text-secondary flex-shrink-0" />
+                  <Calendar className="w-8 h-8 text-tertiary flex-shrink-0" />
                   <div>
                     <h3 className="text-2xl font-bold text-foreground">Fall 2024</h3>
                     <p className="text-lg text-muted-foreground">NYU Abu Dhabi Campus</p>
@@ -208,7 +208,7 @@ const About = () => {
                   </div>
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center gap-3">
-                      <span className="text-2xl font-bold text-secondary">{milestone.year}</span>
+                      <span className="text-2xl font-bold text-tertiary">{milestone.year}</span>
                       <h3 className="text-2xl font-bold text-foreground">{milestone.title}</h3>
                     </div>
                     <p className="text-lg text-muted-foreground leading-relaxed">
@@ -232,7 +232,7 @@ const About = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card className="p-8 bg-card border-border">
-                <Users className="w-10 h-10 text-secondary mb-4" />
+                <Users className="w-10 h-10 text-tertiary mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-3">Student Participation</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Students from across NYU Abu Dhabi came together to test their integration skills 
@@ -241,7 +241,7 @@ const About = () => {
               </Card>
 
               <Card className="p-8 bg-card border-border">
-                <Award className="w-10 h-10 text-secondary mb-4" />
+                <Award className="w-10 h-10 text-tertiary mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-3">Challenging Problems</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Multiple rounds of carefully designed integration problems tested participants on 
@@ -295,7 +295,7 @@ const About = () => {
               mathematical excellence that transcends campus boundaries.
             </p>
             <div className="pt-8">
-              <p className="text-2xl font-bold text-secondary">
+              <p className="text-2xl font-bold text-tertiary">
                 From one university to six. From campus event to national competition.
               </p>
             </div>
@@ -314,7 +314,7 @@ const About = () => {
             <Card className="p-10 bg-card border-secondary/30 shadow-xl">
               <div className="space-y-4">
                 <h3 className="text-3xl font-bold text-foreground">Dr. Dania Zantout</h3>
-                <p className="text-xl text-secondary font-semibold">
+                <p className="text-xl text-tertiary font-semibold">
                   Founding and Executive Director
                 </p>
                 <p className="text-lg text-muted-foreground">
