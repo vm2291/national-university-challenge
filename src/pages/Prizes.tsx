@@ -44,7 +44,7 @@ const Prizes = () => {
             <div className="flex justify-center mb-6">
               <Trophy className="w-16 h-16 text-secondary" />
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-secondary via-secondary to-tertiary bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#e8c896] via-[#c08550] to-[#9a5a2a] bg-clip-text text-transparent">
               Prizes
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
@@ -60,7 +60,7 @@ const Prizes = () => {
           <div className="max-w-4xl mx-auto space-y-12">
             {/* T-Shirt Images Grid */}
             <div className="space-y-6">
-              <h3 className="text-2xl sm:text-3xl font-bold text-center bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
+              <h3 className="text-2xl sm:text-3xl font-bold text-center bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
                 Competition T-Shirts
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -88,7 +88,7 @@ const Prizes = () => {
 
             {/* Voucher Images Grid */}
             <div className="space-y-6 mt-12">
-              <h3 className="text-2xl sm:text-3xl font-bold text-center bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
+              <h3 className="text-2xl sm:text-3xl font-bold text-center bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
                 Amazon Vouchers
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
