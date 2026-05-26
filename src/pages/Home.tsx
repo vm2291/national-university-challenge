@@ -124,7 +124,7 @@ const Home = () => {
       </section>
 
       {/* Event Details Section */}
-      <section className="py-16 bg-gradient-to-br from-primary/10 via-background to-primary/20">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
             Event Details
