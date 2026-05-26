@@ -4,6 +4,8 @@ import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 import CountUp from "@/components/CountUp";
+import hero1 from "@/assets/hero1.jpg";
+import hero2 from "@/assets/hero2.jpg";
 import hero3 from "@/assets/hero3.jpg";
 const Home = () => {
   const stats = [{
@@ -67,10 +69,10 @@ const Home = () => {
             {/* Photo collage column */}
             <div className="lg:col-span-5 relative h-[420px] sm:h-[480px] lg:h-[560px] animate-in fade-in duration-1000">
               <div className="absolute top-0 right-0 w-[62%] h-[58%] rounded-2xl overflow-hidden shadow-2xl shadow-tertiary/20 border-4 border-card rotate-[3deg] hover:rotate-0 transition-transform duration-700 ease-out animate-in slide-in-from-right-8 fade-in" style={{ animationDelay: "200ms", animationFillMode: "both" }}>
-                <img src="/event-2025/competition-room.png" alt="Takãmul Cup competition room" className="w-full h-full object-cover" loading="eager" />
+                <img src={hero1} alt="Takãmul Cup competition" className="w-full h-full object-cover" loading="eager" />
               </div>
               <div className="absolute bottom-0 left-0 w-[58%] h-[55%] rounded-2xl overflow-hidden shadow-2xl shadow-tertiary/20 border-4 border-card -rotate-[4deg] hover:rotate-0 transition-transform duration-700 ease-out animate-in slide-in-from-left-8 fade-in" style={{ animationDelay: "400ms", animationFillMode: "both" }}>
-                <img src="/event-2025/group-photo-winners.png" alt="All participating students group photo" className="w-full h-full object-cover" loading="eager" />
+                <img src={hero2} alt="Competitors solving integrals" className="w-full h-full object-cover" loading="eager" />
               </div>
               <div className="absolute top-[28%] left-[34%] w-[44%] h-[44%] rounded-2xl overflow-hidden shadow-2xl shadow-tertiary/30 border-4 border-card rotate-[-2deg] hover:rotate-0 transition-transform duration-700 ease-out animate-in zoom-in-50 fade-in" style={{ animationDelay: "600ms", animationFillMode: "both" }}>
                 <img src={hero3} alt="Award ceremony" className="w-full h-full object-cover" loading="eager" />
