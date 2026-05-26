@@ -64,7 +64,7 @@ const About = () => {
             <div className="flex justify-center mb-6">
               <BookOpen className="w-16 h-16 text-secondary" />
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#e8c896] via-[#c08550] to-[#9a5a2a] bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#a8632e] via-[#7a3f1a] to-[#4a230d] bg-clip-text text-transparent">
               About Us
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
@@ -95,7 +95,7 @@ const About = () => {
       {/* Vision Points */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
             What Drives Us
           </h2>
 
@@ -119,7 +119,7 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-12">
             <div className="text-center">
-              <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
+              <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
                 The Falcon's Talon Edition
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
@@ -157,7 +157,7 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-12">
             <div className="text-center space-y-6">
-              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
+              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
                 Where It All Started
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
@@ -190,7 +190,7 @@ const About = () => {
       {/* Milestones */}
       <section className="py-20 bg-primary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
             Key Milestones
           </h2>
 
@@ -226,7 +226,7 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-12">
-            <h2 className="text-4xl sm:text-5xl font-bold text-center bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl font-bold text-center bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
               2024 Event Highlights
             </h2>
 
@@ -307,7 +307,7 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
               Leadership & Vision
             </h2>
             

@@ -104,7 +104,7 @@ const Testimonials = () => {
             <div className="flex justify-center mb-6">
               <Quote className="w-16 h-16 text-secondary" />
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#e8c896] via-[#c08550] to-[#9a5a2a] bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#a8632e] via-[#7a3f1a] to-[#4a230d] bg-clip-text text-transparent">
               Testimonials
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
@@ -117,23 +117,34 @@ const Testimonials = () => {
       {/* Testimonials Grid */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <Card
-                key={index}
-                className="p-6 md:p-8 bg-card border-primary/30 hover:border-secondary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-              >
-                <Quote className="w-6 h-6 text-secondary mb-3" />
-                <blockquote className="text-foreground/90 text-base md:text-lg leading-relaxed mb-4">
-                  {testimonial.quote}
-                </blockquote>
-                {testimonial.name && (
-                  <p className="text-sm text-muted-foreground font-medium border-t border-primary/30 pt-3">
-                    {testimonial.name}{testimonial.university && ` - ${testimonial.university}`}
-                  </p>
-                )}
-              </Card>
-            ))}
+          <div className="max-w-4xl mx-auto space-y-6">
+            {testimonials.map((testimonial, index) => {
+              const isEven = index % 2 === 0;
+              return (
+                <Card
+                  key={index}
+                  className={`p-6 md:p-8 border-primary/30 hover:shadow-lg transition-all duration-300 ${
+                    isEven
+                      ? "bg-card ml-0 md:mr-12"
+                      : "bg-primary/30 mr-0 md:ml-12"
+                  }`}
+                >
+                  <div className="flex gap-4">
+                    <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                    <div>
+                      <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
+                        {testimonial.quote}
+                      </blockquote>
+                      {testimonial.name && (
+                        <p className="text-sm text-muted-foreground font-medium">
+                          - {testimonial.name}{testimonial.university && `, ${testimonial.university}`}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>

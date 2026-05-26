@@ -10,16 +10,14 @@ const Pill = ({ children }: { children: React.ReactNode }) => (
 
 const InfoList = ({ items }: { items: React.ReactNode[]; variant?: "default" | "brown" | "orange" }) => {
   return (
-    <div className="bg-card border border-primary/40 border-l-4 border-l-secondary rounded-lg p-5 sm:p-6 shadow-sm">
-      <ul className="space-y-2.5">
-        {items.map((item, i) => (
-          <li key={i} className="flex gap-3 text-foreground/90 text-base leading-relaxed">
-            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-secondary flex-shrink-0" />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className="space-y-3 pl-1">
+      {items.map((item, i) => (
+        <li key={i} className="flex gap-3 text-foreground/90 text-base leading-relaxed">
+          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-secondary flex-shrink-0" />
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
   );
 };
 
@@ -59,7 +57,7 @@ const CompetitionStructure = () => {
             <div className="flex justify-center mb-6">
               <ListChecks className="w-16 h-16 text-secondary" />
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#e8c896] via-[#c08550] to-[#9a5a2a] bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#a8632e] via-[#7a3f1a] to-[#4a230d] bg-clip-text text-transparent">
               Coordinators Info
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
@@ -72,7 +70,7 @@ const CompetitionStructure = () => {
       {/* Stages */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-7xl mx-auto">
 
             {/* STAGE 1 */}
             <StageSection number={1} title="Stage 1 — Qualifiers">
@@ -350,7 +348,7 @@ Final: Winner SF1 vs Winner SF2`}
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-10">
               <Trophy className="w-10 h-10 text-secondary mr-3" />
-              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
                 Competition Titles and Awards
               </h2>
             </div>
@@ -379,7 +377,7 @@ Final: Winner SF1 vs Winner SF2`}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 uppercase tracking-wide bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 uppercase tracking-wide bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
               Summary for Coordinators
             </h2>
             <Card className="p-6 sm:p-8 bg-card border-2 border-primary/40 text-foreground shadow-md">

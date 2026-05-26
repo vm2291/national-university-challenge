@@ -138,7 +138,7 @@ Full Audience Viewing
             <div className="flex justify-center mb-6">
               <Calendar className="w-16 h-16 text-secondary" />
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#e8c896] via-[#c08550] to-[#9a5a2a] bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#a8632e] via-[#7a3f1a] to-[#4a230d] bg-clip-text text-transparent">
               Event Details
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
@@ -154,7 +154,7 @@ Full Audience Viewing
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-10">
               <ListChecks className="w-10 h-10 text-secondary mr-3" />
-              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
                 Competition Structure
               </h2>
             </div>
@@ -178,7 +178,7 @@ Full Audience Viewing
       <section className="py-16 bg-primary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
               Competition Flow Diagram
             </h2>
             <div className="space-y-8">
@@ -206,7 +206,7 @@ Full Audience Viewing
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center justify-center mb-10">
               <Clock className="w-10 h-10 text-secondary mr-3" />
-              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
                 Master Event Schedule
               </h2>
             </div>
@@ -242,7 +242,7 @@ Full Audience Viewing
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-10">
               <Users2 className="w-10 h-10 text-secondary mr-3" />
-              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
                 Key Personnel
               </h2>
             </div>
@@ -264,7 +264,7 @@ Full Audience Viewing
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-10">
               <Trophy className="w-10 h-10 text-secondary mr-3" />
-              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
                 Awards & Recognition
               </h2>
             </div>
@@ -324,7 +324,7 @@ Full Audience Viewing
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-10">
               <MapPin className="w-10 h-10 text-secondary mr-3" />
-              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#c89060] to-[#8a4a20] bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
                 Location
               </h2>
             </div>
