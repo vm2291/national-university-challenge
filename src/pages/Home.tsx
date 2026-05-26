@@ -144,22 +144,16 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-3 sm:gap-4">
             {universities.map((university, index) => (
               <div
                 key={index}
-                className="group relative p-6 rounded-2xl bg-gradient-to-br from-[#e9c590]/30 via-[#e9c590]/15 to-transparent border border-[#e9c590]/60 backdrop-blur hover:-translate-y-1 hover:shadow-xl hover:shadow-[#a86b3e]/15 transition-all duration-500 animate-in fade-in slide-in-from-bottom-6"
-                style={{ animationDelay: `${index * 80}ms`, animationFillMode: "both" }}
+                className="group relative px-6 py-3 rounded-full border border-[#a86b3e]/30 bg-card/40 backdrop-blur-sm hover:border-[#a86b3e]/70 hover:bg-[#e9c590]/30 hover:-translate-y-0.5 transition-all duration-300 animate-in fade-in zoom-in-95"
+                style={{ animationDelay: `${index * 70}ms`, animationFillMode: "both" }}
               >
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#a86b3e]/0 to-[#a86b3e]/0 group-hover:from-[#a86b3e]/5 group-hover:to-[#3d2515]/5 transition-all duration-500 pointer-events-none" />
-                <div className="relative flex items-center gap-4">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[#e9c590]/70 to-[#a86b3e]/20 text-[#7a4520] font-mono text-sm font-bold tracking-wider flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
-                    {String(index + 1).padStart(2, "0")}
-                  </div>
-                  <p className="text-base sm:text-lg font-medium text-[#3d2515] leading-snug">
-                    {university}
-                  </p>
-                </div>
+                <span className="text-sm sm:text-base font-medium text-[#3d2515] tracking-tight">
+                  {university}
+                </span>
               </div>
             ))}
           </div>
@@ -183,7 +177,9 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="max-w-3xl mx-auto relative">
+            {/* Vertical line */}
+            <div className="absolute left-8 sm:left-1/2 top-4 bottom-4 w-px bg-gradient-to-b from-transparent via-[#a86b3e]/40 to-transparent sm:-translate-x-1/2" />
             {[
               { icon: Calendar, label: "Date", primary: "Sunday, Dec 7, 2025", secondary: "Mark your calendar" },
               { icon: Clock, label: "Time", primary: "9:00 AM – 5:00 PM", secondary: "Gulf Standard Time (GST)" },
@@ -191,18 +187,27 @@ const Home = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="group relative text-center p-10 rounded-3xl bg-gradient-to-br from-[#e9c590]/30 via-[#e9c590]/20 to-transparent border border-[#e9c590]/60 backdrop-blur hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#a86b3e]/20 transition-all duration-500 animate-in fade-in slide-in-from-bottom-8"
+                className={`relative mb-10 last:mb-0 sm:grid sm:grid-cols-2 sm:gap-12 sm:items-center animate-in fade-in slide-in-from-bottom-6 ${
+                  index % 2 === 1 ? "sm:[&>div:first-child]:order-2" : ""
+                }`}
                 style={{ animationDelay: `${index * 150}ms`, animationFillMode: "both" }}
               >
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#a86b3e]/0 to-[#a86b3e]/0 group-hover:from-[#a86b3e]/5 group-hover:to-[#3d2515]/5 transition-all duration-500 pointer-events-none" />
-                <div className="relative">
-                  <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-2xl bg-gradient-to-br from-[#e9c590]/60 to-[#a86b3e]/20 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
-                    <item.icon className="w-8 h-8 text-[#7a4520]" strokeWidth={2} />
+                {/* Dot */}
+                <div className="absolute left-8 sm:left-1/2 top-6 w-4 h-4 rounded-full bg-[#a86b3e] ring-4 ring-background sm:-translate-x-1/2 z-10" />
+
+                <div className={`pl-20 sm:pl-0 ${index % 2 === 1 ? "sm:text-left sm:pl-12" : "sm:text-right sm:pr-12"}`}>
+                  <div className={`inline-flex items-center gap-3 ${index % 2 === 1 ? "" : "sm:flex-row-reverse"}`}>
+                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-[#e9c590]/60 to-[#a86b3e]/20">
+                      <item.icon className="w-5 h-5 text-[#7a4520]" strokeWidth={2} />
+                    </div>
+                    <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#7a4520]">
+                      {item.label}
+                    </span>
                   </div>
-                  <div className="text-xs font-semibold uppercase tracking-[0.25em] text-[#7a4520] mb-3">
-                    {item.label}
-                  </div>
-                  <p className="text-xl sm:text-2xl font-bold text-[#3d2515] leading-tight mb-1">{item.primary}</p>
+                </div>
+
+                <div className={`pl-20 sm:pl-0 mt-2 sm:mt-0 ${index % 2 === 1 ? "sm:pr-12 sm:text-right" : "sm:pl-12"}`}>
+                  <p className="text-2xl sm:text-3xl font-bold text-[#3d2515] leading-tight mb-1 tracking-tight">{item.primary}</p>
                   <p className="text-sm text-[#7a4520]/80 font-light">{item.secondary}</p>
                 </div>
               </div>
