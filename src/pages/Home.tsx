@@ -20,26 +20,28 @@ const Home = () => {
   const universities = ["Abu Dhabi University", "American University in Dubai", "Middlesex University Dubai", "Heriot-Watt University Dubai", "UAE University", "NYU Abu Dhabi", "Mohamed bin Zayed University of Artificial Intelligence"];
   return <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden pt-16">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-background to-primary/20" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--primary))_0%,transparent_50%)] opacity-25" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--secondary))_0%,transparent_50%)] opacity-10" />
+      <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden pt-16 bg-background">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_45%,hsl(var(--secondary)/0.22)_0%,transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,hsl(var(--primary)/0.14)_0%,transparent_45%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_85%,hsl(var(--secondary)/0.12)_0%,transparent_45%)]" />
+        <div className="absolute inset-0 opacity-[0.06] bg-[linear-gradient(hsl(var(--primary))_1px,transparent_1px),linear-gradient(90deg,hsl(var(--primary))_1px,transparent_1px)] bg-[size:72px_72px]" />
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-background" />
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 py-12">
-            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-[#e8c896] via-[#c08550] to-[#5a2a14] bg-clip-text text-transparent">
+            <h1 className="text-6xl sm:text-8xl lg:text-9xl font-bold mb-8 tracking-tight leading-none">
+              <span className="bg-gradient-to-r from-[#f5dba8] via-[#e0b076] to-[#b07840] bg-clip-text text-transparent">
                 Takãmul Cup
               </span>
             </h1>
 
-            <div className="inline-block px-6 py-3 bg-secondary rounded-full shadow-lg mb-6">
-              <p className="text-lg sm:text-xl font-bold text-secondary-foreground">
+            <div className="inline-block px-5 py-2 rounded-full mb-8 border border-secondary/40 bg-secondary/10 backdrop-blur-sm">
+              <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] text-secondary uppercase">
                 National University Level Integration Bee
               </p>
             </div>
 
-            <p className="text-base sm:text-lg text-foreground max-w-3xl mx-auto leading-relaxed mb-12 font-medium">
+            <p className="text-lg sm:text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed mb-12 font-light">
               The UAE's premier integration competition for university students, where the brightest mathematical minds compete in speed, accuracy, and strategic problem-solving
             </p>
           </div>
@@ -47,12 +49,12 @@ const Home = () => {
       </section>
 
       {/* Battle of Mathematical Excellence Section */}
-      <section className="py-16 bg-primary text-tertiary">
+      <section className="py-16 bg-card/40 text-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-tertiary">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-foreground">
             Battle of Mathematical Excellence
           </h2>
-          <p className="text-center text-lg text-tertiary/90 mb-12 max-w-3xl mx-auto">
+          <p className="text-center text-lg text-foreground/85 mb-12 max-w-3xl mx-auto">
             Join the UAE's premier integration competition where the nation's brightest 
             mathematical minds compete in speed, accuracy, and strategic problem-solving!
           </p>
@@ -61,7 +63,7 @@ const Home = () => {
             {stats.map((stat, index) => <div key={index} className="text-center p-8 bg-tertiary/10 backdrop-blur rounded-2xl border border-tertiary/20 hover:bg-tertiary/20 transition-all duration-300">
                 <stat.icon className="w-12 h-12 mx-auto mb-4 text-secondary" />
                 <div className="text-5xl font-bold mb-2 text-secondary">{stat.value}</div>
-                <div className="text-xl font-semibold uppercase tracking-wide text-tertiary">{stat.label}</div>
+                <div className="text-xl font-semibold uppercase tracking-wide text-foreground">{stat.label}</div>
               </div>)}
           </div>
         </div>
@@ -72,17 +74,17 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center mb-12">
             <Trophy className="w-10 h-10 text-secondary mr-3" />
-            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
               Participating Universities
             </h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {universities.slice(0, 6).map((university, index) => <Card key={index} className="p-6 text-center bg-card hover:bg-primary/10 border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10">
+            {universities.slice(0, 6).map((university, index) => <Card key={index} className="p-6 text-center bg-card hover:bg-muted/20 border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10">
                 <p className="text-lg font-semibold text-foreground">{university}</p>
               </Card>)}
             {/* Last university - full width centered */}
-            <Card className="p-6 text-center bg-card hover:bg-primary/10 border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10 sm:col-span-2">
+            <Card className="p-6 text-center bg-card hover:bg-muted/20 border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10 sm:col-span-2">
               <p className="text-lg font-semibold text-foreground">{universities[6]}</p>
             </Card>
           </div>
@@ -92,23 +94,23 @@ const Home = () => {
       {/* Event Details Section */}
       <section className="py-16 bg-gradient-to-br from-primary/10 via-background to-primary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
             Event Details
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <Card className="p-8 bg-card backdrop-blur border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
+            <Card className="p-8 bg-card backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
               <Calendar className="w-10 h-10 text-secondary mx-auto mb-4" />
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Date</p>
               <p className="text-xl font-bold text-foreground">Sunday</p>
               <p className="text-2xl font-bold text-foreground">Dec 7, 2025</p>
             </Card>
-            <Card className="p-8 bg-card backdrop-blur border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
+            <Card className="p-8 bg-card backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
               <Clock className="w-10 h-10 text-secondary mx-auto mb-4" />
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Time</p>
               <p className="text-2xl font-bold text-foreground">9:00 AM - 5:00 PM</p>
               <p className="text-lg text-foreground">(GST)</p>
             </Card>
-            <Card className="p-8 bg-card backdrop-blur border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
+            <Card className="p-8 bg-card backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
               <MapPin className="w-10 h-10 text-secondary mx-auto mb-4" />
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Venue</p>
               <p className="text-xl font-bold text-foreground">NYU Abu Dhabi</p>
@@ -121,12 +123,12 @@ const Home = () => {
       {/* Featured Testimonials Section */}
       <section className="py-16 bg-gradient-to-br from-secondary/10 via-background to-primary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
             What Participants Had to Say About Their Experience
           </h2>
           
           <div className="max-w-4xl mx-auto space-y-6 mb-10">
-            <Card className="p-6 md:p-8 bg-card border-primary/30 hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
+            <Card className="p-6 md:p-8 bg-card border-border hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <div>
@@ -138,7 +140,7 @@ const Home = () => {
               </div>
             </Card>
             
-            <Card className="p-6 md:p-8 bg-primary/30 border-primary/30 hover:shadow-lg transition-all duration-300 mr-0 md:ml-12">
+            <Card className="p-6 md:p-8 bg-muted/40 border-border hover:shadow-lg transition-all duration-300 mr-0 md:ml-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <div>
@@ -150,7 +152,7 @@ const Home = () => {
               </div>
             </Card>
             
-            <Card className="p-6 md:p-8 bg-card border-primary/30 hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
+            <Card className="p-6 md:p-8 bg-card border-border hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <div>
@@ -162,7 +164,7 @@ const Home = () => {
               </div>
             </Card>
             
-            <Card className="p-6 md:p-8 bg-primary/30 border-primary/30 hover:shadow-lg transition-all duration-300 mr-0 md:ml-12">
+            <Card className="p-6 md:p-8 bg-muted/40 border-border hover:shadow-lg transition-all duration-300 mr-0 md:ml-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <div>
@@ -187,38 +189,38 @@ const Home = () => {
       </section>
 
       {/* Competition Philosophy Section */}
-      <section className="py-16 bg-primary/20">
+      <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-8">
               <Brain className="w-10 h-10 text-secondary mr-3" />
-              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
                 Competition Philosophy
           </h2>
             </div>
             
-            <Card className="p-8 bg-primary border-secondary/30 mb-6">
+            <Card className="p-8 bg-card border-border mb-6">
               <div className="flex items-start gap-4">
                 <Sparkles className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
-                <p className="text-lg text-tertiary leading-relaxed">
+                <p className="text-lg text-foreground leading-relaxed">
                   The <strong>Takãmul Cup</strong> celebrates <strong>mathematical excellence in the AI era</strong> by honoring the irreplaceable power of human cognition. In an age where artificial intelligence can solve complex problems instantly, we create a space that celebrates <strong>the brain</strong>—its creativity, procedural fluency, pattern recognition, and deep mathematical reasoning.
           </p>
               </div>
             </Card>
             
-            <Card className="p-8 bg-primary border-secondary/30 mb-6">
+            <Card className="p-8 bg-card border-border mb-6">
               <div className="flex items-start gap-4">
                 <Brain className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
-                <p className="text-lg text-tertiary leading-relaxed">
+                <p className="text-lg text-foreground leading-relaxed">
                   The Takãmul Cup fosters an environment where <strong>cognitive skills</strong> and <strong>procedural fluency</strong> are not just valued but celebrated. It's a reminder that while technology advances, the human capacity for mathematical thought remains extraordinary and worth cultivating.
                 </p>
               </div>
             </Card>
             
-            <Card className="p-8 bg-primary border-secondary/30">
+            <Card className="p-8 bg-card border-border">
               <div className="flex items-start gap-4">
                 <Sparkles className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
-                <p className="text-lg text-tertiary leading-relaxed">
+                <p className="text-lg text-foreground leading-relaxed">
                   This competition is about <strong>living mathematics</strong>—experiencing the thrill of solving integrals with nothing but mental agility, pencil, and paper. We isolate AI outside the room; inside, it's just <strong>your brain, your skills, and your passion for mathematics</strong>.
                 </p>
               </div>

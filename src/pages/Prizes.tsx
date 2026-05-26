@@ -44,7 +44,7 @@ const Prizes = () => {
             <div className="flex justify-center mb-6">
               <Trophy className="w-16 h-16 text-secondary" />
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#e8c896] via-[#c08550] to-[#5a2a14] bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#f5dba8] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
               Prizes
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
@@ -60,7 +60,7 @@ const Prizes = () => {
           <div className="max-w-4xl mx-auto space-y-12">
             {/* T-Shirt Images Grid */}
             <div className="space-y-6">
-              <h3 className="text-2xl sm:text-3xl font-bold text-center bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+              <h3 className="text-2xl sm:text-3xl font-bold text-center bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
                 Competition T-Shirts
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -88,7 +88,7 @@ const Prizes = () => {
 
             {/* Voucher Images Grid */}
             <div className="space-y-6 mt-12">
-              <h3 className="text-2xl sm:text-3xl font-bold text-center bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+              <h3 className="text-2xl sm:text-3xl font-bold text-center bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
                 Amazon Vouchers
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -115,12 +115,12 @@ const Prizes = () => {
             </div>
 
             {/* Additional Prize Information */}
-            <Card className="p-8 bg-primary/10 border-secondary/30">
+            <Card className="p-8 bg-muted/20 border-secondary/30">
               <div className="flex items-start gap-4">
                 <Award className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
                 <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-tertiary">Award Categories</h3>
-                  <ul className="space-y-2 text-tertiary/90">
+                  <h3 className="text-2xl font-bold text-foreground">Award Categories</h3>
+                  <ul className="space-y-2 text-foreground/85">
                     <li className="flex items-start gap-2">
                       <span className="text-secondary font-bold">🥇</span>
                       <span><strong>The Grand Integrator:</strong> Championship Winner - Certificate + Amazon Voucher Prize + T-shirt</span>

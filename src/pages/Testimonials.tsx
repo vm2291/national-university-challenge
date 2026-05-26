@@ -104,7 +104,7 @@ const Testimonials = () => {
             <div className="flex justify-center mb-6">
               <Quote className="w-16 h-16 text-secondary" />
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#e8c896] via-[#c08550] to-[#5a2a14] bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#f5dba8] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
               Testimonials
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
@@ -123,10 +123,10 @@ const Testimonials = () => {
               return (
                 <Card
                   key={index}
-                  className={`p-6 md:p-8 border-primary/30 hover:shadow-lg transition-all duration-300 ${
+                  className={`p-6 md:p-8 border-border hover:shadow-lg transition-all duration-300 ${
                     isEven
                       ? "bg-card ml-0 md:mr-12"
-                      : "bg-primary/30 mr-0 md:ml-12"
+                      : "bg-muted/40 mr-0 md:ml-12"
                   }`}
                 >
                   <div className="flex gap-4">

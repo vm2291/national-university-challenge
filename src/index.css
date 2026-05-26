@@ -9,59 +9,51 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
 
 @layer base {
   :root {
-    --background: 38 40% 97%;
-    --foreground: 22 30% 24%;
+    /* Dark warm theme — near-black background with warm gold accents. */
+    --background: 24 18% 6%;
+    --foreground: 36 40% 92%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 22 30% 24%;
+    --card: 24 16% 9%;
+    --card-foreground: 36 40% 92%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 22 30% 24%;
+    --popover: 24 16% 9%;
+    --popover-foreground: 36 40% 92%;
 
-    /* Primary: light gold / beige (gradient start) */
-    --primary: 36 65% 75%;
-    --primary-foreground: 20 50% 22%;
+    /* Primary: warm gold (used for accents, icons, gradient start) */
+    --primary: 36 70% 70%;
+    --primary-foreground: 24 30% 8%;
 
-    /* Secondary: warm copper (gradient mid) */
-    --secondary: 25 55% 45%;
-    --secondary-foreground: 38 50% 96%;
+    /* Secondary: copper (mid-gradient, buttons, highlights) */
+    --secondary: 28 65% 58%;
+    --secondary-foreground: 24 30% 8%;
 
-    /* Tertiary: deep warm brown (gradient end) */
-    --tertiary: 20 55% 22%;
-    --tertiary-foreground: 36 65% 85%;
+    /* Tertiary: deep warm brown (kept for legacy refs) */
+    --tertiary: 24 30% 14%;
+    --tertiary-foreground: 36 60% 85%;
 
-    --muted: 36 35% 93%;
-    --muted-foreground: 22 18% 42%;
+    --muted: 24 14% 12%;
+    --muted-foreground: 36 18% 68%;
 
-    --accent: 25 55% 45%;
-    --accent-foreground: 38 40% 97%;
+    --accent: 28 65% 58%;
+    --accent-foreground: 24 30% 8%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 70% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 34 42% 82%;
-    --input: 34 42% 82%;
-    --ring: 25 55% 45%;
+    --border: 28 18% 18%;
+    --input: 28 18% 18%;
+    --ring: 36 70% 70%;
 
     --radius: 0.75rem;
     
-    /* Custom design tokens - Brand colors */
-    --gold: 36 65% 75%;
-    --gold-dark: 25 55% 45%;
-    --beige: 36 65% 75%;
-    --burnt-orange: 25 55% 45%;
-    --deep-brown: 20 55% 22%;
-    --brown-light: 25 60% 52%;
+    --gold: 36 70% 70%;
+    --gold-dark: 28 65% 50%;
 
-    /* Gradients — light gold → copper → deep brown */
-    --gradient-primary: linear-gradient(135deg, hsl(36 65% 78%) 0%, hsl(25 55% 45%) 100%);
-    --gradient-beige: linear-gradient(135deg, hsl(36 65% 82%) 0%, hsl(34 55% 72%) 100%);
-    --gradient-hero: linear-gradient(90deg, hsl(36 70% 78%) 0%, hsl(28 60% 55%) 50%, hsl(20 55% 30%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(36 80% 78%) 0%, hsl(28 65% 50%) 100%);
+    --gradient-hero: linear-gradient(90deg, hsl(40 85% 80%) 0%, hsl(28 70% 58%) 50%, hsl(20 55% 32%) 100%);
 
-    /* Shadows */
-    --shadow-primary: 0 10px 40px -10px hsl(25 55% 45% / 0.35);
-    --shadow-beige: 0 10px 40px -10px hsl(36 65% 75% / 0.5);
-    --shadow-elegant: 0 20px 60px -15px hsl(20 55% 22% / 0.25);
+    --shadow-primary: 0 10px 40px -10px hsl(28 65% 50% / 0.45);
+    --shadow-elegant: 0 20px 60px -15px hsl(0 0% 0% / 0.5);
     
     /* Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
