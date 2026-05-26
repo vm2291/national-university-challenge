@@ -60,9 +60,6 @@ export default {
         "deep-brown": {
           DEFAULT: "hsl(var(--deep-brown))",
         },
-        "desert-sand": {
-          DEFAULT: "hsl(var(--desert-sand))",
-        },
         tertiary: {
           DEFAULT: "hsl(var(--tertiary))",
           foreground: "hsl(var(--tertiary-foreground))",
