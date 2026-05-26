@@ -60,7 +60,7 @@ const EventGallery = () => {
             <div className="flex justify-center mb-6">
               <Camera className="w-16 h-16 text-secondary" />
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#b8821f] via-[#8b4a14] to-[#3d1a08] bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#5a2a14] via-[#5a2a14] to-[#3d1a08] bg-clip-text text-transparent">
               2025 Gallery
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
