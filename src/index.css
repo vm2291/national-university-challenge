@@ -9,51 +9,51 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
 
 @layer base {
   :root {
-    /* Light desert theme — warm cream background with gold/copper accents. */
-    --background: 36 45% 96%;
-    --foreground: 24 45% 14%;
+    /* Desert Clay palette — soft cream backdrop, sandstone + clay accents. */
+    --background: 38 50% 95%;        /* #faf5ec warm cream */
+    --foreground: 22 35% 18%;        /* deep clay brown text */
 
-    --card: 36 40% 98%;
-    --card-foreground: 24 45% 14%;
+    --card: 38 55% 97%;              /* slightly lighter than bg */
+    --card-foreground: 22 35% 18%;
 
-    --popover: 36 40% 98%;
-    --popover-foreground: 24 45% 14%;
+    --popover: 38 55% 97%;
+    --popover-foreground: 22 35% 18%;
 
-    /* Primary: warm gold */
-    --primary: 36 65% 58%;
-    --primary-foreground: 24 45% 12%;
+    /* Primary: sandstone gold #d4a574 */
+    --primary: 30 50% 65%;
+    --primary-foreground: 22 40% 16%;
 
-    /* Secondary: copper */
-    --secondary: 24 60% 38%;
-    --secondary-foreground: 36 50% 96%;
+    /* Secondary: clay rose #c2956b — accent */
+    --secondary: 26 40% 50%;
+    --secondary-foreground: 38 50% 96%;
 
-    /* Tertiary: deep warm brown */
-    --tertiary: 22 55% 18%;
-    --tertiary-foreground: 36 50% 92%;
+    /* Tertiary: deep warm brown #5a3a2a for footer */
+    --tertiary: 22 36% 26%;
+    --tertiary-foreground: 38 50% 92%;
 
-    --muted: 36 30% 90%;
-    --muted-foreground: 24 25% 38%;
+    --muted: 36 35% 88%;
+    --muted-foreground: 24 22% 38%;
 
-    --accent: 36 55% 85%;
-    --accent-foreground: 24 45% 14%;
+    --accent: 30 45% 82%;
+    --accent-foreground: 22 40% 18%;
 
-    --destructive: 0 70% 50%;
+    --destructive: 0 65% 48%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 28 30% 82%;
-    --input: 28 30% 82%;
-    --ring: 36 65% 58%;
+    --border: 30 25% 80%;
+    --input: 30 25% 80%;
+    --ring: 30 50% 60%;
 
     --radius: 0.75rem;
-    
-    --gold: 36 65% 58%;
-    --gold-dark: 24 60% 38%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(40 75% 65%) 0%, hsl(24 60% 38%) 100%);
-    --gradient-hero: linear-gradient(90deg, hsl(40 80% 70%) 0%, hsl(28 65% 48%) 50%, hsl(22 55% 22%) 100%);
+    --gold: 30 50% 65%;
+    --gold-dark: 26 40% 50%;
 
-    --shadow-primary: 0 10px 40px -10px hsl(24 60% 38% / 0.25);
-    --shadow-elegant: 0 20px 60px -15px hsl(24 40% 20% / 0.18);
+    --gradient-primary: linear-gradient(135deg, hsl(32 55% 70%) 0%, hsl(22 36% 32%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(38 50% 95%) 0%, hsl(30 50% 85%) 50%, hsl(26 40% 70%) 100%);
+
+    --shadow-primary: 0 10px 40px -10px hsl(26 40% 35% / 0.20);
+    --shadow-elegant: 0 20px 60px -15px hsl(22 35% 20% / 0.15);
     
     /* Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -126,16 +126,16 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     scroll-behavior: smooth;
-    font-feature-settings: 'ss01', 'cv11', 'cv02';
+    font-feature-settings: 'ss01';
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Sora', 'Inter', system-ui, sans-serif;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.025em;
+    font-family: 'Instrument Serif', 'Iowan Old Style', Georgia, serif;
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
     font-optical-sizing: auto;
   }
   
