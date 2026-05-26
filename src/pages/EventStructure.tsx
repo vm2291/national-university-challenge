@@ -138,7 +138,7 @@ Full Audience Viewing
             <div className="flex justify-center mb-6">
               <Calendar className="w-16 h-16 text-secondary" />
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#a8632e] via-[#7a3f1a] to-[#4a230d] bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#e8c896] via-[#c08550] to-[#5a2a14] bg-clip-text text-transparent">
               Event Details
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
@@ -271,11 +271,11 @@ Full Audience Viewing
             <p className="text-center text-lg text-muted-foreground mb-8 font-semibold">Award Ceremony Order</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="p-8 bg-secondary text-secondary-foreground md:col-span-2 border-secondary text-center hover:shadow-xl transition-all duration-300">
-                <Award className="w-12 h-12 mx-auto mb-3" />
-                <h3 className="text-2xl font-bold mb-2">THE GRAND INTEGRATOR</h3>
-                <p className="text-xl font-semibold mb-2">Championship Winner</p>
-                <p className="opacity-90">Certificate + Amazon Voucher Prize + T-shirt</p>
+              <Card className="p-8 bg-card md:col-span-2 border-2 border-secondary/40 text-center hover:border-secondary/70 hover:shadow-xl transition-all duration-300">
+                <Award className="w-12 h-12 mx-auto mb-3 text-secondary" />
+                <h3 className="text-2xl font-bold mb-2 bg-gradient-to-r from-[#c08550] to-[#5a2a14] bg-clip-text text-transparent">THE GRAND INTEGRATOR</h3>
+                <p className="text-xl font-semibold mb-2 text-tertiary">Championship Winner</p>
+                <p className="text-muted-foreground">Certificate + Amazon Voucher Prize + T-shirt</p>
               </Card>
               <Card className="p-6 bg-card border-primary/30 text-center hover:border-secondary/40 hover:shadow-lg transition-all duration-300">
                 <Award className="w-10 h-10 mx-auto mb-3 text-secondary" />

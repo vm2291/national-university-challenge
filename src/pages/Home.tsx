@@ -21,17 +21,14 @@ const Home = () => {
   return <div className="min-h-screen pt-16">
       {/* Hero Section */}
       <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden pt-16">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/event-2025/DSC_9286.png')" }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/75 to-background/95" />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/25 via-transparent to-secondary/20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-background to-primary/20" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--primary))_0%,transparent_50%)] opacity-25" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--secondary))_0%,transparent_50%)] opacity-10" />
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 py-12">
             <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-[#a8632e] via-[#7a3f1a] to-[#4a230d] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#e8c896] via-[#c08550] to-[#5a2a14] bg-clip-text text-transparent">
                 Takãmul Cup
               </span>
             </h1>
