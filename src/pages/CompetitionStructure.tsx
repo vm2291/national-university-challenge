@@ -10,16 +10,14 @@ const Pill = ({ children }: { children: React.ReactNode }) => (
 
 const InfoList = ({ items }: { items: React.ReactNode[]; variant?: "default" | "brown" | "orange" }) => {
   return (
-    <div className="bg-card border border-primary/40 border-l-4 border-l-secondary rounded-lg p-5 sm:p-6 shadow-sm">
-      <ul className="space-y-2.5">
-        {items.map((item, i) => (
-          <li key={i} className="flex gap-3 text-foreground/90 text-base leading-relaxed">
-            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-secondary flex-shrink-0" />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className="space-y-3 pl-1">
+      {items.map((item, i) => (
+        <li key={i} className="flex gap-3 text-foreground/90 text-base leading-relaxed">
+          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-secondary flex-shrink-0" />
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
   );
 };
 
