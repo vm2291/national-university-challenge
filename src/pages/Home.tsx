@@ -40,11 +40,8 @@ const Home = () => {
                 </p>
               </div>
 
-              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-normal leading-[0.95] tracking-tight">
-                <span className="block bg-gradient-to-br from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent italic">
-                  Takãmul
-                </span>
-                <span className="block text-foreground">Cup</span>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight whitespace-nowrap bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent" style={{ fontFamily: "'Work Sans', sans-serif" }}>
+                Takãmul Cup
               </h1>
 
               <p className="text-lg sm:text-xl text-foreground/75 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
