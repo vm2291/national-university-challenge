@@ -253,7 +253,7 @@ const About = () => {
             {/* Event Photos Grid */}
             <Card className="p-4 sm:p-6 md:p-8 bg-muted/20 border-secondary/30">
               <div className="text-center space-y-4">
-                <h3 className="text-xl sm:text-2xl font-bold text-tertiary mb-2">
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
                   2024 Event Photos
                 </h3>
                 <p className="text-sm sm:text-base text-foreground/75 italic mb-6">

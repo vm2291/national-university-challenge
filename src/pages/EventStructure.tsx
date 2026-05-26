@@ -184,13 +184,13 @@ Full Audience Viewing
             <div className="space-y-8">
               {flowSections.map((s, i) => (
                 <Card key={i} className="p-6 sm:p-8 bg-card border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg">
-                  <h3 className="text-xl sm:text-2xl font-bold text-tertiary mb-4">{s.title}</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">{s.title}</h3>
                   <div className="bg-muted/30 border-l-4 border-secondary rounded-md p-4 mb-5 space-y-1">
                     {s.info.map((line, j) => (
                       <p key={j} className="text-foreground/90 text-sm sm:text-base">{line}</p>
                     ))}
                   </div>
-                  <pre className="bg-muted/20 border-2 border-secondary/30 text-tertiary p-4 sm:p-6 rounded-lg text-xs sm:text-sm leading-relaxed overflow-x-auto font-mono whitespace-pre">
+                  <pre className="bg-muted/20 border-2 border-secondary/30 text-foreground p-4 sm:p-6 rounded-lg text-xs sm:text-sm leading-relaxed overflow-x-auto font-mono whitespace-pre">
                     {s.diagram}
                   </pre>
                 </Card>
@@ -279,20 +279,20 @@ Full Audience Viewing
               </Card>
               <Card className="p-6 bg-card border-border text-center hover:border-secondary/40 hover:shadow-lg transition-all duration-300">
                 <Award className="w-10 h-10 mx-auto mb-3 text-secondary" />
-                <h3 className="text-xl font-bold text-tertiary mb-2">SENIOR INTEGRATOR</h3>
+                <h3 className="text-xl font-bold text-foreground mb-2">SENIOR INTEGRATOR</h3>
                 <p className="text-lg font-semibold text-secondary mb-2">Championship Runner-Up</p>
                 <p className="text-muted-foreground">Certificate + Amazon Voucher Prize + T-shirt</p>
               </Card>
               <Card className="p-6 bg-card border-border text-center hover:border-secondary/40 hover:shadow-lg transition-all duration-300">
                 <Award className="w-10 h-10 mx-auto mb-3 text-secondary" />
-                <h3 className="text-xl font-bold text-tertiary mb-2">SEMI INTEGRATORS</h3>
+                <h3 className="text-xl font-bold text-foreground mb-2">SEMI INTEGRATORS</h3>
                 <p className="text-lg font-semibold text-secondary mb-2">Semifinalists (2 places)</p>
                 <p className="text-muted-foreground">Certificate + Amazon Voucher Prize + T-shirt</p>
               </Card>
             </div>
 
             <Card className="mt-8 p-6 sm:p-8 bg-muted/30 border-secondary/30">
-              <p className="font-bold text-tertiary mb-3 text-lg">Additional Recognition:</p>
+              <p className="font-bold text-foreground mb-3 text-lg">Additional Recognition:</p>
               <ul className="space-y-2">
                 {[
                   <>All 35 official competitors receive <strong>Certificate of Participation + T-shirt</strong></>,

@@ -22,12 +22,12 @@ const InfoList = ({ items }: { items: React.ReactNode[]; variant?: "default" | "
 };
 
 const SubTitle = ({ children }: { children: React.ReactNode }) => (
-  <h3 className="text-xl sm:text-2xl font-bold text-tertiary mb-4 pb-2 border-b-2 border-primary">{children}</h3>
+  <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 pb-2 border-b-2 border-primary">{children}</h3>
 );
 
 const TimingCard = ({ label, value, details }: { label: string; value: string; details: string[] }) => (
   <Card className="p-5 bg-card border-2 border-border text-center hover:border-secondary/60 hover:-translate-y-1 transition-all duration-300">
-    <p className="text-xs sm:text-sm uppercase tracking-wider font-bold text-tertiary mb-2">{label}</p>
+    <p className="text-xs sm:text-sm uppercase tracking-wider font-bold text-foreground mb-2">{label}</p>
     <p className="text-4xl sm:text-5xl font-black text-secondary mb-1">{value}</p>
     {details.map((d, i) => (
       <p key={i} className="text-xs sm:text-sm text-muted-foreground">{d}</p>
@@ -355,17 +355,17 @@ Final: Winner SF1 vs Winner SF2`}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="p-6 bg-card border-secondary/40 text-center hover:shadow-lg transition-all duration-300">
                 <Award className="w-10 h-10 mx-auto mb-3 text-secondary" />
-                <h3 className="text-xl font-bold text-tertiary mb-1">The Grand Integrator</h3>
+                <h3 className="text-xl font-bold text-foreground mb-1">The Grand Integrator</h3>
                 <p className="text-secondary font-semibold">Championship Winner</p>
               </Card>
               <Card className="p-6 bg-card border-secondary/40 text-center hover:shadow-lg transition-all duration-300">
                 <Award className="w-10 h-10 mx-auto mb-3 text-secondary" />
-                <h3 className="text-xl font-bold text-tertiary mb-1">Senior Integrator</h3>
+                <h3 className="text-xl font-bold text-foreground mb-1">Senior Integrator</h3>
                 <p className="text-secondary font-semibold">Championship Runner-Up</p>
               </Card>
               <Card className="md:col-span-2 p-6 bg-card border-secondary/40 text-center hover:shadow-lg transition-all duration-300">
                 <Award className="w-10 h-10 mx-auto mb-3 text-secondary" />
-                <h3 className="text-xl font-bold text-tertiary mb-1">Semi Integrators</h3>
+                <h3 className="text-xl font-bold text-foreground mb-1">Semi Integrators</h3>
                 <p className="text-secondary font-semibold">Semifinalists (2 competitors)</p>
               </Card>
             </div>

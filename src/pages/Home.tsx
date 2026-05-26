@@ -202,7 +202,7 @@ const Home = () => {
             <Card className="p-8 bg-card border-border mb-6">
               <div className="flex items-start gap-4">
                 <Sparkles className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
-                <p className="text-lg text-tertiary leading-relaxed">
+                <p className="text-lg text-foreground leading-relaxed">
                   The <strong>Takãmul Cup</strong> celebrates <strong>mathematical excellence in the AI era</strong> by honoring the irreplaceable power of human cognition. In an age where artificial intelligence can solve complex problems instantly, we create a space that celebrates <strong>the brain</strong>—its creativity, procedural fluency, pattern recognition, and deep mathematical reasoning.
           </p>
               </div>
@@ -211,7 +211,7 @@ const Home = () => {
             <Card className="p-8 bg-card border-border mb-6">
               <div className="flex items-start gap-4">
                 <Brain className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
-                <p className="text-lg text-tertiary leading-relaxed">
+                <p className="text-lg text-foreground leading-relaxed">
                   The Takãmul Cup fosters an environment where <strong>cognitive skills</strong> and <strong>procedural fluency</strong> are not just valued but celebrated. It's a reminder that while technology advances, the human capacity for mathematical thought remains extraordinary and worth cultivating.
                 </p>
               </div>
@@ -220,7 +220,7 @@ const Home = () => {
             <Card className="p-8 bg-card border-border">
               <div className="flex items-start gap-4">
                 <Sparkles className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
-                <p className="text-lg text-tertiary leading-relaxed">
+                <p className="text-lg text-foreground leading-relaxed">
                   This competition is about <strong>living mathematics</strong>—experiencing the thrill of solving integrals with nothing but mental agility, pencil, and paper. We isolate AI outside the room; inside, it's just <strong>your brain, your skills, and your passion for mathematics</strong>.
                 </p>
               </div>
