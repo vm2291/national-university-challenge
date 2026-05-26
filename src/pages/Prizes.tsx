@@ -44,7 +44,7 @@ const Prizes = () => {
             <div className="flex justify-center mb-6">
               <Trophy className="w-16 h-16 text-secondary" />
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#a8632e] via-[#7a3f1a] to-[#4a230d] bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#e8c896] via-[#c08550] to-[#5a2a14] bg-clip-text text-transparent">
               Prizes
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
