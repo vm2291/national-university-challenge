@@ -119,9 +119,9 @@ const CompetitionStructure = () => {
                   "Top 16 students labeled as seeds 1 to 16 (seed 1 = highest overall performance)",
                   "If two or more students tie exactly at critical boundary (e.g., for seed 16), a short tie-breaker may be used at organizers' discretion",
                 ]} />
-                <Card className="mt-4 p-6 bg-tertiary text-primary border-secondary">
-                  <p className="font-bold mb-3">Bracket Structure:</p>
-                  <pre className="text-xs sm:text-sm leading-relaxed overflow-x-auto font-mono whitespace-pre">
+                <Card className="mt-4 p-6 bg-card border-2 border-secondary/50">
+                  <p className="font-bold mb-3 text-secondary uppercase tracking-wide text-sm">Bracket Structure</p>
+                  <pre className="text-xs sm:text-sm leading-relaxed overflow-x-auto font-mono whitespace-pre text-tertiary">
 {`Round of 16:
 M₁: Seed 1 vs Seed 16        M₂: Seed 8 vs Seed 9
 M₃: Seed 5 vs Seed 12        M₄: Seed 4 vs Seed 13
@@ -220,7 +220,7 @@ Final: Winner SF1 vs Winner SF2`}
                 <li className="flex gap-3"><span className="font-bold">⚡</span><span>If tie remains after one tie-breaker: <strong>new tie-breaker integral given</strong> (again with 3 minutes)</span></li>
                 <li className="flex gap-3"><span className="font-bold">⚡</span><span>Process repeats until one competitor submits the first correct answer</span></li>
               </ul>
-              <div className="bg-tertiary/30 rounded-md p-5">
+              <div className="bg-background/50 backdrop-blur rounded-md p-5 border border-secondary-foreground/20">
                 <p className="font-bold mb-3">Sudden Death Rules:</p>
                 <ul className="space-y-2">
                   {[

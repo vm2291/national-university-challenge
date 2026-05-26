@@ -190,7 +190,7 @@ Full Audience Viewing
                       <p key={j} className="text-foreground/90 text-sm sm:text-base">{line}</p>
                     ))}
                   </div>
-                  <pre className="bg-tertiary text-primary p-4 sm:p-6 rounded-lg text-xs sm:text-sm leading-relaxed overflow-x-auto font-mono whitespace-pre">
+                  <pre className="bg-primary/10 border-2 border-secondary/30 text-tertiary p-4 sm:p-6 rounded-lg text-xs sm:text-sm leading-relaxed overflow-x-auto font-mono whitespace-pre">
                     {s.diagram}
                   </pre>
                 </Card>
