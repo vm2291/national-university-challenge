@@ -74,25 +74,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Mission Statement */}
-      <section className="py-16 bg-card/40 text-foreground">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <Lightbulb className="w-12 h-12 mx-auto text-[#a86b3e]" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
-              The Battle of Mathematical Excellence
-            </h2>
-            <p className="text-xl text-foreground/85 leading-relaxed">
-              Takãmul Cup represents more than just a competition—it's a celebration of mathematical 
-              brilliance, strategic thinking, and academic excellence. We bring together the nation's 
-              brightest minds to compete in speed, accuracy, and problem-solving prowess, creating a 
-              platform where mathematical talent shines on a national stage.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Vision Points */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
