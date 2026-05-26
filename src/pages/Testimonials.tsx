@@ -95,7 +95,9 @@ const Testimonials = () => {
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-primary/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-background to-primary/20" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--primary))_0%,transparent_50%)] opacity-20" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--secondary))_0%,transparent_50%)] opacity-10" />
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
@@ -124,7 +126,7 @@ const Testimonials = () => {
                   className={`p-6 md:p-8 border-border hover:shadow-lg transition-all duration-300 ${
                     isEven
                       ? "bg-card ml-0 md:mr-12"
-                      : "bg-[#e8c590] mr-0 md:ml-12"
+                      : "bg-muted/40 mr-0 md:ml-12"
                   }`}
                 >
                   <div className="flex gap-4">

@@ -115,7 +115,7 @@ const Prizes = () => {
             </div>
 
             {/* Additional Prize Information */}
-            <Card className="p-8 bg-[#e8c590] border-secondary/30">
+            <Card className="p-8 bg-muted/20 border-secondary/30">
               <div className="flex items-start gap-4">
                 <Award className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
                 <div className="space-y-4">
