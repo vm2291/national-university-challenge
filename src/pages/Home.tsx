@@ -104,12 +104,9 @@ const Home = () => {
       {/* Universities Section */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center mb-12">
-            <Trophy className="w-10 h-10 text-[#a86b3e] mr-3" />
-            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
-              Participating Universities
-            </h2>
-          </div>
+          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
+            Participating Universities
+          </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {universities.slice(0, 6).map((university, index) => <Card key={index} className="p-6 text-center bg-card hover:bg-[#e9c590] border-border hover:border-[#e9c590] transition-all duration-300 hover:shadow-lg hover:shadow-[#e9c590]/30">
@@ -223,40 +220,53 @@ const Home = () => {
       {/* Competition Philosophy Section */}
       <section className="py-16 bg-background text-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex items-center justify-center mb-8">
-              <Brain className="w-10 h-10 text-[#a86b3e] mr-3" />
-              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
-                Competition Philosophy
-          </h2>
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
+              Competition Philosophy
+            </h2>
+
+            <div className="relative">
+              {/* Vertical timeline line */}
+              <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#a86b3e]/40 to-transparent md:-translate-x-1/2" />
+
+              {[
+                {
+                  num: "01",
+                  text: "The Takãmul Cup celebrates mathematical excellence in the AI era by honoring the irreplaceable power of human cognition. In an age where artificial intelligence can solve complex problems instantly, we create a space that celebrates the brain, its creativity, procedural fluency, pattern recognition, and deep mathematical reasoning.",
+                },
+                {
+                  num: "02",
+                  text: "The Takãmul Cup fosters an environment where cognitive skills and procedural fluency are not just valued but celebrated. It's a reminder that while technology advances, the human capacity for mathematical thought remains extraordinary and worth cultivating.",
+                },
+                {
+                  num: "03",
+                  text: "This competition is about living mathematics, experiencing the thrill of solving integrals with nothing but mental agility, pencil, and paper. We isolate AI outside the room; inside, it's just your brain, your skills, and your passion for mathematics.",
+                },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className={`relative mb-12 last:mb-0 md:grid md:grid-cols-2 md:gap-12 items-center animate-in fade-in slide-in-from-bottom-6 duration-700 ${
+                    i % 2 === 1 ? "md:[&>div:first-child]:order-2" : ""
+                  }`}
+                  style={{ animationDelay: `${i * 150}ms`, animationFillMode: "both" }}
+                >
+                  <div className={`pl-12 md:pl-0 ${i % 2 === 1 ? "md:text-left md:pl-12" : "md:text-right md:pr-12"}`}>
+                    <span className="inline-block text-6xl md:text-7xl font-light bg-gradient-to-br from-[#a86b3e] to-[#3d2515] bg-clip-text text-transparent">
+                      {item.num}
+                    </span>
+                  </div>
+
+                  {/* Dot on timeline */}
+                  <div className="absolute left-4 md:left-1/2 top-6 md:top-1/2 w-3 h-3 rounded-full bg-[#a86b3e] ring-4 ring-background md:-translate-x-1/2 md:-translate-y-1/2" />
+
+                  <div className={`pl-12 md:pl-0 mt-2 md:mt-0 ${i % 2 === 1 ? "md:pr-12 md:text-right" : "md:pl-12"}`}>
+                    <p className="text-lg text-foreground/85 leading-relaxed font-light">
+                      {item.text}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
-            
-            <Card className="p-8 bg-card border-border mb-6">
-              <div className="flex items-start gap-4">
-                <Sparkles className="w-8 h-8 text-[#a86b3e] flex-shrink-0 mt-1" />
-                <p className="text-lg text-foreground leading-relaxed">
-                  The <strong>Takãmul Cup</strong> celebrates <strong>mathematical excellence in the AI era</strong> by honoring the irreplaceable power of human cognition. In an age where artificial intelligence can solve complex problems instantly, we create a space that celebrates <strong>the brain</strong>—its creativity, procedural fluency, pattern recognition, and deep mathematical reasoning.
-          </p>
-              </div>
-            </Card>
-            
-            <Card className="p-8 bg-card border-border mb-6">
-              <div className="flex items-start gap-4">
-                <Brain className="w-8 h-8 text-[#a86b3e] flex-shrink-0 mt-1" />
-                <p className="text-lg text-foreground leading-relaxed">
-                  The Takãmul Cup fosters an environment where <strong>cognitive skills</strong> and <strong>procedural fluency</strong> are not just valued but celebrated. It's a reminder that while technology advances, the human capacity for mathematical thought remains extraordinary and worth cultivating.
-                </p>
-              </div>
-            </Card>
-            
-            <Card className="p-8 bg-card border-border">
-              <div className="flex items-start gap-4">
-                <Sparkles className="w-8 h-8 text-[#a86b3e] flex-shrink-0 mt-1" />
-                <p className="text-lg text-foreground leading-relaxed">
-                  This competition is about <strong>living mathematics</strong>—experiencing the thrill of solving integrals with nothing but mental agility, pencil, and paper. We isolate AI outside the room; inside, it's just <strong>your brain, your skills, and your passion for mathematics</strong>.
-                </p>
-              </div>
-            </Card>
           </div>
         </div>
       </section>
