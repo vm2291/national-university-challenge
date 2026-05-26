@@ -254,6 +254,27 @@ const About = () => {
         </div>
       </section>
 
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
+            What Drives Us
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {visionPoints.map((point, index) => (
+              <Card
+                key={index}
+                className="p-8 bg-card border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-xl hover:shadow-secondary/10"
+              >
+                <point.icon className="w-12 h-12 text-[#a86b3e] mb-4" />
+                <h3 className="text-2xl font-bold text-foreground mb-3">{point.title}</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">{point.description}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
