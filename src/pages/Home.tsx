@@ -153,7 +153,7 @@ const Home = () => {
       </section>
 
       {/* Featured Testimonials Section */}
-      <section className="py-16 bg-[hsl(36_60%_88%)] text-foreground">
+      <section className="py-16 bg-gradient-to-b from-background via-[hsl(36_60%_88%)] to-background text-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
             What Participants Had to Say About Their Experience
@@ -221,7 +221,7 @@ const Home = () => {
       </section>
 
       {/* Competition Philosophy Section */}
-      <section className="py-16 bg-[hsl(36_60%_88%)] text-foreground">
+      <section className="py-16 bg-gradient-to-b from-background via-[hsl(36_60%_88%)] to-background text-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-8">
