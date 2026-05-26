@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import CountUp from "@/components/CountUp";
 import hero1 from "@/assets/hero1.jpg";
 import hero2 from "@/assets/hero2.jpg";
 import hero3 from "@/assets/hero3.jpg";
@@ -10,15 +11,18 @@ const Home = () => {
   const stats = [{
     icon: Users,
     label: "Competitors",
-    value: "35+"
+    value: 35,
+    suffix: "+"
   }, {
     icon: Trophy,
     label: "Universities",
-    value: "7"
+    value: 7,
+    suffix: ""
   }, {
     icon: Target,
     label: "Stages",
-    value: "5"
+    value: 5,
+    suffix: ""
   }];
   const universities = ["Abu Dhabi University", "American University in Dubai", "Middlesex University Dubai", "Heriot-Watt University Dubai", "UAE University", "NYU Abu Dhabi", "Mohamed bin Zayed University of Artificial Intelligence"];
   return <div className="min-h-screen pt-16">
@@ -81,22 +85,44 @@ const Home = () => {
       </section>
 
       {/* Battle of Mathematical Excellence Section */}
-      <section className="py-16 bg-background text-foreground">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-foreground">
-            Battle of Mathematical Excellence
-          </h2>
-          <p className="text-center text-lg text-foreground/85 mb-12 max-w-3xl mx-auto">
-            Join the UAE's premier integration competition where the nation's brightest 
-            mathematical minds compete in speed, accuracy, and strategic problem-solving!
-          </p>
+      <section className="py-20 bg-background text-foreground relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_60%_at_50%_40%,hsl(var(--primary)/0.18)_0%,transparent_70%)] pointer-events-none" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="text-center mb-14 animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-secondary/40 bg-card/60 backdrop-blur-sm mb-5">
+              <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
+              <p className="text-[11px] font-medium tracking-[0.22em] text-[#3d2515] uppercase">By the numbers</p>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
+              Battle of Mathematical Excellence
+            </h2>
+            <p className="text-lg text-foreground/75 max-w-2xl mx-auto font-light">
+              Join the UAE's premier integration competition where the nation's brightest
+              mathematical minds compete in speed, accuracy, and strategic problem-solving.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {stats.map((stat, index) => <div key={index} className="text-center p-8 bg-[#e9c590]/40 backdrop-blur rounded-2xl border border-[#e9c590] hover:bg-[#e9c590]/60 hover:-translate-y-1 transition-all duration-300 shadow-sm hover:shadow-md">
-                <stat.icon className="w-12 h-12 mx-auto mb-4 text-[#a86b3e]" strokeWidth={2.25} />
-                <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">{stat.value}</div>
-                <div className="text-xl font-semibold uppercase tracking-wide text-foreground">{stat.label}</div>
-              </div>)}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {stats.map((stat, index) => (
+              <div
+                key={index}
+                className="group relative text-center p-10 rounded-3xl bg-gradient-to-br from-[#e9c590]/30 via-[#e9c590]/20 to-transparent border border-[#e9c590]/60 backdrop-blur hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#a86b3e]/20 transition-all duration-500 animate-in fade-in slide-in-from-bottom-8"
+                style={{ animationDelay: `${index * 150}ms`, animationFillMode: "both" }}
+              >
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#a86b3e]/0 to-[#a86b3e]/0 group-hover:from-[#a86b3e]/5 group-hover:to-[#3d2515]/5 transition-all duration-500 pointer-events-none" />
+                <div className="relative">
+                  <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-2xl bg-gradient-to-br from-[#e9c590]/60 to-[#a86b3e]/20 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
+                    <stat.icon className="w-8 h-8 text-[#7a4520]" strokeWidth={2} />
+                  </div>
+                  <div className="text-6xl sm:text-7xl font-bold mb-3 tracking-tight bg-gradient-to-br from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
+                    <CountUp end={stat.value} suffix={stat.suffix} />
+                  </div>
+                  <div className="text-xs font-semibold uppercase tracking-[0.25em] text-[#7a4520]">
+                    {stat.label}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
