@@ -74,25 +74,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Mission Statement */}
-      <section className="py-16 bg-card/40 text-foreground">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <Lightbulb className="w-12 h-12 mx-auto text-[#a86b3e]" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
-              The Battle of Mathematical Excellence
-            </h2>
-            <p className="text-xl text-foreground/85 leading-relaxed">
-              Takãmul Cup represents more than just a competition—it's a celebration of mathematical 
-              brilliance, strategic thinking, and academic excellence. We bring together the nation's 
-              brightest minds to compete in speed, accuracy, and problem-solving prowess, creating a 
-              platform where mathematical talent shines on a national stage.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Vision Points */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
@@ -187,42 +168,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Milestones */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
-            Key Milestones
-          </h2>
-
-          <div className="max-w-4xl mx-auto space-y-8">
-            {milestones.map((milestone, index) => (
-              <Card
-                key={index}
-                className="p-8 bg-card border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-xl hover:shadow-secondary/10"
-              >
-                <div className="flex flex-col sm:flex-row items-start gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center">
-                      <milestone.icon className="w-8 h-8 text-secondary-foreground" />
-                    </div>
-                  </div>
-                  <div className="flex-1 space-y-2">
-                    <div className="flex items-center gap-3">
-                      <span className="text-2xl font-bold text-[#a86b3e]">{milestone.year}</span>
-                      <h3 className="text-2xl font-bold text-foreground">{milestone.title}</h3>
-                    </div>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
-                      {milestone.description}
-                    </p>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 2024 Event Highlights */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-12">
