@@ -160,7 +160,7 @@ const Home = () => {
           </h2>
           
           <div className="max-w-4xl mx-auto space-y-6 mb-10">
-            <Card className="p-6 md:p-8 bg-card border-border hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
+            <Card className="p-6 md:p-8 bg-white border-border hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-[#a86b3e] flex-shrink-0 mt-1" />
                 <div>
@@ -184,7 +184,7 @@ const Home = () => {
               </div>
             </Card>
             
-            <Card className="p-6 md:p-8 bg-card border-border hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
+            <Card className="p-6 md:p-8 bg-white border-border hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-[#a86b3e] flex-shrink-0 mt-1" />
                 <div>
