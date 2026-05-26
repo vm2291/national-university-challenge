@@ -126,7 +126,7 @@ const Testimonials = () => {
                   className={`p-6 md:p-8 border-border hover:shadow-lg transition-all duration-300 ${
                     isEven
                       ? "bg-card ml-0 md:mr-12"
-                      : "bg-muted/40 mr-0 md:ml-12"
+                      : "bg-desert-sand/60 mr-0 md:ml-12"
                   }`}
                 >
                   <div className="flex gap-4">
