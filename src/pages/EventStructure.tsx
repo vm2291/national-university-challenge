@@ -309,11 +309,6 @@ Full Audience Viewing
               </ul>
             </Card>
 
-            <div className="text-center mt-12 space-y-2">
-              <p className="text-xl font-bold text-secondary">Takãmul Cup - Falcon's Talon Edition</p>
-              <p className="text-foreground/80">Inaugural National UAE Integration Bee Championship</p>
-              <p className="text-foreground/80">December 7, 2025 | NYU Abu Dhabi</p>
-            </div>
           </div>
         </div>
       </section>
