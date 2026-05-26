@@ -93,8 +93,8 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {stats.map((stat, index) => <div key={index} className="text-center p-8 bg-tertiary/10 backdrop-blur rounded-2xl border border-tertiary/20 hover:bg-tertiary/20 transition-all duration-300">
-                <stat.icon className="w-12 h-12 mx-auto mb-4 text-tertiary" />
-                <div className="text-5xl font-bold mb-2 text-tertiary">{stat.value}</div>
+                <stat.icon className="w-12 h-12 mx-auto mb-4 text-[#3d2515]" strokeWidth={2.25} />
+                <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">{stat.value}</div>
                 <div className="text-xl font-semibold uppercase tracking-wide text-foreground">{stat.label}</div>
               </div>)}
           </div>
