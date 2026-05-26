@@ -100,32 +100,39 @@ const Testimonials = () => {
         intro="What participants had to say about their Takāmul Cup experience."
       />
 
-      {/* Testimonials Grid */}
-      <section className="py-16 bg-primary/20">
+      {/* Testimonials Grid — editorial pull-quotes */}
+      <section className="py-20 bg-primary/15">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto space-y-6">
+          <div className="max-w-5xl mx-auto columns-1 md:columns-2 gap-8 [column-fill:_balance]">
             {testimonials.map((testimonial, index) => (
-              <Card 
-                key={index} 
-                className={`p-6 md:p-8 border-primary/30 hover:shadow-lg transition-all duration-300 ${
-                  index % 2 === 0 
-                    ? 'bg-card ml-0 md:mr-12' 
-                    : 'bg-primary/30 mr-0 md:ml-12'
+              <Card
+                key={index}
+                data-reveal
+                style={{ ['--reveal-delay' as string]: `${(index % 6) * 80}ms` }}
+                className={`card-lift mb-8 break-inside-avoid p-7 md:p-8 border-primary/30 ${
+                  index % 3 === 0
+                    ? 'bg-secondary text-secondary-foreground border-secondary'
+                    : index % 3 === 1
+                    ? 'bg-card'
+                    : 'bg-primary/40'
                 }`}
               >
-                <div className="flex gap-4">
-                  <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
-                  <div>
-                    <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
-                      {testimonial.quote}
-                    </blockquote>
-                    {testimonial.name && (
-                      <p className="text-sm text-muted-foreground font-medium">
-                        - {testimonial.name}{testimonial.university && `, ${testimonial.university}`}
+                <Quote className={`w-8 h-8 mb-4 ${index % 3 === 0 ? 'text-primary' : 'text-secondary'}`} />
+                <blockquote className={`font-display text-xl md:text-2xl leading-snug mb-5 ${index % 3 === 0 ? 'text-secondary-foreground' : 'text-tertiary'}`}>
+                  "{testimonial.quote}"
+                </blockquote>
+                {testimonial.name && (
+                  <div className={`pt-4 border-t ${index % 3 === 0 ? 'border-primary/30' : 'border-secondary/20'}`}>
+                    <p className={`kicker !text-xs ${index % 3 === 0 ? '!text-primary' : ''}`}>
+                      {testimonial.name}
+                    </p>
+                    {testimonial.university && (
+                      <p className={`mt-2 text-sm ${index % 3 === 0 ? 'text-primary/80' : 'text-foreground/65'}`}>
+                        {testimonial.university}
                       </p>
                     )}
                   </div>
-                </div>
+                )}
               </Card>
             ))}
           </div>
