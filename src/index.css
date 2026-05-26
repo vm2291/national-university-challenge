@@ -10,13 +10,13 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
 @layer base {
   :root {
     /* Desert Clay palette — soft cream backdrop, sandstone + clay accents. */
-    --background: 38 50% 95%;        /* #faf5ec warm cream */
+    --background: 36 55% 88%;        /* #e7c796 warm desert sand */
     --foreground: 22 35% 18%;        /* deep clay brown text */
 
-    --card: 38 55% 97%;              /* slightly lighter than bg */
+    --card: 38 60% 94%;              /* lighter sand for cards */
     --card-foreground: 22 35% 18%;
 
-    --popover: 38 55% 97%;
+    --popover: 38 60% 94%;
     --popover-foreground: 22 35% 18%;
 
     /* Primary: sandstone gold #d4a574 */
@@ -31,17 +31,17 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
     --tertiary: 22 36% 26%;
     --tertiary-foreground: 38 50% 92%;
 
-    --muted: 36 35% 88%;
+    --muted: 34 45% 82%;             /* warm sand muted */
     --muted-foreground: 24 22% 38%;
 
-    --accent: 30 45% 82%;
+    --accent: 34 50% 78%;
     --accent-foreground: 22 40% 18%;
 
     --destructive: 0 65% 48%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 25% 80%;
-    --input: 30 25% 80%;
+    --border: 32 30% 72%;
+    --input: 32 30% 72%;
     --ring: 30 50% 60%;
 
     --radius: 0.75rem;
@@ -50,7 +50,7 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
     --gold-dark: 26 40% 50%;
 
     --gradient-primary: linear-gradient(135deg, hsl(32 55% 70%) 0%, hsl(22 36% 32%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(38 50% 95%) 0%, hsl(30 50% 85%) 50%, hsl(26 40% 70%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(36 55% 90%) 0%, hsl(34 55% 80%) 50%, hsl(28 45% 68%) 100%);
 
     --shadow-primary: 0 10px 40px -10px hsl(26 40% 35% / 0.20);
     --shadow-elegant: 0 20px 60px -15px hsl(22 35% 20% / 0.15);
