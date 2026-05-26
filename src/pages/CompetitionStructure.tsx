@@ -432,11 +432,6 @@ Final: Winner SF1 vs Winner SF2`}
                 </li>
               </ul>
             </Card>
-
-            <div className="text-center mt-10 space-y-1">
-              <p className="text-lg font-bold text-secondary">Takãmul Cup • Falcon's Talon Edition • December 7, 2025</p>
-              <p className="text-foreground/80">NYU Abu Dhabi • C2 West Forum • 9:00 AM – 5:00 PM (GST)</p>
-            </div>
           </div>
         </div>
       </section>
