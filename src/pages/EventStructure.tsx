@@ -185,12 +185,12 @@ Full Audience Viewing
               {flowSections.map((s, i) => (
                 <Card key={i} className="p-6 sm:p-8 bg-card border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg">
                   <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">{s.title}</h3>
-                  <div className="bg-muted/30 border-l-4 border-secondary rounded-md p-4 mb-5 space-y-1">
+                  <div className="border-l-2 border-secondary/60 pl-4 mb-5 space-y-1">
                     {s.info.map((line, j) => (
                       <p key={j} className="text-foreground/90 text-sm sm:text-base">{line}</p>
                     ))}
                   </div>
-                  <pre className="bg-muted/20 border-2 border-secondary/30 text-foreground p-4 sm:p-6 rounded-lg text-xs sm:text-sm leading-relaxed overflow-x-auto font-mono whitespace-pre">
+                  <pre className="bg-muted/30 text-foreground/85 p-4 sm:p-6 rounded-lg text-xs sm:text-sm leading-relaxed overflow-x-auto font-mono whitespace-pre">
                     {s.diagram}
                   </pre>
                 </Card>

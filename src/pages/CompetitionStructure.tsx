@@ -22,13 +22,13 @@ const InfoList = ({ items }: { items: React.ReactNode[]; variant?: "default" | "
 };
 
 const SubTitle = ({ children }: { children: React.ReactNode }) => (
-  <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 pb-2 border-b-2 border-primary">{children}</h3>
+  <h3 className="text-xl sm:text-2xl font-semibold text-foreground mb-4 pb-2 border-b border-border">{children}</h3>
 );
 
 const TimingCard = ({ label, value, details }: { label: string; value: string; details: string[] }) => (
-  <Card className="p-5 bg-card border-2 border-border text-center hover:border-secondary/60 hover:-translate-y-1 transition-all duration-300">
-    <p className="text-xs sm:text-sm uppercase tracking-wider font-bold text-foreground mb-2">{label}</p>
-    <p className="text-4xl sm:text-5xl font-black text-secondary mb-1">{value}</p>
+  <Card className="p-5 bg-card border border-border text-center hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300">
+    <p className="text-xs uppercase tracking-[0.18em] font-medium text-muted-foreground mb-2">{label}</p>
+    <p className="text-4xl sm:text-5xl font-normal text-secondary mb-1">{value}</p>
     {details.map((d, i) => (
       <p key={i} className="text-xs sm:text-sm text-muted-foreground">{d}</p>
     ))}
@@ -36,8 +36,8 @@ const TimingCard = ({ label, value, details }: { label: string; value: string; d
 );
 
 const StageSection = ({ number, title, children }: { number: number; title: string; children: React.ReactNode }) => (
-  <div className="relative pl-6 sm:pl-10 border-l-4 border-secondary mb-12">
-    <div className="absolute -left-[14px] top-0 w-6 h-6 rounded-full bg-secondary border-4 border-background" />
+  <div className="relative pl-6 sm:pl-10 border-l-2 border-secondary/40 mb-12">
+    <div className="absolute -left-[11px] top-0 w-5 h-5 rounded-full bg-secondary border-4 border-background" />
     <div className="flex items-center gap-4 mb-6">
       <Pill>{number}</Pill>
       <h2 className="text-2xl sm:text-3xl font-bold text-foreground">{title}</h2>
@@ -70,7 +70,7 @@ const CompetitionStructure = () => {
       {/* Stages */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-5xl mx-auto">
 
             {/* STAGE 1 */}
             <StageSection number={1} title="Stage 1 — Qualifiers">
