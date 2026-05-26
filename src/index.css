@@ -10,28 +10,28 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
 @layer base {
   :root {
     --background: 40 30% 97%;
-    --foreground: 16 100% 11%;
+    --foreground: 24 25% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 16 100% 11%;
+    --card-foreground: 24 25% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 16 100% 11%;
+    --popover-foreground: 24 25% 18%;
 
     /* Primary: #e7c595 - warm beige (most prominent) */
     --primary: 36 68% 74%;
-    --primary-foreground: 16 100% 11%;
+    --primary-foreground: 24 25% 18%;
 
     /* Secondary: #93460b - burnt orange */
     --secondary: 25 86% 31%;
     --secondary-foreground: 40 30% 97%;
 
     /* Tertiary: #381200 - deep brown */
-    --tertiary: 16 100% 11%;
+    --tertiary: 24 30% 22%;
     --tertiary-foreground: 36 68% 74%;
 
     --muted: 36 30% 92%;
-    --muted-foreground: 16 50% 30%;
+    --muted-foreground: 24 18% 38%;
 
     --accent: 25 86% 31%;
     --accent-foreground: 40 30% 97%;
@@ -50,7 +50,7 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
     --gold-dark: 25 86% 31%;
     --beige: 36 68% 74%;
     --burnt-orange: 25 86% 31%;
-    --deep-brown: 16 100% 11%;
+    --deep-brown: 24 30% 22%;
     --brown-light: 25 70% 45%;
     
     /* Gradients */
@@ -134,16 +134,16 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     scroll-behavior: smooth;
-    font-feature-settings: 'ss01', 'cv01';
+    font-feature-settings: 'ss01', 'cv11', 'cv02';
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+    font-family: 'Bricolage Grotesque', 'Inter', system-ui, sans-serif;
     font-weight: 600;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
     font-optical-sizing: auto;
   }
   
