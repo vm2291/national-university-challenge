@@ -1,6 +1,7 @@
-import { Calendar, MapPin, Trophy, Users, Clock, Award, ListChecks, Users2 } from "lucide-react";
+import { MapPin, Trophy, Clock, Award, ListChecks, Users2 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Footer from "@/components/Footer";
+import PageHero from "@/components/PageHero";
 
 const EventStructure = () => {
   const stages = [
@@ -130,23 +131,20 @@ Full Audience Viewing
 
   return (
     <div className="min-h-screen pt-16">
-      {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-background to-primary/10" />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
-            <div className="flex justify-center mb-6">
-              <Calendar className="w-16 h-16 text-secondary" />
-            </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-secondary via-secondary to-tertiary bg-clip-text text-transparent">
-              Event Details
-            </h1>
-            <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
-              NYU Abu Dhabi • December 7, 2025 • 9:00 AM – 5:00 PM (GST)
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        kicker="Programme"
+        title={<>Event <span className="font-display-italic text-secondary">details</span>.</>}
+        intro="The full schedule, structure, personnel and venue for Takãmul Cup 2025."
+        meta={
+          <>
+            <span>NYU Abu Dhabi</span>
+            <span className="text-secondary/40">/</span>
+            <span>December 7, 2025</span>
+            <span className="text-secondary/40">/</span>
+            <span>9:00 AM – 5:00 PM (GST)</span>
+          </>
+        }
+      />
 
       {/* Competition Structure */}
       <section className="py-16 bg-background">

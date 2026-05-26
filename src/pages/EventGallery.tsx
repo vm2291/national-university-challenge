@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight, Calendar, MapPin, Users, GraduationCap } from "lucide-react";
+import PageHero from "@/components/PageHero";
 
 const EventGallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -50,43 +51,23 @@ const EventGallery = () => {
   const goToNext = () => setSelectedImage(prev => prev !== null ? (prev + 1) % galleryImages.length : null);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-background">
-      {/* Hero Section */}
-      <section className="relative pt-24 pb-8 px-4">
-        <div className="max-w-7xl mx-auto text-center"> <br></br>
-          {/* Stats and date - 2x2 grid on mobile, flex-row on md+ */}
-          <div className="
-            grid grid-cols-2 gap-3 mb-6
-            md:flex md:flex-row md:items-center md:justify-center md:gap-8 md:mb-6
-          ">
-            <div className="flex items-center gap-1 justify-center text-primary-foreground/90 text-base md:text-2xl font-semibold">
-              <Calendar className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
-              <span>December 7</span>
-            </div>
-            <div className="flex items-center gap-1 justify-center text-primary-foreground/90 text-base md:text-2xl font-semibold">
-              <MapPin className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
-              <span>NYU Abu Dhabi</span>
-            </div>
-            <div className="flex items-center gap-1 justify-center text-primary-foreground/90 text-base md:text-2xl font-semibold">
-              <Users className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
-              <span>35+ Competitors</span>
-            </div>
-            <div className="flex items-center gap-1 justify-center text-primary-foreground/90 text-base md:text-2xl font-semibold">
-              <GraduationCap className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
-              <span>7 Universities</span>
-            </div>
-          </div>
-          <div className="border-t border-primary/10 max-w-2xl mx-auto my-5" />
-          {/* Event summary */}
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Takãmul Cup 2025 brought together the brightest mathematical minds from across the UAE, 
-              fostering collaboration, competition, and celebration of integration mastery. We extend our 
-              deepest gratitude to all sponsors, organizers, and participants who made this event a reality.
-            </p>
-          </div>
-        </div>
-      </section>
+    <div className="min-h-screen pt-16">
+      <PageHero
+        kicker="2025 Edition"
+        title={<>The <span className="font-display-italic text-secondary">2025</span> gallery.</>}
+        intro="Takãmul Cup 2025 brought together the brightest mathematical minds from across the UAE, fostering collaboration, competition, and celebration of integration mastery. We extend our deepest gratitude to all sponsors, organizers, and participants who made this event a reality."
+        meta={
+          <>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> December 7</span>
+            <span className="text-secondary/40">/</span>
+            <span className="flex items-center gap-2"><MapPin className="w-4 h-4" /> NYU Abu Dhabi</span>
+            <span className="text-secondary/40">/</span>
+            <span className="flex items-center gap-2"><Users className="w-4 h-4" /> 35+ Competitors</span>
+            <span className="text-secondary/40">/</span>
+            <span className="flex items-center gap-2"><GraduationCap className="w-4 h-4" /> 7 Universities</span>
+          </>
+        }
+      />
 
       {/* Gallery - Two-column grid for all images */}
       <section className="px-4 pb-20 mt-8">

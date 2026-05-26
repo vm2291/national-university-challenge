@@ -20,7 +20,7 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
   
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-lg border-b border-primary/30 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-secondary/15">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -30,7 +30,7 @@ const Navigation = () => {
               alt="Takãmul Cup Logo" 
               className="h-12 w-auto object-contain transform transition-transform group-hover:scale-105"
             />
-            <span className="text-lg font-bold bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent hidden sm:block">
+            <span className="font-display text-xl text-tertiary hidden sm:block">
               Takãmul Cup
             </span>
           </Link>
@@ -41,13 +41,14 @@ const Navigation = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-4 py-2 rounded-md font-medium text-sm transition-all duration-200 ${
+                className={`relative px-3 py-2 font-medium text-sm tracking-wide transition-colors duration-200 ${
                   isActive(link.path)
-                    ? "bg-secondary text-secondary-foreground shadow-md"
-                    : "text-foreground hover:bg-primary/30 hover:text-secondary"
+                    ? "text-secondary"
+                    : "text-tertiary/70 hover:text-secondary"
                 }`}
               >
                 {link.label}
+                <span className={`absolute left-3 right-3 -bottom-0.5 h-px bg-secondary origin-left transition-transform duration-300 ${isActive(link.path) ? "scale-x-100" : "scale-x-0"}`} />
               </Link>
             ))}
           </div>
