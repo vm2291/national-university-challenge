@@ -18,10 +18,10 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
     --background: 38 67% 95%;        /* #fbf4e8 cream */
     --foreground: 22 70% 11%;        /* #381200 deep brown */
 
-    --card: 0 0% 100%;               /* white card = light shade variant */
+    --card: 38 60% 91%;              /* warm cream card, blends with bg */
     --card-foreground: 22 70% 11%;
 
-    --popover: 0 0% 100%;
+    --popover: 38 60% 91%;
     --popover-foreground: 22 70% 11%;
 
     /* Primary: desert sand #e9c590 */
@@ -35,8 +35,8 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
     --tertiary: 22 70% 11%;
     --tertiary-foreground: 38 67% 95%;
 
-    --muted: 38 55% 92%;             /* very light cream tint */
-    --muted-foreground: 22 40% 28%;  /* darker brown for readable secondary text */
+    --muted: 38 50% 89%;             /* slightly deeper cream */
+    --muted-foreground: 22 40% 25%;  /* readable secondary text */
 
     --accent: 36 67% 74%;
     --accent-foreground: 22 70% 11%;
@@ -44,8 +44,8 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
     --destructive: 0 65% 48%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 36 40% 82%;
-    --input: 36 40% 82%;
+    --border: 36 35% 78%;
+    --input: 36 35% 78%;
     --ring: 36 67% 60%;
 
     --radius: 0.75rem;
