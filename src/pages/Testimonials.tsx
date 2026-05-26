@@ -100,7 +100,7 @@ const Testimonials = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <div className="flex justify-center mb-6">
-              <Quote className="w-16 h-16 text-tertiary" />
+              <Quote className="w-16 h-16 text-[#a86b3e]" />
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
               Testimonials
@@ -128,7 +128,7 @@ const Testimonials = () => {
                   }`}
                 >
                   <div className="flex gap-4">
-                    <Quote className="w-6 h-6 text-tertiary flex-shrink-0 mt-1" />
+                    <Quote className="w-6 h-6 text-[#a86b3e] flex-shrink-0 mt-1" />
                     <div>
                       <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
                         {testimonial.quote}

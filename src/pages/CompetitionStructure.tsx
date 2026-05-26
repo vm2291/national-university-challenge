@@ -28,7 +28,7 @@ const SubTitle = ({ children }: { children: React.ReactNode }) => (
 const TimingCard = ({ label, value, details }: { label: string; value: string; details: string[] }) => (
   <Card className="p-5 bg-card border border-border text-center hover:border-secondary/50 hover:-translate-y-1 transition-all duration-300">
     <p className="text-xs uppercase tracking-[0.18em] font-medium text-muted-foreground mb-2">{label}</p>
-    <p className="text-4xl sm:text-5xl font-normal text-tertiary mb-1">{value}</p>
+    <p className="text-4xl sm:text-5xl font-normal text-[#a86b3e] mb-1">{value}</p>
     {details.map((d, i) => (
       <p key={i} className="text-xs sm:text-sm text-muted-foreground">{d}</p>
     ))}
@@ -55,7 +55,7 @@ const CompetitionStructure = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <div className="flex justify-center mb-6">
-              <ListChecks className="w-16 h-16 text-tertiary" />
+              <ListChecks className="w-16 h-16 text-[#a86b3e]" />
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
               Coordinators Info
@@ -113,7 +113,7 @@ const CompetitionStructure = () => {
                   "If two or more students tie exactly at critical boundary (e.g., for seed 16), a short tie-breaker may be used at organizers' discretion",
                 ]} />
                 <Card className="mt-4 p-6 bg-card border-2 border-secondary/50">
-                  <p className="font-bold mb-3 text-tertiary uppercase tracking-wide text-sm">Bracket Structure</p>
+                  <p className="font-bold mb-3 text-[#a86b3e] uppercase tracking-wide text-sm">Bracket Structure</p>
                   <pre className="text-xs sm:text-sm leading-relaxed overflow-x-auto font-mono whitespace-pre text-foreground">
 {`Round of 16:
 M₁: Seed 1 vs Seed 16        M₂: Seed 8 vs Seed 9
@@ -189,7 +189,7 @@ Final: Winner SF1 vs Winner SF2`}
             <Card className="p-6 sm:p-8 bg-card border-2 border-secondary/40 mb-12 shadow-md">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 rounded-lg bg-secondary/10">
-                  <Zap className="w-7 h-7 text-tertiary" />
+                  <Zap className="w-7 h-7 text-[#a86b3e]" />
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">Sudden Death Tie-Breaker Protocol</h3>
               </div>
@@ -347,26 +347,26 @@ Final: Winner SF1 vs Winner SF2`}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-10">
-              <Trophy className="w-10 h-10 text-tertiary mr-3" />
+              <Trophy className="w-10 h-10 text-[#a86b3e] mr-3" />
               <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
                 Competition Titles and Awards
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="p-6 bg-card border-secondary/40 text-center hover:shadow-lg transition-all duration-300">
-                <Award className="w-10 h-10 mx-auto mb-3 text-tertiary" />
+                <Award className="w-10 h-10 mx-auto mb-3 text-[#a86b3e]" />
                 <h3 className="text-xl font-bold text-foreground mb-1">The Grand Integrator</h3>
-                <p className="text-tertiary font-semibold">Championship Winner</p>
+                <p className="text-[#a86b3e] font-semibold">Championship Winner</p>
               </Card>
               <Card className="p-6 bg-card border-secondary/40 text-center hover:shadow-lg transition-all duration-300">
-                <Award className="w-10 h-10 mx-auto mb-3 text-tertiary" />
+                <Award className="w-10 h-10 mx-auto mb-3 text-[#a86b3e]" />
                 <h3 className="text-xl font-bold text-foreground mb-1">Senior Integrator</h3>
-                <p className="text-tertiary font-semibold">Championship Runner-Up</p>
+                <p className="text-[#a86b3e] font-semibold">Championship Runner-Up</p>
               </Card>
               <Card className="md:col-span-2 p-6 bg-card border-secondary/40 text-center hover:shadow-lg transition-all duration-300">
-                <Award className="w-10 h-10 mx-auto mb-3 text-tertiary" />
+                <Award className="w-10 h-10 mx-auto mb-3 text-[#a86b3e]" />
                 <h3 className="text-xl font-bold text-foreground mb-1">Semi Integrators</h3>
-                <p className="text-tertiary font-semibold">Semifinalists (2 competitors)</p>
+                <p className="text-[#a86b3e] font-semibold">Semifinalists (2 competitors)</p>
               </Card>
             </div>
           </div>

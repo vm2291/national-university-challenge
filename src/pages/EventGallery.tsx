@@ -58,7 +58,7 @@ const EventGallery = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <div className="flex justify-center mb-6">
-              <Camera className="w-16 h-16 text-tertiary" />
+              <Camera className="w-16 h-16 text-[#a86b3e]" />
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
               2025 Gallery
@@ -79,7 +79,7 @@ const EventGallery = () => {
                   key={i}
                   className="flex items-center justify-center gap-2 px-3 py-3 rounded-xl bg-card/70 backdrop-blur border border-border"
                 >
-                  <Icon className="w-4 h-4 md:w-5 md:h-5 text-tertiary flex-shrink-0" />
+                  <Icon className="w-4 h-4 md:w-5 md:h-5 text-[#a86b3e] flex-shrink-0" />
                   <span className="text-sm md:text-base font-medium text-foreground">{label}</span>
                 </div>
               ))}
