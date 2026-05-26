@@ -72,10 +72,10 @@ const Home = () => {
                 <img src={hero1} alt="Takãmul Cup competition" className="w-full h-full object-cover" loading="eager" />
               </div>
               <div className="absolute bottom-0 left-0 w-[58%] h-[55%] rounded-2xl overflow-hidden shadow-2xl shadow-tertiary/20 border-4 border-card -rotate-[4deg] hover:rotate-0 transition-transform duration-700 ease-out animate-in slide-in-from-left-8 fade-in" style={{ animationDelay: "400ms", animationFillMode: "both" }}>
-                <img src="/event-2025/competitor-solving.png" alt="Competitor solving on the side" className="w-full h-full object-cover" loading="eager" />
+                <img src={hero2} alt="Competitors solving integrals" className="w-full h-full object-cover" loading="eager" />
               </div>
               <div className="absolute top-[28%] left-[34%] w-[44%] h-[44%] rounded-2xl overflow-hidden shadow-2xl shadow-tertiary/30 border-4 border-card rotate-[-2deg] hover:rotate-0 transition-transform duration-700 ease-out animate-in zoom-in-50 fade-in" style={{ animationDelay: "600ms", animationFillMode: "both" }}>
-                <img src="/event-2025/competition-room.png" alt="All students in the competition room" className="w-full h-full object-cover" loading="eager" />
+                <img src={hero3} alt="Award ceremony" className="w-full h-full object-cover" loading="eager" />
               </div>
               {/* Soft glow */}
               <div className="absolute -inset-8 -z-10 bg-[radial-gradient(circle_at_50%_50%,hsl(var(--primary)/0.35)_0%,transparent_60%)] blur-2xl" />
