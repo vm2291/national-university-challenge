@@ -94,11 +94,11 @@ const Home = () => {
               <p className="text-[11px] font-medium tracking-[0.22em] text-[#3d2515] uppercase">By the numbers</p>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
-              Battle of Mathematical Excellence
+              A Competition Like No Other
             </h2>
             <p className="text-lg text-foreground/75 max-w-2xl mx-auto font-light">
               Join the UAE's premier integration competition where the nation's brightest
-              mathematical minds compete in speed, accuracy, and strategic problem-solving.
+              minds compete in speed, accuracy, and strategic problem-solving.
             </p>
           </div>
 
@@ -184,34 +184,37 @@ const Home = () => {
               { icon: Calendar, label: "Date", primary: "Sunday, Dec 7, 2025", secondary: "Mark your calendar" },
               { icon: Clock, label: "Time", primary: "9:00 AM – 5:00 PM", secondary: "Gulf Standard Time (GST)" },
               { icon: MapPin, label: "Venue", primary: "NYU Abu Dhabi", secondary: "C2 West Forum" },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className={`relative mb-10 last:mb-0 sm:grid sm:grid-cols-2 sm:gap-12 sm:items-center animate-in fade-in slide-in-from-bottom-6 ${
-                  index % 2 === 1 ? "sm:[&>div:first-child]:order-2" : ""
-                }`}
-                style={{ animationDelay: `${index * 150}ms`, animationFillMode: "both" }}
-              >
-                {/* Dot */}
-                <div className="absolute left-8 sm:left-1/2 top-6 w-4 h-4 rounded-full bg-[#a86b3e] ring-4 ring-background sm:-translate-x-1/2 z-10" />
+            ].map((item, index) => {
+              const isOdd = index % 2 === 1;
+              return (
+                <div
+                  key={index}
+                  className="relative mb-10 last:mb-0 sm:grid sm:grid-cols-2 sm:gap-12 sm:items-center animate-in fade-in slide-in-from-bottom-6"
+                  style={{ animationDelay: `${index * 150}ms`, animationFillMode: "both" }}
+                >
+                  {/* Dot */}
+                  <div className="absolute left-8 sm:left-1/2 top-6 w-4 h-4 rounded-full bg-[#e9c590] ring-4 ring-background sm:-translate-x-1/2 z-10" />
 
-                <div className={`pl-20 sm:pl-0 ${index % 2 === 1 ? "sm:text-left sm:pl-12" : "sm:text-right sm:pr-12"}`}>
-                  <div className={`inline-flex items-center gap-3 ${index % 2 === 1 ? "" : "sm:flex-row-reverse"}`}>
-                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-[#e9c590]/60 to-[#a86b3e]/20">
-                      <item.icon className="w-5 h-5 text-[#7a4520]" strokeWidth={2} />
+                  {/* Label + icon column */}
+                  <div className={`pl-20 sm:pl-0 ${isOdd ? "sm:order-2 sm:text-left sm:pl-12" : "sm:text-right sm:pr-12"}`}>
+                    <div className={`inline-flex items-center gap-3 ${isOdd ? "" : "sm:flex-row-reverse"}`}>
+                      <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-[#e9c590]/60 to-[#a86b3e]/20">
+                        <item.icon className="w-5 h-5 text-[#7a4520]" strokeWidth={2} />
+                      </div>
+                      <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#7a4520]">
+                        {item.label}
+                      </span>
                     </div>
-                    <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#7a4520]">
-                      {item.label}
-                    </span>
+                  </div>
+
+                  {/* Primary/secondary text column */}
+                  <div className={`pl-20 sm:pl-0 mt-2 sm:mt-0 ${isOdd ? "sm:order-1 sm:pr-12 sm:text-right" : "sm:pl-12"}`}>
+                    <p className="text-2xl sm:text-3xl font-bold text-[#7a4520] leading-tight mb-1 tracking-tight">{item.primary}</p>
+                    <p className="text-sm text-[#a86b3e]/80 font-light">{item.secondary}</p>
                   </div>
                 </div>
-
-                <div className={`pl-20 sm:pl-0 mt-2 sm:mt-0 ${index % 2 === 1 ? "sm:pr-12 sm:text-right" : "sm:pl-12"}`}>
-                  <p className="text-2xl sm:text-3xl font-bold text-[#3d2515] leading-tight mb-1 tracking-tight">{item.primary}</p>
-                  <p className="text-sm text-[#7a4520]/80 font-light">{item.secondary}</p>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
