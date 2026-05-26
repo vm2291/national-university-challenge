@@ -28,7 +28,7 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 py-12">
             <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-[#e8c896] via-[#c08550] to-[#5a2a14] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#f5dba8] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
                 Takãmul Cup
               </span>
             </h1>
@@ -47,12 +47,12 @@ const Home = () => {
       </section>
 
       {/* Battle of Mathematical Excellence Section */}
-      <section className="py-16 bg-primary text-tertiary">
+      <section className="py-16 bg-card/40 text-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-tertiary">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-foreground">
             Battle of Mathematical Excellence
           </h2>
-          <p className="text-center text-lg text-tertiary/90 mb-12 max-w-3xl mx-auto">
+          <p className="text-center text-lg text-foreground/85 mb-12 max-w-3xl mx-auto">
             Join the UAE's premier integration competition where the nation's brightest 
             mathematical minds compete in speed, accuracy, and strategic problem-solving!
           </p>
@@ -61,7 +61,7 @@ const Home = () => {
             {stats.map((stat, index) => <div key={index} className="text-center p-8 bg-tertiary/10 backdrop-blur rounded-2xl border border-tertiary/20 hover:bg-tertiary/20 transition-all duration-300">
                 <stat.icon className="w-12 h-12 mx-auto mb-4 text-secondary" />
                 <div className="text-5xl font-bold mb-2 text-secondary">{stat.value}</div>
-                <div className="text-xl font-semibold uppercase tracking-wide text-tertiary">{stat.label}</div>
+                <div className="text-xl font-semibold uppercase tracking-wide text-foreground">{stat.label}</div>
               </div>)}
           </div>
         </div>
@@ -72,17 +72,17 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center mb-12">
             <Trophy className="w-10 h-10 text-secondary mr-3" />
-            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
               Participating Universities
             </h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {universities.slice(0, 6).map((university, index) => <Card key={index} className="p-6 text-center bg-card hover:bg-primary/10 border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10">
+            {universities.slice(0, 6).map((university, index) => <Card key={index} className="p-6 text-center bg-card hover:bg-muted/20 border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10">
                 <p className="text-lg font-semibold text-foreground">{university}</p>
               </Card>)}
             {/* Last university - full width centered */}
-            <Card className="p-6 text-center bg-card hover:bg-primary/10 border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10 sm:col-span-2">
+            <Card className="p-6 text-center bg-card hover:bg-muted/20 border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10 sm:col-span-2">
               <p className="text-lg font-semibold text-foreground">{universities[6]}</p>
             </Card>
           </div>
@@ -92,23 +92,23 @@ const Home = () => {
       {/* Event Details Section */}
       <section className="py-16 bg-gradient-to-br from-primary/10 via-background to-primary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
             Event Details
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <Card className="p-8 bg-card backdrop-blur border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
+            <Card className="p-8 bg-card backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
               <Calendar className="w-10 h-10 text-secondary mx-auto mb-4" />
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Date</p>
               <p className="text-xl font-bold text-foreground">Sunday</p>
               <p className="text-2xl font-bold text-foreground">Dec 7, 2025</p>
             </Card>
-            <Card className="p-8 bg-card backdrop-blur border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
+            <Card className="p-8 bg-card backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
               <Clock className="w-10 h-10 text-secondary mx-auto mb-4" />
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Time</p>
               <p className="text-2xl font-bold text-foreground">9:00 AM - 5:00 PM</p>
               <p className="text-lg text-foreground">(GST)</p>
             </Card>
-            <Card className="p-8 bg-card backdrop-blur border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
+            <Card className="p-8 bg-card backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
               <MapPin className="w-10 h-10 text-secondary mx-auto mb-4" />
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Venue</p>
               <p className="text-xl font-bold text-foreground">NYU Abu Dhabi</p>
@@ -121,12 +121,12 @@ const Home = () => {
       {/* Featured Testimonials Section */}
       <section className="py-16 bg-gradient-to-br from-secondary/10 via-background to-primary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
             What Participants Had to Say About Their Experience
           </h2>
           
           <div className="max-w-4xl mx-auto space-y-6 mb-10">
-            <Card className="p-6 md:p-8 bg-card border-primary/30 hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
+            <Card className="p-6 md:p-8 bg-card border-border hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <div>
@@ -138,7 +138,7 @@ const Home = () => {
               </div>
             </Card>
             
-            <Card className="p-6 md:p-8 bg-primary/30 border-primary/30 hover:shadow-lg transition-all duration-300 mr-0 md:ml-12">
+            <Card className="p-6 md:p-8 bg-muted/40 border-border hover:shadow-lg transition-all duration-300 mr-0 md:ml-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <div>
@@ -150,7 +150,7 @@ const Home = () => {
               </div>
             </Card>
             
-            <Card className="p-6 md:p-8 bg-card border-primary/30 hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
+            <Card className="p-6 md:p-8 bg-card border-border hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <div>
@@ -162,7 +162,7 @@ const Home = () => {
               </div>
             </Card>
             
-            <Card className="p-6 md:p-8 bg-primary/30 border-primary/30 hover:shadow-lg transition-all duration-300 mr-0 md:ml-12">
+            <Card className="p-6 md:p-8 bg-muted/40 border-border hover:shadow-lg transition-all duration-300 mr-0 md:ml-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <div>
@@ -187,12 +187,12 @@ const Home = () => {
       </section>
 
       {/* Competition Philosophy Section */}
-      <section className="py-16 bg-primary/20">
+      <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-8">
               <Brain className="w-10 h-10 text-secondary mr-3" />
-              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
                 Competition Philosophy
           </h2>
             </div>

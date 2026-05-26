@@ -26,7 +26,7 @@ const SubTitle = ({ children }: { children: React.ReactNode }) => (
 );
 
 const TimingCard = ({ label, value, details }: { label: string; value: string; details: string[] }) => (
-  <Card className="p-5 bg-card border-2 border-primary/40 text-center hover:border-secondary/60 hover:-translate-y-1 transition-all duration-300">
+  <Card className="p-5 bg-card border-2 border-border text-center hover:border-secondary/60 hover:-translate-y-1 transition-all duration-300">
     <p className="text-xs sm:text-sm uppercase tracking-wider font-bold text-tertiary mb-2">{label}</p>
     <p className="text-4xl sm:text-5xl font-black text-secondary mb-1">{value}</p>
     {details.map((d, i) => (
@@ -40,7 +40,7 @@ const StageSection = ({ number, title, children }: { number: number; title: stri
     <div className="absolute -left-[14px] top-0 w-6 h-6 rounded-full bg-secondary border-4 border-background" />
     <div className="flex items-center gap-4 mb-6">
       <Pill>{number}</Pill>
-      <h2 className="text-2xl sm:text-3xl font-bold text-tertiary">{title}</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold text-foreground">{title}</h2>
     </div>
     <div className="space-y-6">{children}</div>
   </div>
@@ -57,7 +57,7 @@ const CompetitionStructure = () => {
             <div className="flex justify-center mb-6">
               <ListChecks className="w-16 h-16 text-secondary" />
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#e8c896] via-[#c08550] to-[#5a2a14] bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#f5dba8] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
               Coordinators Info
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
@@ -114,7 +114,7 @@ const CompetitionStructure = () => {
                 ]} />
                 <Card className="mt-4 p-6 bg-card border-2 border-secondary/50">
                   <p className="font-bold mb-3 text-secondary uppercase tracking-wide text-sm">Bracket Structure</p>
-                  <pre className="text-xs sm:text-sm leading-relaxed overflow-x-auto font-mono whitespace-pre text-tertiary">
+                  <pre className="text-xs sm:text-sm leading-relaxed overflow-x-auto font-mono whitespace-pre text-foreground">
 {`Round of 16:
 M₁: Seed 1 vs Seed 16        M₂: Seed 8 vs Seed 9
 M₃: Seed 5 vs Seed 12        M₄: Seed 4 vs Seed 13
@@ -191,7 +191,7 @@ Final: Winner SF1 vs Winner SF2`}
                 <div className="p-2 rounded-lg bg-secondary/10">
                   <Zap className="w-7 h-7 text-secondary" />
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-tertiary">Sudden Death Tie-Breaker Protocol</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">Sudden Death Tie-Breaker Protocol</h3>
               </div>
               <p className="text-lg mb-5 text-foreground/85">The same <strong>sudden death tie-breaker</strong> mechanism is used in <strong>Stages 2, 3, 4, and 5</strong> whenever a match score is tied.</p>
               <ul className="space-y-3 mb-5">
@@ -215,8 +215,8 @@ Final: Winner SF1 vs Winner SF2`}
                 <li className="flex gap-3 text-foreground/90"><span className="mt-2 h-1.5 w-1.5 rounded-full bg-secondary flex-shrink-0" /><span>If tie remains after one tie-breaker: <strong>new tie-breaker integral given</strong> (again with 3 minutes)</span></li>
                 <li className="flex gap-3 text-foreground/90"><span className="mt-2 h-1.5 w-1.5 rounded-full bg-secondary flex-shrink-0" /><span>Process repeats until one competitor submits the first correct answer</span></li>
               </ul>
-              <div className="bg-primary/15 rounded-md p-5 border border-primary/40">
-                <p className="font-bold mb-3 text-tertiary">Sudden Death Rules:</p>
+              <div className="bg-primary/15 rounded-md p-5 border border-border">
+                <p className="font-bold mb-3 text-foreground">Sudden Death Rules:</p>
                 <ul className="space-y-2 text-foreground/90">
                   {[
                     <><strong>3-minute clock</strong> for each tie-breaker</>,
@@ -343,12 +343,12 @@ Final: Winner SF1 vs Winner SF2`}
       </section>
 
       {/* Awards */}
-      <section className="py-16 bg-primary/20">
+      <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-10">
               <Trophy className="w-10 h-10 text-secondary mr-3" />
-              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
                 Competition Titles and Awards
               </h2>
             </div>
@@ -377,10 +377,10 @@ Final: Winner SF1 vs Winner SF2`}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 uppercase tracking-wide bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 uppercase tracking-wide bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
               Summary for Coordinators
             </h2>
-            <Card className="p-6 sm:p-8 bg-card border-2 border-primary/40 text-foreground shadow-md">
+            <Card className="p-6 sm:p-8 bg-card border-2 border-border text-foreground shadow-md">
               <ul className="space-y-5">
                 <li className="flex gap-3">
                   <span className="mt-2 h-2 w-2 rounded-full bg-secondary flex-shrink-0" />

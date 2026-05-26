@@ -60,7 +60,7 @@ const EventGallery = () => {
             <div className="flex justify-center mb-6">
               <Camera className="w-16 h-16 text-secondary" />
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#e8c896] via-[#c08550] to-[#5a2a14] bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#f5dba8] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
               2025 Gallery
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
@@ -77,7 +77,7 @@ const EventGallery = () => {
               ].map(({ Icon, label }, i) => (
                 <div
                   key={i}
-                  className="flex items-center justify-center gap-2 px-3 py-3 rounded-xl bg-card/70 backdrop-blur border border-primary/30"
+                  className="flex items-center justify-center gap-2 px-3 py-3 rounded-xl bg-card/70 backdrop-blur border border-border"
                 >
                   <Icon className="w-4 h-4 md:w-5 md:h-5 text-secondary flex-shrink-0" />
                   <span className="text-sm md:text-base font-medium text-foreground">{label}</span>
@@ -89,7 +89,7 @@ const EventGallery = () => {
       </section>
 
       {/* Intro */}
-      <section className="py-12 bg-primary/10">
+      <section className="py-12 bg-muted/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <p className="max-w-3xl mx-auto text-center text-lg text-muted-foreground leading-relaxed">
             Takãmul Cup 2025 brought together the brightest mathematical minds from across the UAE,
@@ -107,7 +107,7 @@ const EventGallery = () => {
               <button
                 key={index}
                 onClick={() => openLightbox(index)}
-                className="group relative mb-4 block w-full overflow-hidden rounded-xl border border-primary/30 bg-card shadow-sm hover:shadow-xl transition-all duration-300 break-inside-avoid"
+                className="group relative mb-4 block w-full overflow-hidden rounded-xl border border-border bg-card shadow-sm hover:shadow-xl transition-all duration-300 break-inside-avoid"
               >
                 <img
                   src={src}

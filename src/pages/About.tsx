@@ -64,7 +64,7 @@ const About = () => {
             <div className="flex justify-center mb-6">
               <BookOpen className="w-16 h-16 text-secondary" />
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#e8c896] via-[#c08550] to-[#5a2a14] bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#f5dba8] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
               About Us
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
@@ -75,14 +75,14 @@ const About = () => {
       </section>
 
       {/* Mission Statement */}
-      <section className="py-16 bg-primary text-tertiary">
+      <section className="py-16 bg-card/40 text-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <Lightbulb className="w-12 h-12 mx-auto text-secondary" />
-            <h2 className="text-3xl sm:text-4xl font-bold text-tertiary">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
               The Battle of Mathematical Excellence
             </h2>
-            <p className="text-xl text-tertiary/90 leading-relaxed">
+            <p className="text-xl text-foreground/85 leading-relaxed">
               Takãmul Cup represents more than just a competition—it's a celebration of mathematical 
               brilliance, strategic thinking, and academic excellence. We bring together the nation's 
               brightest minds to compete in speed, accuracy, and problem-solving prowess, creating a 
@@ -95,7 +95,7 @@ const About = () => {
       {/* Vision Points */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
             What Drives Us
           </h2>
 
@@ -103,7 +103,7 @@ const About = () => {
             {visionPoints.map((point, index) => (
               <Card
                 key={index}
-                className="p-8 bg-card border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-xl hover:shadow-secondary/10"
+                className="p-8 bg-card border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-xl hover:shadow-secondary/10"
               >
                 <point.icon className="w-12 h-12 text-secondary mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-3">{point.title}</h3>
@@ -115,11 +115,11 @@ const About = () => {
       </section>
 
       {/* Impact Section */}
-      <section className="py-20 bg-primary/20">
+      <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-12">
             <div className="text-center">
-              <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+              <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
                 The Falcon's Talon Edition
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
@@ -130,7 +130,7 @@ const About = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="p-8 bg-card border-primary/30">
+              <Card className="p-8 bg-card border-border">
                 <h3 className="text-2xl font-bold text-foreground mb-4">National Expansion</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   The 2025 edition marks a historic milestone as Takãmul Cup expands from its origins 
@@ -139,7 +139,7 @@ const About = () => {
                 </p>
               </Card>
 
-              <Card className="p-8 bg-card border-primary/30">
+              <Card className="p-8 bg-card border-border">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Academic Excellence</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Through rigorous competition across three challenging rounds, we push participants 
@@ -157,7 +157,7 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-12">
             <div className="text-center space-y-6">
-              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
                 Where It All Started
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
@@ -166,7 +166,7 @@ const About = () => {
               </p>
             </div>
 
-            <Card className="p-10 bg-primary/10 border-secondary/30">
+            <Card className="p-10 bg-muted/20 border-secondary/30">
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <Calendar className="w-8 h-8 text-secondary flex-shrink-0" />
@@ -188,9 +188,9 @@ const About = () => {
       </section>
 
       {/* Milestones */}
-      <section className="py-20 bg-primary/20">
+      <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
             Key Milestones
           </h2>
 
@@ -198,7 +198,7 @@ const About = () => {
             {milestones.map((milestone, index) => (
               <Card
                 key={index}
-                className="p-8 bg-card border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-xl hover:shadow-secondary/10"
+                className="p-8 bg-card border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-xl hover:shadow-secondary/10"
               >
                 <div className="flex flex-col sm:flex-row items-start gap-6">
                   <div className="flex-shrink-0">
@@ -226,12 +226,12 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-12">
-            <h2 className="text-4xl sm:text-5xl font-bold text-center bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl font-bold text-center bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
               2024 Event Highlights
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="p-8 bg-card border-primary/30">
+              <Card className="p-8 bg-card border-border">
                 <Users className="w-10 h-10 text-secondary mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-3">Student Participation</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -240,7 +240,7 @@ const About = () => {
                 </p>
               </Card>
 
-              <Card className="p-8 bg-card border-primary/30">
+              <Card className="p-8 bg-card border-border">
                 <Award className="w-10 h-10 text-secondary mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-3">Challenging Problems</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -251,12 +251,12 @@ const About = () => {
             </div>
 
             {/* Event Photos Grid */}
-            <Card className="p-4 sm:p-6 md:p-8 bg-primary/10 border-secondary/30">
+            <Card className="p-4 sm:p-6 md:p-8 bg-muted/20 border-secondary/30">
               <div className="text-center space-y-4">
                 <h3 className="text-xl sm:text-2xl font-bold text-tertiary mb-2">
                   2024 Event Photos
                 </h3>
-                <p className="text-sm sm:text-base text-tertiary/80 italic mb-6">
+                <p className="text-sm sm:text-base text-foreground/75 italic mb-6">
                   Memorable moments from our inaugural event at NYU Abu Dhabi
                 </p>
                 
@@ -282,13 +282,13 @@ const About = () => {
       </section>
 
       {/* Growth Section */}
-      <section className="py-20 bg-primary text-tertiary">
+      <section className="py-20 bg-card/40 text-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl sm:text-5xl font-bold text-tertiary">
+            <h2 className="text-4xl sm:text-5xl font-bold text-foreground">
               Growing Beyond Campus
             </h2>
-            <p className="text-xl text-tertiary/90 leading-relaxed">
+            <p className="text-xl text-foreground/85 leading-relaxed">
               The success and enthusiasm from the 2024 event inspired the vision to expand beyond 
               NYU Abu Dhabi. In 2025, Takãmul Cup takes its place as the UAE's premier national 
               integration competition, bringing together seven universities in a celebration of 
@@ -307,7 +307,7 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#8a4a20] to-[#4a230d] bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#f0d4a0] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
               Leadership & Vision
             </h2>
             
