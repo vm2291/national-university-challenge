@@ -1,6 +1,7 @@
-import { ListChecks, Zap, Trophy, Award } from "lucide-react";
+import { Zap, Trophy, Award } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Footer from "@/components/Footer";
+import PageHero from "@/components/PageHero";
 
 const Pill = ({ children }: { children: React.ReactNode }) => (
   <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary text-secondary-foreground font-bold text-lg shadow-md flex-shrink-0">
@@ -56,23 +57,11 @@ const StageSection = ({ number, title, children }: { number: number; title: stri
 const CompetitionStructure = () => {
   return (
     <div className="min-h-screen pt-16">
-      {/* Hero */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-background to-primary/10" />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
-            <div className="flex justify-center mb-6">
-              <ListChecks className="w-16 h-16 text-secondary" />
-            </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-secondary via-secondary to-tertiary bg-clip-text text-transparent">
-              Coordinators Info
-            </h1>
-            <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
-              Competition Structure for Coordinators
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        kicker="For Coordinators"
+        title={<>Coordinators <span className="font-display-italic text-secondary">info</span>.</>}
+        intro="Competition Structure for Coordinators."
+      />
 
       {/* Stages */}
       <section className="py-16 bg-background">

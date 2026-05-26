@@ -1,6 +1,7 @@
 import { Quote } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Footer from "@/components/Footer";
+import PageHero from "@/components/PageHero";
 
 const Testimonials = () => {
   const testimonials = [
@@ -93,24 +94,11 @@ const Testimonials = () => {
 
   return (
     <div className="min-h-screen pt-16">
-      {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-background to-secondary/20" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,hsl(var(--secondary))_0%,transparent_50%)] opacity-10" />
-        
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-secondary via-secondary to-tertiary bg-clip-text text-transparent">
-                Testimonials
-              </span>
-            </h1>
-            <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
-              What participants had to say about their Takāmul Cup experience
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        kicker="In Their Words"
+        title={<><span className="font-display-italic text-secondary">Testimonials.</span></>}
+        intro="What participants had to say about their Takāmul Cup experience."
+      />
 
       {/* Testimonials Grid */}
       <section className="py-16 bg-primary/20">
