@@ -20,42 +20,45 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
        Contrast pairs: brown-on-cream 11.7:1 (AAA), cream-on-brown 11.7:1 (AAA),
        brown-on-sand 7.2:1 (AAA). */
 
-    --background: 36 60% 91%;        /* warm cream */
-    --foreground: 22 70% 11%;        /* deep brown */
+    /* Three-tone palette: cream bg, sand accent #e9c590, deep brown #381200.
+       Sand is a SURFACE (buttons/highlights with brown text on top),
+       brown is the high-contrast text color, cream is the canvas. */
 
-    --card: 36 55% 87%;              /* slightly deeper cream */
+    --background: 36 55% 93%;        /* #f6ecdb soft cream */
+    --foreground: 22 70% 11%;        /* #381200 */
+
+    --card: 36 50% 89%;              /* slightly deeper cream card */
     --card-foreground: 22 70% 11%;
 
-    --popover: 36 55% 87%;
+    --popover: 36 50% 89%;
     --popover-foreground: 22 70% 11%;
 
-    /* Primary = deep brown for buttons & strong accents (high contrast) */
-    --primary: 22 70% 11%;
-    --primary-foreground: 36 60% 91%;
+    /* Primary = sand #e9c590 surface (buttons), brown text on top */
+    --primary: 36 67% 74%;
+    --primary-foreground: 22 70% 11%;
 
-    /* Secondary = sand surface (use brown text on it) */
-    --secondary: 34 70% 74%;         /* #eac78f */
+    --secondary: 36 67% 74%;         /* sand button surface */
     --secondary-foreground: 22 70% 11%;
 
-    --tertiary: 22 70% 11%;
-    --tertiary-foreground: 36 60% 91%;
+    --tertiary: 22 70% 11%;          /* deep brown — use as text accent */
+    --tertiary-foreground: 36 55% 93%;
 
-    --muted: 36 50% 84%;
-    --muted-foreground: 22 50% 22%;
+    --muted: 36 45% 86%;
+    --muted-foreground: 22 55% 22%;  /* readable secondary text */
 
-    --accent: 34 70% 74%;            /* sand accent surface */
+    --accent: 36 67% 74%;
     --accent-foreground: 22 70% 11%;
 
     --destructive: 0 65% 42%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 34 40% 72%;
-    --input: 34 40% 72%;
+    --border: 34 35% 75%;
+    --input: 34 35% 75%;
     --ring: 22 70% 11%;
 
     --radius: 0.75rem;
 
-    --gold: 34 70% 74%;
+    --gold: 36 67% 74%;
     --gold-dark: 22 70% 11%;
 
     --gradient-primary: linear-gradient(135deg, hsl(22 70% 11%) 0%, hsl(22 60% 22%) 100%);
