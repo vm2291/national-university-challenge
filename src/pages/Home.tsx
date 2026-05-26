@@ -81,21 +81,21 @@ const Home = () => {
       </section>
 
       {/* Battle of Mathematical Excellence Section */}
-      <section className="py-16 bg-gradient-to-b from-background via-[hsl(36_60%_88%)] to-background text-foreground">
+      <section className="py-16 bg-[#e9c590] text-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-foreground">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-[#3d2515]">
             Battle of Mathematical Excellence
           </h2>
-          <p className="text-center text-lg text-foreground/85 mb-12 max-w-3xl mx-auto">
+          <p className="text-center text-lg text-[#3d2515]/85 mb-12 max-w-3xl mx-auto">
             Join the UAE's premier integration competition where the nation's brightest 
             mathematical minds compete in speed, accuracy, and strategic problem-solving!
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {stats.map((stat, index) => <div key={index} className="text-center p-8 bg-[#e9c590]/40 backdrop-blur rounded-2xl border border-[#e9c590] hover:bg-[#e9c590]/60 hover:-translate-y-1 transition-all duration-300 shadow-sm hover:shadow-md">
+            {stats.map((stat, index) => <div key={index} className="text-center p-8 bg-[#faf3e0] backdrop-blur rounded-2xl border border-[#d4b878] hover:bg-[#fff8e7] hover:-translate-y-1 transition-all duration-300 shadow-sm hover:shadow-md">
                 <stat.icon className="w-12 h-12 mx-auto mb-4 text-[#a86b3e]" strokeWidth={2.25} />
                 <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">{stat.value}</div>
-                <div className="text-xl font-semibold uppercase tracking-wide text-foreground">{stat.label}</div>
+                <div className="text-xl font-semibold uppercase tracking-wide text-[#3d2515]">{stat.label}</div>
               </div>)}
           </div>
         </div>
