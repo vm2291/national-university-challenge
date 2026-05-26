@@ -140,7 +140,7 @@ const Home = () => {
               Participating Universities
             </h2>
             <p className="text-lg text-foreground/75 max-w-2xl mx-auto font-light">
-              Seven leading UAE institutions united by a shared pursuit of mathematical excellence.
+              Seven leading UAE institutions, one shared pursuit.
             </p>
           </div>
 
@@ -173,7 +173,7 @@ const Home = () => {
               Event Details
             </h2>
             <p className="text-lg text-foreground/75 max-w-2xl mx-auto font-light">
-              Mark your calendar for a day of mathematical excellence at NYU Abu Dhabi.
+              Here's where and when it all goes down.
             </p>
           </div>
 
@@ -181,7 +181,7 @@ const Home = () => {
             {/* Vertical line */}
             <div className="absolute left-8 sm:left-1/2 top-4 bottom-4 w-px bg-gradient-to-b from-transparent via-[#a86b3e]/40 to-transparent sm:-translate-x-1/2" />
             {[
-              { icon: Calendar, label: "Date", primary: "Sunday, Dec 7, 2025", secondary: "Mark your calendar" },
+              { icon: Calendar, label: "Date", primary: "Dec 7, 2025", secondary: "Sunday" },
               { icon: Clock, label: "Time", primary: "9:00 AM – 5:00 PM", secondary: "Gulf Standard Time (GST)" },
               { icon: MapPin, label: "Venue", primary: "NYU Abu Dhabi", secondary: "C2 West Forum" },
             ].map((item, index) => (
