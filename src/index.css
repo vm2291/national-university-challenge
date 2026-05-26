@@ -19,13 +19,13 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
     --popover: 38 60% 94%;
     --popover-foreground: 22 35% 18%;
 
-    /* Primary: sandstone gold #d4a574 */
-    --primary: 30 50% 65%;
+    /* Primary: desert sand #e9c590 */
+    --primary: 36 67% 74%;
     --primary-foreground: 22 40% 16%;
 
-    /* Secondary: clay rose #c2956b — accent */
-    --secondary: 26 40% 50%;
-    --secondary-foreground: 38 50% 96%;
+    /* Secondary: desert sand #e9c590 (matches primary per design) */
+    --secondary: 36 67% 74%;
+    --secondary-foreground: 22 40% 16%;
 
     /* Tertiary: deep warm brown #5a3a2a for footer */
     --tertiary: 22 36% 26%;
