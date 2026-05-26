@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { ListChecks, Zap, Trophy, Award } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Footer from "@/components/Footer";
@@ -47,6 +49,13 @@ const StageSection = ({ number, title, children }: { number: number; title: stri
 );
 
 const CompetitionStructure = () => {
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.getElementById(location.hash.slice(1));
+      if (el) setTimeout(() => el.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
+    }
+  }, [location]);
   return (
     <div className="min-h-screen pt-16">
       {/* Hero */}
@@ -68,7 +77,7 @@ const CompetitionStructure = () => {
       </section>
 
       {/* Stages */}
-      <section className="py-16 bg-background">
+      <section id="stages" className="py-16 bg-background scroll-mt-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
 
@@ -343,7 +352,7 @@ Final: Winner SF1 vs Winner SF2`}
       </section>
 
       {/* Awards */}
-      <section className="py-16 bg-muted/30">
+      <section id="titles" className="py-16 bg-muted/30 scroll-mt-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-10">
@@ -374,7 +383,7 @@ Final: Winner SF1 vs Winner SF2`}
       </section>
 
       {/* Summary */}
-      <section className="py-16 bg-background">
+      <section id="summary" className="py-16 bg-background scroll-mt-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 uppercase tracking-wide bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
