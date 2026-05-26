@@ -8,18 +8,13 @@ const Pill = ({ children }: { children: React.ReactNode }) => (
   </div>
 );
 
-const InfoList = ({ items, variant = "default" }: { items: React.ReactNode[]; variant?: "default" | "brown" | "orange" }) => {
-  const styles = {
-    default: "bg-primary/15 border-l-4 border-secondary",
-    brown: "bg-tertiary/10 border-l-4 border-tertiary",
-    orange: "bg-secondary/10 border-l-4 border-secondary",
-  };
+const InfoList = ({ items }: { items: React.ReactNode[]; variant?: "default" | "brown" | "orange" }) => {
   return (
-    <div className={`${styles[variant]} rounded-md p-5 sm:p-6`}>
-      <ul className="space-y-2">
+    <div className="bg-card border border-primary/40 border-l-4 border-l-secondary rounded-lg p-5 sm:p-6 shadow-sm">
+      <ul className="space-y-2.5">
         {items.map((item, i) => (
           <li key={i} className="flex gap-3 text-foreground/90 text-base leading-relaxed">
-            <span className="text-secondary font-bold flex-shrink-0">▸</span>
+            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-secondary flex-shrink-0" />
             <span>{item}</span>
           </li>
         ))}
@@ -193,22 +188,24 @@ Final: Winner SF1 vs Winner SF2`}
             </StageSection>
 
             {/* SUDDEN DEATH */}
-            <Card className="p-6 sm:p-8 bg-secondary text-secondary-foreground mb-12 shadow-xl">
+            <Card className="p-6 sm:p-8 bg-card border-2 border-secondary/40 mb-12 shadow-md">
               <div className="flex items-center gap-3 mb-4">
-                <Zap className="w-8 h-8" />
-                <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide">Sudden Death Tie-Breaker Protocol</h3>
+                <div className="p-2 rounded-lg bg-secondary/10">
+                  <Zap className="w-7 h-7 text-secondary" />
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-tertiary">Sudden Death Tie-Breaker Protocol</h3>
               </div>
-              <p className="text-lg mb-5">The same <strong>sudden death tie-breaker</strong> mechanism is used in <strong>Stages 2, 3, 4, and 5</strong> whenever a match score is tied.</p>
+              <p className="text-lg mb-5 text-foreground/85">The same <strong>sudden death tie-breaker</strong> mechanism is used in <strong>Stages 2, 3, 4, and 5</strong> whenever a match score is tied.</p>
               <ul className="space-y-3 mb-5">
                 {[
                   <><strong>All tie-breakers are DEFINITE INTEGRALS</strong></>,
                   "A tie-breaker integral is revealed to the two tied competitors under the central clock",
                   <><strong>Time limit: 3 minutes (sudden death)</strong></>,
                 ].map((item, i) => (
-                  <li key={i} className="flex gap-3"><span className="font-bold">⚡</span><span>{item}</span></li>
+                  <li key={i} className="flex gap-3 text-foreground/90"><span className="mt-2 h-1.5 w-1.5 rounded-full bg-secondary flex-shrink-0" /><span>{item}</span></li>
                 ))}
-                <li className="flex gap-3">
-                  <span className="font-bold">⚡</span>
+                <li className="flex gap-3 text-foreground/90">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-secondary flex-shrink-0" />
                   <div>
                     <span>During the 3-minute window:</span>
                     <ul className="mt-2 ml-4 space-y-2">
@@ -217,12 +214,12 @@ Final: Winner SF1 vs Winner SF2`}
                     </ul>
                   </div>
                 </li>
-                <li className="flex gap-3"><span className="font-bold">⚡</span><span>If tie remains after one tie-breaker: <strong>new tie-breaker integral given</strong> (again with 3 minutes)</span></li>
-                <li className="flex gap-3"><span className="font-bold">⚡</span><span>Process repeats until one competitor submits the first correct answer</span></li>
+                <li className="flex gap-3 text-foreground/90"><span className="mt-2 h-1.5 w-1.5 rounded-full bg-secondary flex-shrink-0" /><span>If tie remains after one tie-breaker: <strong>new tie-breaker integral given</strong> (again with 3 minutes)</span></li>
+                <li className="flex gap-3 text-foreground/90"><span className="mt-2 h-1.5 w-1.5 rounded-full bg-secondary flex-shrink-0" /><span>Process repeats until one competitor submits the first correct answer</span></li>
               </ul>
-              <div className="bg-background/50 backdrop-blur rounded-md p-5 border border-secondary-foreground/20">
-                <p className="font-bold mb-3">Sudden Death Rules:</p>
-                <ul className="space-y-2">
+              <div className="bg-primary/15 rounded-md p-5 border border-primary/40">
+                <p className="font-bold mb-3 text-tertiary">Sudden Death Rules:</p>
+                <ul className="space-y-2 text-foreground/90">
                   {[
                     <><strong>3-minute clock</strong> for each tie-breaker</>,
                     <><strong>First correct answer wins</strong></>,
@@ -385,14 +382,14 @@ Final: Winner SF1 vs Winner SF2`}
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 uppercase tracking-wide bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
               Summary for Coordinators
             </h2>
-            <Card className="p-6 sm:p-8 bg-primary text-tertiary border-secondary/30">
+            <Card className="p-6 sm:p-8 bg-card border-2 border-primary/40 text-foreground shadow-md">
               <ul className="space-y-5">
                 <li className="flex gap-3">
-                  <span className="text-secondary font-bold text-lg">⚡</span>
+                  <span className="mt-2 h-2 w-2 rounded-full bg-secondary flex-shrink-0" />
                   <span><strong>Stage 1</strong> is fully written, fully definite, and entirely scored by Mentimeter. No rubrics or manual scoring rules needed from coordinators beyond ensuring answers entered correctly into system.</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-secondary font-bold text-lg">⚡</span>
+                  <span className="mt-2 h-2 w-2 rounded-full bg-secondary flex-shrink-0" />
                   <div>
                     <strong>Stages 2–3</strong> are bracket-based elimination rounds with:
                     <ul className="mt-2 ml-4 space-y-2">
@@ -405,7 +402,7 @@ Final: Winner SF1 vs Winner SF2`}
                   </div>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-secondary font-bold text-lg">⚡</span>
+                  <span className="mt-2 h-2 w-2 rounded-full bg-secondary flex-shrink-0" />
                   <div>
                     <strong>Stages 4–5</strong> (Semifinals and Championship) use:
                     <ul className="mt-2 ml-4 space-y-2">
@@ -416,15 +413,15 @@ Final: Winner SF1 vs Winner SF2`}
                   </div>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-secondary font-bold text-lg">⚡</span>
+                  <span className="mt-2 h-2 w-2 rounded-full bg-secondary flex-shrink-0" />
                   <span><strong>Pizza lunch break</strong> from 1:30–2:00 PM after Stage 3 (Quarterfinals)</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-secondary font-bold text-lg">⚡</span>
+                  <span className="mt-2 h-2 w-2 rounded-full bg-secondary flex-shrink-0" />
                   <span><strong>Laptops and hardware</strong> for scoring and display provided by NYUAD <strong>(Stage 1 only)</strong></span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-secondary font-bold text-lg">⚡</span>
+                  <span className="mt-2 h-2 w-2 rounded-full bg-secondary flex-shrink-0" />
                   <div>
                     <strong>Coordinators primarily needed to:</strong>
                     <ul className="mt-2 ml-4 space-y-2">
