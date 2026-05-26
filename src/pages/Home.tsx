@@ -199,7 +199,7 @@ const Home = () => {
           </h2>
             </div>
             
-            <Card className="p-8 bg-primary border-secondary/30 mb-6">
+            <Card className="p-8 bg-card border-border mb-6">
               <div className="flex items-start gap-4">
                 <Sparkles className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
                 <p className="text-lg text-tertiary leading-relaxed">
@@ -208,7 +208,7 @@ const Home = () => {
               </div>
             </Card>
             
-            <Card className="p-8 bg-primary border-secondary/30 mb-6">
+            <Card className="p-8 bg-card border-border mb-6">
               <div className="flex items-start gap-4">
                 <Brain className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
                 <p className="text-lg text-tertiary leading-relaxed">
@@ -217,7 +217,7 @@ const Home = () => {
               </div>
             </Card>
             
-            <Card className="p-8 bg-primary border-secondary/30">
+            <Card className="p-8 bg-card border-border">
               <div className="flex items-start gap-4">
                 <Sparkles className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
                 <p className="text-lg text-tertiary leading-relaxed">
