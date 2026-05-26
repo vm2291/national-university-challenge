@@ -112,11 +112,11 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {universities.slice(0, 6).map((university, index) => <Card key={index} className="p-6 text-center bg-card hover:bg-muted/20 border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10">
+            {universities.slice(0, 6).map((university, index) => <Card key={index} className="p-6 text-center bg-card hover:bg-[#e9c590] border-border hover:border-[#e9c590] transition-all duration-300 hover:shadow-lg hover:shadow-[#e9c590]/30">
                 <p className="text-lg font-semibold text-foreground">{university}</p>
               </Card>)}
             {/* Last university - full width centered */}
-            <Card className="p-6 text-center bg-card hover:bg-muted/20 border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10 sm:col-span-2">
+            <Card className="p-6 text-center bg-card hover:bg-[#e9c590] border-border hover:border-[#e9c590] transition-all duration-300 hover:shadow-lg hover:shadow-[#e9c590]/30 sm:col-span-2">
               <p className="text-lg font-semibold text-foreground">{universities[6]}</p>
             </Card>
           </div>
