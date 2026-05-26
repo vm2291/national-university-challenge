@@ -142,7 +142,7 @@ const Home = () => {
               <p className="text-2xl font-bold text-foreground">9:00 AM - 5:00 PM</p>
               <p className="text-lg text-foreground">(GST)</p>
             </Card>
-            <Card className="p-8 bg-white backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
+            <Card className="p-8 bg-card backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
               <MapPin className="w-10 h-10 text-[#a86b3e] mx-auto mb-4" />
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Venue</p>
               <p className="text-xl font-bold text-foreground">NYU Abu Dhabi</p>
