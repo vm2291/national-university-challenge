@@ -1,7 +1,6 @@
-import { Award, Gift } from "lucide-react";
+import { Trophy, Award, Gift } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Footer from "@/components/Footer";
-import PageHero from "@/components/PageHero";
 
 const Prizes = () => {
   const shirts = [
@@ -37,11 +36,23 @@ const Prizes = () => {
 
   return (
     <div className="min-h-screen pt-16">
-      <PageHero
-        kicker="Recognition"
-        title={<><span className="font-display-italic text-secondary">Prizes</span> & rewards.</>}
-        intro="Recognition and rewards for mathematical excellence."
-      />
+      {/* Hero Section */}
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-primary/10" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-4xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            <div className="flex justify-center mb-6">
+              <Trophy className="w-16 h-16 text-secondary" />
+            </div>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-secondary via-secondary to-tertiary bg-clip-text text-transparent">
+              Prizes
+            </h1>
+            <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
+              Recognition and rewards for mathematical excellence
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Prizes Section */}
       <section className="py-20 bg-background">

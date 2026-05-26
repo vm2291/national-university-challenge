@@ -1,7 +1,6 @@
 import { Quote } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Footer from "@/components/Footer";
-import PageHero from "@/components/PageHero";
 
 const Testimonials = () => {
   const testimonials = [
@@ -94,45 +93,51 @@ const Testimonials = () => {
 
   return (
     <div className="min-h-screen pt-16">
-      <PageHero
-        kicker="In Their Words"
-        title={<><span className="font-display-italic text-secondary">Testimonials.</span></>}
-        intro="What participants had to say about their Takāmul Cup experience."
-      />
+      {/* Hero Section */}
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-background to-secondary/20" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,hsl(var(--secondary))_0%,transparent_50%)] opacity-10" />
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-secondary via-secondary to-tertiary bg-clip-text text-transparent">
+                Testimonials
+              </span>
+            </h1>
+            <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
+              What participants had to say about their Takāmul Cup experience
+            </p>
+          </div>
+        </div>
+      </section>
 
-      {/* Testimonials Grid — editorial pull-quotes */}
-      <section className="py-20 bg-primary/15">
+      {/* Testimonials Grid */}
+      <section className="py-16 bg-primary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto columns-1 md:columns-2 gap-8 [column-fill:_balance]">
+          <div className="max-w-5xl mx-auto space-y-6">
             {testimonials.map((testimonial, index) => (
-              <Card
-                key={index}
-                data-reveal
-                style={{ ['--reveal-delay' as string]: `${(index % 6) * 80}ms` }}
-                className={`card-lift mb-8 break-inside-avoid p-7 md:p-8 border-primary/30 ${
-                  index % 3 === 0
-                    ? 'bg-secondary text-secondary-foreground border-secondary'
-                    : index % 3 === 1
-                    ? 'bg-card'
-                    : 'bg-primary/40'
+              <Card 
+                key={index} 
+                className={`p-6 md:p-8 border-primary/30 hover:shadow-lg transition-all duration-300 ${
+                  index % 2 === 0 
+                    ? 'bg-card ml-0 md:mr-12' 
+                    : 'bg-primary/30 mr-0 md:ml-12'
                 }`}
               >
-                <Quote className={`w-8 h-8 mb-4 ${index % 3 === 0 ? 'text-primary' : 'text-secondary'}`} />
-                <blockquote className={`font-display text-xl md:text-2xl leading-snug mb-5 ${index % 3 === 0 ? 'text-secondary-foreground' : 'text-tertiary'}`}>
-                  "{testimonial.quote}"
-                </blockquote>
-                {testimonial.name && (
-                  <div className={`pt-4 border-t ${index % 3 === 0 ? 'border-primary/30' : 'border-secondary/20'}`}>
-                    <p className={`kicker !text-xs ${index % 3 === 0 ? '!text-primary' : ''}`}>
-                      {testimonial.name}
-                    </p>
-                    {testimonial.university && (
-                      <p className={`mt-2 text-sm ${index % 3 === 0 ? 'text-primary/80' : 'text-foreground/65'}`}>
-                        {testimonial.university}
+                <div className="flex gap-4">
+                  <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                  <div>
+                    <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
+                      {testimonial.quote}
+                    </blockquote>
+                    {testimonial.name && (
+                      <p className="text-sm text-muted-foreground font-medium">
+                        - {testimonial.name}{testimonial.university && `, ${testimonial.university}`}
                       </p>
                     )}
                   </div>
-                )}
+                </div>
               </Card>
             ))}
           </div>

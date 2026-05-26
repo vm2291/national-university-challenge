@@ -12,7 +12,6 @@ import Testimonials from "./pages/Testimonials";
 import Prizes from "./pages/Prizes";
 import NotFound from "./pages/NotFound";
 import Navigation from "./components/Navigation";
-import RevealRoot from "./components/RevealRoot";
 
 const queryClient = new QueryClient();
 
@@ -23,7 +22,6 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Navigation />
-        <RevealRoot />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

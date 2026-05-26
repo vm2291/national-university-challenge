@@ -18,145 +18,111 @@ const Home = () => {
     value: "5"
   }];
   const universities = ["Abu Dhabi University", "American University in Dubai", "Middlesex University Dubai", "Heriot-Watt University Dubai", "UAE University", "NYU Abu Dhabi", "Mohamed bin Zayed University of Artificial Intelligence"];
-  const marqueeList = [...universities, ...universities];
   return <div className="min-h-screen pt-16">
-      {/* HERO — editorial */}
-      <section className="relative min-h-[calc(100vh-4rem)] flex items-center overflow-hidden bg-grain">
-        <div aria-hidden className="pointer-events-none absolute -top-20 -right-10 md:right-10 font-display-italic text-[24rem] md:text-[34rem] leading-none text-secondary/[0.07] select-none">∫</div>
-        <div aria-hidden className="pointer-events-none absolute bottom-10 left-6 hidden md:block font-display-italic text-[10rem] leading-none text-secondary/[0.05] select-none">dx</div>
+      {/* Hero Section */}
+      <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden pt-16">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-background to-primary/20" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--primary))_0%,transparent_50%)] opacity-20" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--secondary))_0%,transparent_50%)] opacity-10" />
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 py-12">
+            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-secondary via-secondary to-tertiary bg-clip-text text-transparent">
+                Takãmul Cup
+              </span>
+            </h1>
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
-          <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-10 items-end">
-            <div className="lg:col-span-8 space-y-7">
-              <div className="kicker animate-fade-up">National University Integration Bee</div>
-              <h1 className="font-display text-tertiary text-6xl sm:text-7xl md:text-8xl lg:text-[9rem] leading-[0.95] font-medium tracking-tight animate-blur-in" style={{ animationDelay: "120ms" }}>
-                Takãmul
-                <span className="block font-display-italic text-secondary">Cup.</span>
-              </h1>
-              <p className="max-w-xl text-lg sm:text-xl text-foreground/75 leading-relaxed animate-fade-up" style={{ animationDelay: "320ms" }}>
-                The UAE's premier integration competition for university students, where the brightest mathematical minds compete in speed, accuracy, and strategic problem-solving.
+            <div className="inline-block px-6 py-3 bg-secondary rounded-full shadow-lg mb-6">
+              <p className="text-lg sm:text-xl font-bold text-secondary-foreground">
+                National University Level Integration Bee
               </p>
-              <div className="flex flex-wrap gap-4 pt-2 animate-fade-up" style={{ animationDelay: "460ms" }}>
-                <Link to="/event-structure">
-                  <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground rounded-full px-7 h-12 group">
-                    Event Details
-                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                  </Button>
-                </Link>
-                <Link to="/event-gallery">
-                  <Button size="lg" variant="outline" className="border-2 border-tertiary/30 text-tertiary hover:bg-tertiary hover:text-tertiary-foreground rounded-full px-7 h-12">
-                    2025 Gallery
-                  </Button>
-                </Link>
-              </div>
             </div>
 
-            <aside className="lg:col-span-4 space-y-4 animate-fade-up" style={{ animationDelay: "600ms" }}>
-              <div className="border-l-2 border-secondary pl-5 py-1">
-                <p className="kicker !text-tertiary/50">Date</p>
-                <p className="font-display text-2xl text-tertiary mt-1">Sunday, Dec 7, 2025</p>
-              </div>
-              <div className="border-l-2 border-secondary pl-5 py-1">
-                <p className="kicker !text-tertiary/50">Time</p>
-                <p className="font-display text-2xl text-tertiary mt-1">9:00 AM – 5:00 PM <span className="text-base text-foreground/60">(GST)</span></p>
-              </div>
-              <div className="border-l-2 border-secondary pl-5 py-1">
-                <p className="kicker !text-tertiary/50">Venue</p>
-                <p className="font-display text-2xl text-tertiary mt-1">NYU Abu Dhabi</p>
-                <p className="text-foreground/70">C2 West Forum</p>
-              </div>
-            </aside>
-          </div>
-        </div>
+            <p className="text-base sm:text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed mb-12">
+              The UAE's premier integration competition for university students, where the brightest mathematical minds compete in speed, accuracy, and strategic problem-solving
+            </p>
 
-        {/* Marquee universities at hero bottom */}
-        <div className="absolute bottom-0 left-0 right-0 border-t border-secondary/20 bg-background/60 backdrop-blur-sm py-4 marquee-mask overflow-hidden">
-          <div className="flex gap-12 whitespace-nowrap animate-marquee">
-            {marqueeList.map((u, i) => (
-              <span key={i} className="font-display-italic text-tertiary/70 text-lg flex items-center gap-12">
-                {u}
-                <span className="text-secondary">✦</span>
-              </span>
-            ))}
+            {/* Event Details Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 max-w-4xl mx-auto">
+              <Card className="p-6 bg-card backdrop-blur border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20">
+                <Calendar className="w-8 h-8 text-secondary mx-auto mb-3" />
+                <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Date</p>
+                <p className="text-xl font-bold text-foreground">Sunday</p>
+                <p className="text-2xl font-bold text-foreground">Dec 7, 2025</p>
+              </Card>
+
+              <Card className="p-6 bg-card backdrop-blur border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20">
+                <Clock className="w-8 h-8 text-secondary mx-auto mb-3" />
+                <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Time</p>
+                <p className="text-2xl font-bold text-foreground">9:00 AM - 5:00 PM</p>
+                <p className="text-lg text-foreground">(GST)</p>
+              </Card>
+
+              <Card className="p-6 bg-card backdrop-blur border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20">
+                <MapPin className="w-8 h-8 text-secondary mx-auto mb-3" />
+                <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Venue</p>
+                <p className="text-xl font-bold text-foreground">NYU Abu Dhabi</p>
+                <p className="text-lg text-foreground">C2 West Forum</p>
+              </Card>
+            </div>
+
           </div>
         </div>
       </section>
 
-      {/* Battle of Mathematical Excellence */}
-      <section className="py-24 bg-primary text-tertiary relative overflow-hidden">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="max-w-5xl mx-auto" data-reveal>
-            <div className="kicker mb-6">Why It Matters</div>
-            <h2 className="font-display text-4xl sm:text-5xl md:text-6xl text-tertiary max-w-3xl mb-6">
-              Battle of <span className="font-display-italic text-secondary">mathematical excellence</span>.
-            </h2>
-            <p className="text-lg md:text-xl text-tertiary/80 max-w-2xl mb-16 leading-relaxed">
-              Join the UAE's premier integration competition where the nation's brightest mathematical minds compete in speed, accuracy, and strategic problem-solving!
-            </p>
-          </div>
+      {/* Battle of Mathematical Excellence Section */}
+      <section className="py-16 bg-primary text-tertiary">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-tertiary">
+            Battle of Mathematical Excellence
+          </h2>
+          <p className="text-center text-lg text-tertiary/90 mb-12 max-w-3xl mx-auto">
+            Join the UAE's premier integration competition where the nation's brightest 
+            mathematical minds compete in speed, accuracy, and strategic problem-solving!
+          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-tertiary/15 max-w-5xl mx-auto rounded-2xl overflow-hidden border border-tertiary/20">
-            {stats.map((stat, index) => <div key={index} data-reveal style={{ ['--reveal-delay' as string]: `${index * 120}ms` }} className="group bg-primary/95 hover:bg-primary p-10 transition-colors duration-500">
-                <stat.icon className="w-8 h-8 text-secondary mb-6 transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-6" />
-                <div className="font-display text-6xl md:text-7xl text-tertiary mb-2 leading-none">{stat.value}</div>
-                <div className="kicker !text-tertiary/60">{stat.label}</div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {stats.map((stat, index) => <div key={index} className="text-center p-8 bg-tertiary/10 backdrop-blur rounded-2xl border border-tertiary/20 hover:bg-tertiary/20 transition-all duration-300">
+                <stat.icon className="w-12 h-12 mx-auto mb-4 text-secondary" />
+                <div className="text-5xl font-bold mb-2 text-secondary">{stat.value}</div>
+                <div className="text-xl font-semibold uppercase tracking-wide text-tertiary">{stat.label}</div>
               </div>)}
           </div>
         </div>
       </section>
 
-      {/* Universities — editorial list */}
-      <section className="py-24 bg-background">
+      {/* Universities Section */}
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto">
-            <div className="grid lg:grid-cols-12 gap-10 mb-12 items-end" data-reveal>
-              <div className="lg:col-span-5">
-                <div className="kicker mb-4">The Lineup</div>
-                <h2 className="font-display text-4xl sm:text-5xl md:text-6xl text-tertiary leading-tight">
-                  Participating <span className="font-display-italic text-secondary">universities</span>.
-                </h2>
-              </div>
-              <div className="lg:col-span-7 lg:pl-8 lg:border-l border-secondary/20">
-                <p className="text-lg text-foreground/70 leading-relaxed">
-                  Seven institutions across the UAE come together to celebrate quick thinking and procedural fluency at the highest level.
-                </p>
-              </div>
-            </div>
+          <div className="flex items-center justify-center mb-12">
+            <Trophy className="w-10 h-10 text-secondary mr-3" />
+            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
+              Participating Universities
+            </h2>
+          </div>
 
-            <ol className="divide-y divide-secondary/20 border-y border-secondary/20">
-              {universities.map((u, i) => (
-                <li
-                  key={i}
-                  data-reveal
-                  style={{ ['--reveal-delay' as string]: `${i * 70}ms` }}
-                  className="group flex items-baseline justify-between py-6 sm:py-7 gap-6 hover:px-4 transition-all duration-500 hover:bg-primary/10 -mx-4 px-4 cursor-default"
-                >
-                  <div className="flex items-baseline gap-6 min-w-0">
-                    <span className="font-display-italic text-secondary/40 text-xl sm:text-2xl tabular-nums w-10 flex-shrink-0">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <span className="font-display text-xl sm:text-2xl md:text-3xl text-tertiary truncate group-hover:text-secondary transition-colors duration-500">{u}</span>
-                  </div>
-                  <ArrowRight className="w-5 h-5 text-secondary opacity-0 -translate-x-3 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 flex-shrink-0" />
-                </li>
-              ))}
-            </ol>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {universities.slice(0, 6).map((university, index) => <Card key={index} className="p-6 text-center bg-card hover:bg-primary/10 border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10">
+                <p className="text-lg font-semibold text-foreground">{university}</p>
+              </Card>)}
+            {/* Last university - full width centered */}
+            <Card className="p-6 text-center bg-card hover:bg-primary/10 border-primary/30 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/10 sm:col-span-2">
+              <p className="text-lg font-semibold text-foreground">{universities[6]}</p>
+            </Card>
           </div>
         </div>
       </section>
 
-      {/* Featured Testimonials */}
-      <section className="py-24 bg-gradient-to-br from-secondary/10 via-background to-primary/20">
+      {/* Featured Testimonials Section */}
+      <section className="py-16 bg-gradient-to-br from-secondary/10 via-background to-primary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto mb-14 text-center" data-reveal>
-            <div className="kicker mx-auto justify-center mb-5">Voices</div>
-            <h2 className="font-display text-4xl sm:text-5xl md:text-6xl text-tertiary">
-              What participants <span className="font-display-italic text-secondary">had to say</span> about their experience.
-            </h2>
-          </div>
-
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
+            What Participants Had to Say About Their Experience
+          </h2>
+          
           <div className="max-w-4xl mx-auto space-y-6 mb-10">
-            <Card data-reveal className="card-lift p-6 md:p-8 bg-card border-primary/30 ml-0 md:mr-12">
+            <Card className="p-6 md:p-8 bg-card border-primary/30 hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <div>
@@ -168,7 +134,7 @@ const Home = () => {
               </div>
             </Card>
             
-            <Card data-reveal className="card-lift p-6 md:p-8 bg-primary/30 border-primary/30 mr-0 md:ml-12">
+            <Card className="p-6 md:p-8 bg-primary/30 border-primary/30 hover:shadow-lg transition-all duration-300 mr-0 md:ml-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <div>
@@ -180,7 +146,7 @@ const Home = () => {
               </div>
             </Card>
             
-            <Card data-reveal className="card-lift p-6 md:p-8 bg-card border-primary/30 ml-0 md:mr-12">
+            <Card className="p-6 md:p-8 bg-card border-primary/30 hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <div>
@@ -192,7 +158,7 @@ const Home = () => {
               </div>
             </Card>
             
-            <Card data-reveal className="card-lift p-6 md:p-8 bg-primary/30 border-primary/30 mr-0 md:ml-12">
+            <Card className="p-6 md:p-8 bg-primary/30 border-primary/30 hover:shadow-lg transition-all duration-300 mr-0 md:ml-12">
               <div className="flex gap-4">
                 <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <div>
@@ -207,8 +173,8 @@ const Home = () => {
           
           <div className="text-center">
             <Link to="/testimonials">
-              <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground gap-2 rounded-full px-7 h-12 group">
-                Read more
+              <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground gap-2">
+                Read more 
                 <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
@@ -216,37 +182,43 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Competition Philosophy — editorial numbered manifesto */}
-      <section className="py-24 bg-primary/30 relative overflow-hidden">
+      {/* Competition Philosophy Section */}
+      <section className="py-16 bg-primary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto">
-            <div className="mb-16 grid lg:grid-cols-12 gap-8 items-end" data-reveal>
-              <div className="lg:col-span-7">
-                <div className="kicker mb-5">Manifesto</div>
-                <h2 className="font-display text-4xl sm:text-5xl md:text-6xl text-tertiary leading-tight">
-                  Competition <span className="font-display-italic text-secondary">philosophy</span>.
-                </h2>
-              </div>
-              <div className="lg:col-span-5 lg:text-right">
-                <p className="font-display-italic text-secondary text-2xl md:text-3xl">"Just your brain, your skills, your passion."</p>
-              </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center justify-center mb-8">
+              <Brain className="w-10 h-10 text-secondary mr-3" />
+              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-secondary to-tertiary bg-clip-text text-transparent">
+                Competition Philosophy
+          </h2>
             </div>
-
-            <div className="space-y-12">
-              {[
-                { icon: Sparkles, text: <>The <strong>Takãmul Cup</strong> celebrates <strong>mathematical excellence in the AI era</strong> by honoring the irreplaceable power of human cognition. In an age where artificial intelligence can solve complex problems instantly, we create a space that celebrates <strong>the brain</strong>—its creativity, procedural fluency, pattern recognition, and deep mathematical reasoning.</> },
-                { icon: Brain, text: <>The Takãmul Cup fosters an environment where <strong>cognitive skills</strong> and <strong>procedural fluency</strong> are not just valued but celebrated. It's a reminder that while technology advances, the human capacity for mathematical thought remains extraordinary and worth cultivating.</> },
-                { icon: Sparkles, text: <>This competition is about <strong>living mathematics</strong>—experiencing the thrill of solving integrals with nothing but mental agility, pencil, and paper. We isolate AI outside the room; inside, it's just <strong>your brain, your skills, and your passion for mathematics</strong>.</> },
-              ].map((item, i) => (
-                <div key={i} data-reveal style={{ ['--reveal-delay' as string]: `${i * 120}ms` }} className="grid lg:grid-cols-12 gap-6 lg:gap-10 items-start pb-12 border-b border-secondary/20 last:border-b-0">
-                  <div className="lg:col-span-3 flex items-baseline gap-4">
-                    <span className="section-number">{String(i + 1).padStart(2, "0")}</span>
-                    <item.icon className="w-6 h-6 text-secondary mt-2" />
-                  </div>
-                  <p className="lg:col-span-9 text-lg md:text-xl text-tertiary leading-relaxed">{item.text}</p>
-                </div>
-              ))}
-            </div>
+            
+            <Card className="p-8 bg-primary border-secondary/30 mb-6">
+              <div className="flex items-start gap-4">
+                <Sparkles className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
+                <p className="text-lg text-tertiary leading-relaxed">
+                  The <strong>Takãmul Cup</strong> celebrates <strong>mathematical excellence in the AI era</strong> by honoring the irreplaceable power of human cognition. In an age where artificial intelligence can solve complex problems instantly, we create a space that celebrates <strong>the brain</strong>—its creativity, procedural fluency, pattern recognition, and deep mathematical reasoning.
+          </p>
+              </div>
+            </Card>
+            
+            <Card className="p-8 bg-primary border-secondary/30 mb-6">
+              <div className="flex items-start gap-4">
+                <Brain className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
+                <p className="text-lg text-tertiary leading-relaxed">
+                  The Takãmul Cup fosters an environment where <strong>cognitive skills</strong> and <strong>procedural fluency</strong> are not just valued but celebrated. It's a reminder that while technology advances, the human capacity for mathematical thought remains extraordinary and worth cultivating.
+                </p>
+              </div>
+            </Card>
+            
+            <Card className="p-8 bg-primary border-secondary/30">
+              <div className="flex items-start gap-4">
+                <Sparkles className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
+                <p className="text-lg text-tertiary leading-relaxed">
+                  This competition is about <strong>living mathematics</strong>—experiencing the thrill of solving integrals with nothing but mental agility, pencil, and paper. We isolate AI outside the room; inside, it's just <strong>your brain, your skills, and your passion for mathematics</strong>.
+                </p>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
