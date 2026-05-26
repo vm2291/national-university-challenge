@@ -9,59 +9,59 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
 
 @layer base {
   :root {
-    --background: 40 30% 97%;
-    --foreground: 24 25% 18%;
+    --background: 38 40% 97%;
+    --foreground: 22 30% 24%;
 
     --card: 0 0% 100%;
-    --card-foreground: 24 25% 18%;
+    --card-foreground: 22 30% 24%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 24 25% 18%;
+    --popover-foreground: 22 30% 24%;
 
-    /* Primary: #e7c595 - warm beige (most prominent) */
-    --primary: 36 68% 74%;
-    --primary-foreground: 24 25% 18%;
+    /* Primary: warm sand / beige (logo background) */
+    --primary: 34 62% 76%;
+    --primary-foreground: 22 35% 26%;
 
-    /* Secondary: #93460b - burnt orange */
-    --secondary: 25 86% 31%;
-    --secondary-foreground: 40 30% 97%;
+    /* Secondary: softened copper / sienna (logo "p" tone) */
+    --secondary: 22 58% 48%;
+    --secondary-foreground: 38 40% 97%;
 
-    /* Tertiary: #381200 - deep brown */
-    --tertiary: 24 30% 22%;
-    --tertiary-foreground: 36 68% 74%;
+    /* Tertiary: warm cocoa brown (logo frame) */
+    --tertiary: 22 32% 32%;
+    --tertiary-foreground: 34 62% 88%;
 
-    --muted: 36 30% 92%;
-    --muted-foreground: 24 18% 38%;
+    --muted: 36 35% 93%;
+    --muted-foreground: 22 18% 42%;
 
-    --accent: 25 86% 31%;
-    --accent-foreground: 40 30% 97%;
+    --accent: 22 58% 48%;
+    --accent-foreground: 38 40% 97%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 36 40% 80%;
-    --input: 36 40% 80%;
-    --ring: 25 86% 31%;
+    --border: 34 42% 82%;
+    --input: 34 42% 82%;
+    --ring: 22 58% 48%;
 
     --radius: 0.75rem;
     
     /* Custom design tokens - Brand colors */
-    --gold: 36 68% 74%;
-    --gold-dark: 25 86% 31%;
-    --beige: 36 68% 74%;
-    --burnt-orange: 25 86% 31%;
-    --deep-brown: 24 30% 22%;
-    --brown-light: 25 70% 45%;
-    
+    --gold: 34 62% 76%;
+    --gold-dark: 22 58% 48%;
+    --beige: 34 62% 76%;
+    --burnt-orange: 22 58% 48%;
+    --deep-brown: 22 32% 32%;
+    --brown-light: 22 50% 50%;
+
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(36 68% 74%) 0%, hsl(25 86% 31%) 100%);
-    --gradient-beige: linear-gradient(135deg, hsl(36 68% 80%) 0%, hsl(36 55% 70%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(36 68% 80%) 0%, hsl(25 86% 31%) 50%, hsl(16 100% 11%) 100%);
-    
+    --gradient-primary: linear-gradient(135deg, hsl(34 62% 76%) 0%, hsl(22 58% 48%) 100%);
+    --gradient-beige: linear-gradient(135deg, hsl(34 62% 82%) 0%, hsl(34 50% 72%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(34 62% 82%) 0%, hsl(22 58% 48%) 60%, hsl(22 32% 32%) 100%);
+
     /* Shadows */
-    --shadow-primary: 0 10px 40px -10px hsl(25 86% 31% / 0.4);
-    --shadow-beige: 0 10px 40px -10px hsl(36 68% 74% / 0.5);
-    --shadow-elegant: 0 20px 60px -15px hsl(16 100% 11% / 0.2);
+    --shadow-primary: 0 10px 40px -10px hsl(22 58% 48% / 0.35);
+    --shadow-beige: 0 10px 40px -10px hsl(34 62% 76% / 0.5);
+    --shadow-elegant: 0 20px 60px -15px hsl(22 32% 32% / 0.2);
     
     /* Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
