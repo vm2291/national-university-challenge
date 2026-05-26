@@ -44,7 +44,7 @@ const Navigation = () => {
                 className={`px-4 py-2 rounded-md font-medium text-sm transition-all duration-200 ${
                   isActive(link.path)
                     ? "bg-secondary text-secondary-foreground shadow-md"
-                    : "text-foreground hover:bg-muted/40 hover:text-secondary"
+                    : "text-foreground hover:bg-muted/40 hover:text-tertiary"
                 }`}
               >
                 {link.label}

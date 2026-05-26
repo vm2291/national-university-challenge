@@ -35,7 +35,7 @@ const Home = () => {
             <div className="lg:col-span-7 text-center lg:text-left space-y-7 animate-in fade-in slide-in-from-bottom-4 duration-1000">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-secondary/40 bg-card/60 backdrop-blur-sm animate-in fade-in slide-in-from-top-2 duration-700">
                 <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />
-                <p className="text-[11px] sm:text-xs font-medium tracking-[0.22em] text-secondary uppercase">
+                <p className="text-[11px] sm:text-xs font-medium tracking-[0.22em] text-tertiary uppercase">
                   National University Integration Bee
                 </p>
               </div>
@@ -93,8 +93,8 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {stats.map((stat, index) => <div key={index} className="text-center p-8 bg-tertiary/10 backdrop-blur rounded-2xl border border-tertiary/20 hover:bg-tertiary/20 transition-all duration-300">
-                <stat.icon className="w-12 h-12 mx-auto mb-4 text-secondary" />
-                <div className="text-5xl font-bold mb-2 text-secondary">{stat.value}</div>
+                <stat.icon className="w-12 h-12 mx-auto mb-4 text-tertiary" />
+                <div className="text-5xl font-bold mb-2 text-tertiary">{stat.value}</div>
                 <div className="text-xl font-semibold uppercase tracking-wide text-foreground">{stat.label}</div>
               </div>)}
           </div>
@@ -105,7 +105,7 @@ const Home = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center mb-12">
-            <Trophy className="w-10 h-10 text-secondary mr-3" />
+            <Trophy className="w-10 h-10 text-tertiary mr-3" />
             <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
               Participating Universities
             </h2>
@@ -131,19 +131,19 @@ const Home = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <Card className="p-8 bg-card backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
-              <Calendar className="w-10 h-10 text-secondary mx-auto mb-4" />
+              <Calendar className="w-10 h-10 text-tertiary mx-auto mb-4" />
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Date</p>
               <p className="text-xl font-bold text-foreground">Sunday</p>
               <p className="text-2xl font-bold text-foreground">Dec 7, 2025</p>
             </Card>
             <Card className="p-8 bg-card backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
-              <Clock className="w-10 h-10 text-secondary mx-auto mb-4" />
+              <Clock className="w-10 h-10 text-tertiary mx-auto mb-4" />
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Time</p>
               <p className="text-2xl font-bold text-foreground">9:00 AM - 5:00 PM</p>
               <p className="text-lg text-foreground">(GST)</p>
             </Card>
             <Card className="p-8 bg-card backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
-              <MapPin className="w-10 h-10 text-secondary mx-auto mb-4" />
+              <MapPin className="w-10 h-10 text-tertiary mx-auto mb-4" />
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Venue</p>
               <p className="text-xl font-bold text-foreground">NYU Abu Dhabi</p>
               <p className="text-lg text-foreground">C2 West Forum</p>
@@ -162,7 +162,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto space-y-6 mb-10">
             <Card className="p-6 md:p-8 bg-card border-border hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
               <div className="flex gap-4">
-                <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <Quote className="w-6 h-6 text-tertiary flex-shrink-0 mt-1" />
                 <div>
                   <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
                     The Takāmul Cup was an intense but rewarding experience that pushed me to think quickly, collaborate under pressure, and apply integration techniques creatively. Competing at a national level was both challenging and motivating, and it strengthened my confidence in problem-solving beyond the classroom.
@@ -174,7 +174,7 @@ const Home = () => {
             
             <Card className="p-6 md:p-8 bg-muted/40 border-border hover:shadow-lg transition-all duration-300 mr-0 md:ml-12">
               <div className="flex gap-4">
-                <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <Quote className="w-6 h-6 text-tertiary flex-shrink-0 mt-1" />
                 <div>
                   <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
                     Takāmul Cup was one of the most exciting competitions I've ever participated in. The fast pace and clear objective leaves you with almost no time to be nervous and get straight into solving the problem. The feeling this left me with is unmatched.
@@ -186,7 +186,7 @@ const Home = () => {
             
             <Card className="p-6 md:p-8 bg-card border-border hover:shadow-lg transition-all duration-300 ml-0 md:mr-12">
               <div className="flex gap-4">
-                <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <Quote className="w-6 h-6 text-tertiary flex-shrink-0 mt-1" />
                 <div>
                   <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
                     I loved the entire experience! I think it was really nice to have a space to challenge ourselves. As someone without a very heavy math background, the Takamul Cup also gave me a reason to really refine my skills. The entire competition was memorable. I loved how organised the competition was. All of the participants clearly understood the structure and the flow of the different stages. Everyone there was really nice which made competing a lot less stressful.
@@ -198,7 +198,7 @@ const Home = () => {
             
             <Card className="p-6 md:p-8 bg-muted/40 border-border hover:shadow-lg transition-all duration-300 mr-0 md:ml-12">
               <div className="flex gap-4">
-                <Quote className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
+                <Quote className="w-6 h-6 text-tertiary flex-shrink-0 mt-1" />
                 <div>
                   <blockquote className="text-foreground/90 text-lg leading-relaxed mb-2">
                     Math war. Never knew a math competition could be this exciting. The structure was fun, especially the tie breakers. They were vastly different, you turn from aiming to beat your opponent to pushing yourself to the absolute limit.
@@ -225,7 +225,7 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-8">
-              <Brain className="w-10 h-10 text-secondary mr-3" />
+              <Brain className="w-10 h-10 text-tertiary mr-3" />
               <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
                 Competition Philosophy
           </h2>
@@ -233,7 +233,7 @@ const Home = () => {
             
             <Card className="p-8 bg-card border-border mb-6">
               <div className="flex items-start gap-4">
-                <Sparkles className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
+                <Sparkles className="w-8 h-8 text-tertiary flex-shrink-0 mt-1" />
                 <p className="text-lg text-foreground leading-relaxed">
                   The <strong>Takãmul Cup</strong> celebrates <strong>mathematical excellence in the AI era</strong> by honoring the irreplaceable power of human cognition. In an age where artificial intelligence can solve complex problems instantly, we create a space that celebrates <strong>the brain</strong>—its creativity, procedural fluency, pattern recognition, and deep mathematical reasoning.
           </p>
@@ -242,7 +242,7 @@ const Home = () => {
             
             <Card className="p-8 bg-card border-border mb-6">
               <div className="flex items-start gap-4">
-                <Brain className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
+                <Brain className="w-8 h-8 text-tertiary flex-shrink-0 mt-1" />
                 <p className="text-lg text-foreground leading-relaxed">
                   The Takãmul Cup fosters an environment where <strong>cognitive skills</strong> and <strong>procedural fluency</strong> are not just valued but celebrated. It's a reminder that while technology advances, the human capacity for mathematical thought remains extraordinary and worth cultivating.
                 </p>
@@ -251,7 +251,7 @@ const Home = () => {
             
             <Card className="p-8 bg-card border-border">
               <div className="flex items-start gap-4">
-                <Sparkles className="w-8 h-8 text-secondary flex-shrink-0 mt-1" />
+                <Sparkles className="w-8 h-8 text-tertiary flex-shrink-0 mt-1" />
                 <p className="text-lg text-foreground leading-relaxed">
                   This competition is about <strong>living mathematics</strong>—experiencing the thrill of solving integrals with nothing but mental agility, pencil, and paper. We isolate AI outside the room; inside, it's just <strong>your brain, your skills, and your passion for mathematics</strong>.
                 </p>
