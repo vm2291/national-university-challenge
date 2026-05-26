@@ -20,26 +20,28 @@ const Home = () => {
   const universities = ["Abu Dhabi University", "American University in Dubai", "Middlesex University Dubai", "Heriot-Watt University Dubai", "UAE University", "NYU Abu Dhabi", "Mohamed bin Zayed University of Artificial Intelligence"];
   return <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden pt-16">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-background to-primary/20" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--primary))_0%,transparent_50%)] opacity-25" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,hsl(var(--secondary))_0%,transparent_50%)] opacity-10" />
+      <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden pt-16 bg-background">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_45%,hsl(var(--secondary)/0.22)_0%,transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,hsl(var(--primary)/0.14)_0%,transparent_45%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_85%,hsl(var(--secondary)/0.12)_0%,transparent_45%)]" />
+        <div className="absolute inset-0 opacity-[0.06] bg-[linear-gradient(hsl(var(--primary))_1px,transparent_1px),linear-gradient(90deg,hsl(var(--primary))_1px,transparent_1px)] bg-[size:72px_72px]" />
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-background" />
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 py-12">
-            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-[#f5dba8] via-[#d4a574] to-[#a86d3a] bg-clip-text text-transparent">
+            <h1 className="text-6xl sm:text-8xl lg:text-9xl font-bold mb-8 tracking-tight leading-none">
+              <span className="bg-gradient-to-r from-[#f5dba8] via-[#e0b076] to-[#b07840] bg-clip-text text-transparent">
                 Takãmul Cup
               </span>
             </h1>
 
-            <div className="inline-block px-6 py-3 bg-secondary rounded-full shadow-lg mb-6">
-              <p className="text-lg sm:text-xl font-bold text-secondary-foreground">
+            <div className="inline-block px-5 py-2 rounded-full mb-8 border border-secondary/40 bg-secondary/10 backdrop-blur-sm">
+              <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] text-secondary uppercase">
                 National University Level Integration Bee
               </p>
             </div>
 
-            <p className="text-base sm:text-lg text-foreground max-w-3xl mx-auto leading-relaxed mb-12 font-medium">
+            <p className="text-lg sm:text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed mb-12 font-light">
               The UAE's premier integration competition for university students, where the brightest mathematical minds compete in speed, accuracy, and strategic problem-solving
             </p>
           </div>
