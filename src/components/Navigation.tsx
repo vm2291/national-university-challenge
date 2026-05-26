@@ -30,7 +30,7 @@ const Navigation = () => {
               alt="Takãmul Cup Logo" 
               className="h-12 w-auto object-contain transform transition-transform group-hover:scale-105"
             />
-            <span className="text-lg font-bold bg-gradient-to-r from-[#5a2a14] via-[#5a2a14] to-[#3d1a08] bg-clip-text text-transparent hidden sm:block">
+            <span className="text-lg font-bold bg-gradient-to-r from-[#c47a1a] via-[#8b4513] to-[#3d1a08] bg-clip-text text-transparent hidden sm:block">
               Takãmul Cup
             </span>
           </Link>

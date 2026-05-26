@@ -57,7 +57,7 @@ const CompetitionStructure = () => {
             <div className="flex justify-center mb-6">
               <ListChecks className="w-16 h-16 text-secondary" />
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#5a2a14] via-[#5a2a14] to-[#3d1a08] bg-clip-text text-transparent">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-[#c47a1a] via-[#8b4513] to-[#3d1a08] bg-clip-text text-transparent">
               Coordinators Info
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
@@ -348,7 +348,7 @@ Final: Winner SF1 vs Winner SF2`}
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-10">
               <Trophy className="w-10 h-10 text-secondary mr-3" />
-              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#5a2a14] via-[#5a2a14] to-[#3d1a08] bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-[#c47a1a] via-[#8b4513] to-[#3d1a08] bg-clip-text text-transparent">
                 Competition Titles and Awards
               </h2>
             </div>
@@ -377,7 +377,7 @@ Final: Winner SF1 vs Winner SF2`}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 uppercase tracking-wide bg-gradient-to-r from-[#5a2a14] via-[#5a2a14] to-[#3d1a08] bg-clip-text text-transparent">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 uppercase tracking-wide bg-gradient-to-r from-[#c47a1a] via-[#8b4513] to-[#3d1a08] bg-clip-text text-transparent">
               Summary for Coordinators
             </h2>
             <Card className="p-6 sm:p-8 bg-card border-2 border-border text-foreground shadow-md">
