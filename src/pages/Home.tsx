@@ -128,81 +128,105 @@ const Home = () => {
       </section>
 
       {/* Universities Section */}
-      <section className="py-20 bg-background relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_50%,hsl(var(--primary)/0.15)_0%,transparent_70%)] pointer-events-none" />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-center mb-14 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-secondary/40 bg-card/60 backdrop-blur-sm mb-5">
-              <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
-              <p className="text-[11px] font-medium tracking-[0.22em] text-[#3d2515] uppercase">Our Network</p>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
-              Participating Universities
-            </h2>
-            <p className="text-lg text-foreground/75 max-w-2xl mx-auto font-light">
-              Seven leading institutions from across the UAE united by a shared pursuit of mathematical excellence.
-            </p>
-          </div>
+      <section className="py-24 bg-[#381200] text-[#f5e8d4] relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_0%,#93460b66_0%,transparent_70%)] pointer-events-none" />
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#e7c595]/40 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#e7c595]/40 to-transparent" />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
-            {universities.map((university, index) => (
-              <div
-                key={index}
-                className="group relative p-6 rounded-2xl bg-gradient-to-br from-[#e9c590]/25 via-[#e9c590]/10 to-transparent border border-[#e9c590]/50 backdrop-blur hover:-translate-y-1 hover:shadow-xl hover:shadow-[#a86b3e]/20 hover:border-[#a86b3e]/50 transition-all duration-500 animate-in fade-in slide-in-from-bottom-6"
-                style={{ animationDelay: `${index * 80}ms`, animationFillMode: "both" }}
-              >
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#a86b3e]/0 to-[#a86b3e]/0 group-hover:from-[#a86b3e]/5 group-hover:to-[#3d2515]/5 transition-all duration-500 pointer-events-none" />
-                <div className="relative flex items-center gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-gradient-to-br from-[#e9c590]/70 to-[#a86b3e]/20 flex items-center justify-center text-xs font-semibold text-[#7a4520] group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
-                    {String(index + 1).padStart(2, "0")}
-                  </div>
-                  <p className="text-base font-medium text-foreground leading-snug">{university}</p>
-                </div>
-              </div>
-            ))}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            {/* Left: title */}
+            <div className="lg:col-span-5 animate-in fade-in slide-in-from-left-6 duration-700">
+              <p className="text-[11px] font-medium tracking-[0.35em] text-[#e7c595] uppercase mb-5">
+                Our Network
+              </p>
+              <h2 className="text-4xl sm:text-5xl font-bold leading-[1.05] mb-6 text-[#f5e8d4]">
+                Participating <br />
+                <span className="italic font-light text-[#e7c595]">Universities</span>
+              </h2>
+              <div className="w-16 h-px bg-[#e7c595]/60 mb-6" />
+              <p className="text-base text-[#f5e8d4]/70 leading-relaxed font-light max-w-md">
+                Seven leading UAE institutions united by a shared pursuit of mathematical excellence.
+              </p>
+            </div>
+
+            {/* Right: list */}
+            <div className="lg:col-span-7">
+              <ul className="divide-y divide-[#e7c595]/15 border-y border-[#e7c595]/15">
+                {universities.map((university, index) => (
+                  <li
+                    key={index}
+                    className="group flex items-center gap-6 py-5 cursor-default animate-in fade-in slide-in-from-right-4"
+                    style={{ animationDelay: `${index * 70}ms`, animationFillMode: "both" }}
+                  >
+                    <span className="text-xs font-mono tracking-widest text-[#e7c595]/60 w-8">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <span className="text-lg sm:text-xl font-light text-[#f5e8d4] flex-1 group-hover:translate-x-2 group-hover:text-[#e7c595] transition-all duration-300">
+                      {university}
+                    </span>
+                    <ArrowRight className="w-4 h-4 text-[#e7c595]/0 group-hover:text-[#e7c595] group-hover:translate-x-1 transition-all duration-300" />
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Event Details Section */}
-      <section className="py-20 bg-background relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_60%_at_50%_40%,hsl(var(--primary)/0.18)_0%,transparent_70%)] pointer-events-none" />
+      <section className="py-24 bg-background relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-center mb-14 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-secondary/40 bg-card/60 backdrop-blur-sm mb-5">
-              <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
-              <p className="text-[11px] font-medium tracking-[0.22em] text-[#3d2515] uppercase">Save the Date</p>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
-              Event Details
-            </h2>
-            <p className="text-lg text-foreground/75 max-w-2xl mx-auto font-light">
-              Mark your calendar — here's everything you need to know about the day.
-            </p>
-          </div>
+          <div className="max-w-5xl mx-auto">
+            <div className="relative rounded-[2.5rem] bg-gradient-to-br from-[#e9c590]/40 via-background to-[#e9c590]/20 border border-[#a86b3e]/20 shadow-2xl shadow-[#a86b3e]/10 overflow-hidden animate-in fade-in zoom-in-95 duration-700">
+              {/* Ticket notches */}
+              <div className="hidden md:block absolute top-1/2 -left-4 w-8 h-8 rounded-full bg-background -translate-y-1/2" />
+              <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-8 rounded-full bg-background -translate-y-1/2" />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {[
-              { icon: Calendar, label: "Date", primary: "Sunday", secondary: "Dec 7, 2025" },
-              { icon: Clock, label: "Time", primary: "9:00 AM – 5:00 PM", secondary: "(GST)" },
-              { icon: MapPin, label: "Venue", primary: "NYU Abu Dhabi", secondary: "C2 West Forum" },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="group relative p-10 rounded-3xl bg-gradient-to-br from-[#e9c590]/30 via-[#e9c590]/15 to-transparent border border-[#e9c590]/60 backdrop-blur hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#a86b3e]/20 transition-all duration-500 animate-in fade-in slide-in-from-bottom-8 text-center"
-                style={{ animationDelay: `${index * 150}ms`, animationFillMode: "both" }}
-              >
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#a86b3e]/0 to-[#a86b3e]/0 group-hover:from-[#a86b3e]/5 group-hover:to-[#3d2515]/5 transition-all duration-500 pointer-events-none" />
-                <div className="relative">
-                  <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-2xl bg-gradient-to-br from-[#e9c590]/60 to-[#a86b3e]/20 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
-                    <item.icon className="w-8 h-8 text-[#7a4520]" strokeWidth={2} />
+              <div className="p-8 sm:p-12">
+                {/* Header */}
+                <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10 pb-8 border-b border-dashed border-[#a86b3e]/30">
+                  <div>
+                    <p className="text-[11px] font-medium tracking-[0.35em] text-[#7a4520] uppercase mb-2">
+                      Admit One
+                    </p>
+                    <h2 className="text-4xl sm:text-5xl font-bold text-[#3d2515] leading-none">
+                      Event Details
+                    </h2>
                   </div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#7a4520] mb-3">{item.label}</p>
-                  <p className="text-2xl font-bold text-foreground leading-tight">{item.primary}</p>
-                  <p className="text-base text-foreground/70 mt-1 font-light">{item.secondary}</p>
+                  <div className="text-right">
+                    <p className="text-[10px] uppercase tracking-[0.3em] text-[#7a4520]/70">Edition</p>
+                    <p className="text-2xl font-bold text-[#3d2515] font-mono">No. 2025</p>
+                  </div>
+                </div>
+
+                {/* Itinerary rows */}
+                <div className="space-y-6">
+                  {[
+                    { icon: Calendar, label: "Date", primary: "Sunday, Dec 7, 2025", secondary: "Mark your calendar" },
+                    { icon: Clock, label: "Time", primary: "9:00 AM – 5:00 PM", secondary: "Gulf Standard Time (GST)" },
+                    { icon: MapPin, label: "Venue", primary: "NYU Abu Dhabi", secondary: "C2 West Forum" },
+                  ].map((item, index) => (
+                    <div
+                      key={index}
+                      className="group grid grid-cols-[auto_1fr_auto] sm:grid-cols-[auto_140px_1fr] items-center gap-5 sm:gap-8 py-4 animate-in fade-in slide-in-from-left-4"
+                      style={{ animationDelay: `${index * 120}ms`, animationFillMode: "both" }}
+                    >
+                      <div className="flex items-center justify-center w-12 h-12 rounded-full border border-[#a86b3e]/30 bg-background/60 group-hover:bg-[#a86b3e] group-hover:border-[#a86b3e] transition-all duration-500">
+                        <item.icon className="w-5 h-5 text-[#7a4520] group-hover:text-[#f5e8d4] transition-colors duration-500" strokeWidth={2} />
+                      </div>
+                      <p className="text-[10px] uppercase tracking-[0.3em] text-[#7a4520] font-semibold col-span-2 sm:col-span-1">
+                        {item.label}
+                      </p>
+                      <div className="col-span-3 sm:col-span-1">
+                        <p className="text-xl sm:text-2xl font-bold text-[#3d2515] leading-tight">{item.primary}</p>
+                        <p className="text-sm text-[#7a4520]/80 font-light mt-0.5">{item.secondary}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
