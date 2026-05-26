@@ -1,8 +1,17 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Calendar, MapPin, Trophy, Users, Clock, Award, ListChecks, Users2 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Footer from "@/components/Footer";
 
 const EventStructure = () => {
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.getElementById(location.hash.slice(1));
+      if (el) setTimeout(() => el.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
+    }
+  }, [location]);
   const stages = [
     { label: "Stage 1 (Qualifiers):", text: "All 35 participants → Select TOP 16" },
     { label: "Stage 2 (Round of 16):", text: "TOP 16 → 8 head-to-head matches → TOP 8" },
