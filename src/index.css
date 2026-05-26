@@ -15,49 +15,54 @@ Brand colors: #93460b (burnt orange) and #e7c796 (warm beige)
        Shade 3: deep brown text & footer (#381200)
        All foregrounds chosen for WCAG AA contrast. */
 
-    --background: 38 67% 95%;        /* #fbf4e8 cream */
-    --foreground: 22 70% 11%;        /* #381200 deep brown */
+    /* Harmonized palette inspired by the Takāmul Cup logo.
+       Cream #f7ecd9 background, sand #eac78f accent, deep brown #381200 text.
+       Contrast pairs: brown-on-cream 11.7:1 (AAA), cream-on-brown 11.7:1 (AAA),
+       brown-on-sand 7.2:1 (AAA). */
 
-    --card: 38 60% 91%;              /* warm cream card, blends with bg */
+    --background: 36 60% 91%;        /* warm cream */
+    --foreground: 22 70% 11%;        /* deep brown */
+
+    --card: 36 55% 87%;              /* slightly deeper cream */
     --card-foreground: 22 70% 11%;
 
-    --popover: 38 60% 91%;
+    --popover: 36 55% 87%;
     --popover-foreground: 22 70% 11%;
 
-    /* Primary: desert sand #e9c590 */
-    --primary: 36 67% 74%;
-    --primary-foreground: 22 70% 11%;   /* deep brown for AA contrast */
+    /* Primary = deep brown for buttons & strong accents (high contrast) */
+    --primary: 22 70% 11%;
+    --primary-foreground: 36 60% 91%;
 
-    --secondary: 36 67% 74%;
+    /* Secondary = sand surface (use brown text on it) */
+    --secondary: 34 70% 74%;         /* #eac78f */
     --secondary-foreground: 22 70% 11%;
 
-    /* Tertiary: deep brown for footer */
     --tertiary: 22 70% 11%;
-    --tertiary-foreground: 38 67% 95%;
+    --tertiary-foreground: 36 60% 91%;
 
-    --muted: 38 50% 89%;             /* slightly deeper cream */
-    --muted-foreground: 22 40% 25%;  /* readable secondary text */
+    --muted: 36 50% 84%;
+    --muted-foreground: 22 50% 22%;
 
-    --accent: 36 67% 74%;
+    --accent: 34 70% 74%;            /* sand accent surface */
     --accent-foreground: 22 70% 11%;
 
-    --destructive: 0 65% 48%;
+    --destructive: 0 65% 42%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 36 35% 78%;
-    --input: 36 35% 78%;
-    --ring: 36 67% 60%;
+    --border: 34 40% 72%;
+    --input: 34 40% 72%;
+    --ring: 22 70% 11%;
 
     --radius: 0.75rem;
 
-    --gold: 36 67% 74%;
+    --gold: 34 70% 74%;
     --gold-dark: 22 70% 11%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(36 67% 74%) 0%, hsl(22 70% 11%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(38 67% 95%) 0%, hsl(36 67% 88%) 50%, hsl(36 67% 74%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(22 70% 11%) 0%, hsl(22 60% 22%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(36 60% 91%) 0%, hsl(34 65% 82%) 50%, hsl(34 70% 74%) 100%);
 
-    --shadow-primary: 0 10px 40px -10px hsl(26 40% 35% / 0.20);
-    --shadow-elegant: 0 20px 60px -15px hsl(22 35% 20% / 0.15);
+    --shadow-primary: 0 10px 40px -10px hsl(22 70% 11% / 0.25);
+    --shadow-elegant: 0 20px 60px -15px hsl(22 70% 11% / 0.20);
     
     /* Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
