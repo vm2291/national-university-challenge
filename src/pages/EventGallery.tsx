@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { X, ChevronLeft, ChevronRight, Calendar, MapPin, Users, GraduationCap } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Calendar, MapPin, Users, GraduationCap, Camera } from "lucide-react";
+import Footer from "@/components/Footer";
 
 const EventGallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -50,65 +51,72 @@ const EventGallery = () => {
   const goToNext = () => setSelectedImage(prev => prev !== null ? (prev + 1) % galleryImages.length : null);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-background">
-      {/* Hero Section */}
-      <section className="relative pt-24 pb-8 px-4">
-        <div className="max-w-7xl mx-auto text-center"> <br></br>
-          {/* Stats and date - 2x2 grid on mobile, flex-row on md+ */}
-          <div className="
-            grid grid-cols-2 gap-3 mb-6
-            md:flex md:flex-row md:items-center md:justify-center md:gap-8 md:mb-6
-          ">
-            <div className="flex items-center gap-1 justify-center text-primary-foreground/90 text-base md:text-2xl font-semibold">
-              <Calendar className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
-              <span>December 7</span>
+    <div className="min-h-screen pt-16">
+      {/* Hero Section - matches other pages */}
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-background to-primary/10" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-4xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            <div className="flex justify-center mb-6">
+              <Camera className="w-16 h-16 text-secondary" />
             </div>
-            <div className="flex items-center gap-1 justify-center text-primary-foreground/90 text-base md:text-2xl font-semibold">
-              <MapPin className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
-              <span>NYU Abu Dhabi</span>
-            </div>
-            <div className="flex items-center gap-1 justify-center text-primary-foreground/90 text-base md:text-2xl font-semibold">
-              <Users className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
-              <span>35+ Competitors</span>
-            </div>
-            <div className="flex items-center gap-1 justify-center text-primary-foreground/90 text-base md:text-2xl font-semibold">
-              <GraduationCap className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
-              <span>7 Universities</span>
-            </div>
-          </div>
-          <div className="border-t border-primary/10 max-w-2xl mx-auto my-5" />
-          {/* Event summary */}
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Takãmul Cup 2025 brought together the brightest mathematical minds from across the UAE, 
-              fostering collaboration, competition, and celebration of integration mastery. We extend our 
-              deepest gratitude to all sponsors, organizers, and participants who made this event a reality.
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-secondary via-secondary to-tertiary bg-clip-text text-transparent">
+              2025 Gallery
+            </h1>
+            <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
+              Moments from the inaugural Takãmul Cup
             </p>
+
+            {/* Event facts row */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 pt-8 max-w-3xl mx-auto">
+              {[
+                { Icon: Calendar, label: "December 7" },
+                { Icon: MapPin, label: "NYU Abu Dhabi" },
+                { Icon: Users, label: "35+ Competitors" },
+                { Icon: GraduationCap, label: "7 Universities" },
+              ].map(({ Icon, label }, i) => (
+                <div
+                  key={i}
+                  className="flex items-center justify-center gap-2 px-3 py-3 rounded-xl bg-card/70 backdrop-blur border border-primary/30"
+                >
+                  <Icon className="w-4 h-4 md:w-5 md:h-5 text-secondary flex-shrink-0" />
+                  <span className="text-sm md:text-base font-medium text-foreground">{label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Gallery - Two-column grid for all images */}
-      <section className="px-4 pb-20 mt-8">
-        {/* Added mt-8 for more space above gallery */}
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {/* Intro */}
+      <section className="py-12 bg-primary/10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="max-w-3xl mx-auto text-center text-lg text-muted-foreground leading-relaxed">
+            Takãmul Cup 2025 brought together the brightest mathematical minds from across the UAE,
+            fostering collaboration, competition, and celebration of integration mastery. We extend our
+            deepest gratitude to all sponsors, organizers, and participants who made this event a reality.
+          </p>
+        </div>
+      </section>
+
+      {/* Masonry Gallery */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto columns-1 sm:columns-2 lg:columns-3 gap-4 [column-fill:_balance]">
             {galleryImages.map((src, index) => (
-              <div
+              <button
                 key={index}
-                className="cursor-pointer group"
                 onClick={() => openLightbox(index)}
+                className="group relative mb-4 block w-full overflow-hidden rounded-xl border border-primary/30 bg-card shadow-sm hover:shadow-xl transition-all duration-300 break-inside-avoid"
               >
-                <div className="relative overflow-hidden rounded-2xl border-2 border-primary/20 hover:border-secondary/50 transition-all duration-300 shadow-md hover:shadow-xl">
-                  <img
-                    src={src}
-                    alt={`Takãmul Cup 2025 - Image ${index + 1}`}
-                    className="w-full h-[280px] md:h-[320px] object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div>
-              </div>
+                <img
+                  src={src}
+                  alt={`Takãmul Cup 2025 - Image ${index + 1}`}
+                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  loading="lazy"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-tertiary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </button>
             ))}
           </div>
         </div>
@@ -117,7 +125,7 @@ const EventGallery = () => {
       {/* Lightbox */}
       {selectedImage !== null && (
         <div 
-          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
+          className="fixed inset-0 z-50 bg-tertiary/95 backdrop-blur flex items-center justify-center"
           onClick={closeLightbox}
         >
           <button
@@ -153,6 +161,7 @@ const EventGallery = () => {
           </div>
         </div>
       )}
+      <Footer />
     </div>
   );
 };
