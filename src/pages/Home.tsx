@@ -124,25 +124,25 @@ const Home = () => {
       </section>
 
       {/* Event Details Section */}
-      <section className="py-16 bg-gradient-to-br from-primary/10 via-background to-primary/20">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
             Event Details
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <Card className="p-8 bg-white backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
+            <Card className="p-8 bg-card backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
               <Calendar className="w-10 h-10 text-[#a86b3e] mx-auto mb-4" />
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Date</p>
               <p className="text-xl font-bold text-foreground">Sunday</p>
               <p className="text-2xl font-bold text-foreground">Dec 7, 2025</p>
             </Card>
-            <Card className="p-8 bg-white backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
+            <Card className="p-8 bg-card backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
               <Clock className="w-10 h-10 text-[#a86b3e] mx-auto mb-4" />
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Time</p>
               <p className="text-2xl font-bold text-foreground">9:00 AM - 5:00 PM</p>
               <p className="text-lg text-foreground">(GST)</p>
             </Card>
-            <Card className="p-8 bg-white backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
+            <Card className="p-8 bg-card backdrop-blur border-border hover:border-secondary/40 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 text-center">
               <MapPin className="w-10 h-10 text-[#a86b3e] mx-auto mb-4" />
               <p className="text-sm uppercase tracking-wider text-muted-foreground mb-2">Venue</p>
               <p className="text-xl font-bold text-foreground">NYU Abu Dhabi</p>
