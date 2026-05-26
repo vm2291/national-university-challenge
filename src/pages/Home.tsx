@@ -3,6 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import hero1 from "@/assets/hero1.jpg";
+import hero2 from "@/assets/hero2.jpg";
+import hero3 from "@/assets/hero3.jpg";
 const Home = () => {
   const stats = [{
     icon: Users,
@@ -20,30 +23,62 @@ const Home = () => {
   const universities = ["Abu Dhabi University", "American University in Dubai", "Middlesex University Dubai", "Heriot-Watt University Dubai", "UAE University", "NYU Abu Dhabi", "Mohamed bin Zayed University of Artificial Intelligence"];
   return <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden pt-16 bg-background">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_45%,hsl(var(--secondary)/0.22)_0%,transparent_70%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,hsl(var(--primary)/0.14)_0%,transparent_45%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_85%,hsl(var(--secondary)/0.12)_0%,transparent_45%)]" />
-        <div className="absolute inset-0 opacity-[0.06] bg-[linear-gradient(hsl(var(--primary))_1px,transparent_1px),linear-gradient(90deg,hsl(var(--primary))_1px,transparent_1px)] bg-[size:72px_72px]" />
+      <section className="relative min-h-[calc(100vh-4rem)] flex items-center overflow-hidden pt-12 pb-16 bg-background">
+        {/* Soft warm radials */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_30%_40%,hsl(var(--primary)/0.28)_0%,transparent_65%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_75%,hsl(var(--secondary)/0.18)_0%,transparent_55%)]" />
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-background" />
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 py-12">
-            <h1 className="text-6xl sm:text-8xl lg:text-9xl font-bold mb-8 tracking-tight leading-none">
-              <span className="bg-gradient-to-r from-[#c47a1a] via-[#8b4513] to-[#3d1a08] bg-clip-text text-transparent">
-                Takãmul Cup
-              </span>
-            </h1>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+            {/* Text column */}
+            <div className="lg:col-span-7 text-center lg:text-left space-y-7 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-secondary/40 bg-card/60 backdrop-blur-sm animate-in fade-in slide-in-from-top-2 duration-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />
+                <p className="text-[11px] sm:text-xs font-medium tracking-[0.22em] text-secondary uppercase">
+                  National University Integration Bee
+                </p>
+              </div>
 
-            <div className="inline-block px-5 py-2 rounded-full mb-8 border border-secondary/40 bg-secondary/10 backdrop-blur-sm">
-              <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] text-secondary uppercase">
-                National University Level Integration Bee
+              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-normal leading-[0.95] tracking-tight">
+                <span className="block bg-gradient-to-br from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent italic">
+                  Takãmul
+                </span>
+                <span className="block text-foreground">Cup</span>
+              </h1>
+
+              <p className="text-lg sm:text-xl text-foreground/75 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                The UAE's premier integration competition for university students, where the brightest mathematical minds compete in speed, accuracy, and strategic problem-solving.
               </p>
+
+              <div className="flex flex-wrap gap-3 justify-center lg:justify-start pt-2">
+                <Link to="/event-structure">
+                  <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground gap-2 px-6 h-12 rounded-full shadow-lg shadow-secondary/20">
+                    Event Details <ArrowRight className="w-4 h-4" />
+                  </Button>
+                </Link>
+                <Link to="/event-gallery">
+                  <Button variant="outline" className="border-secondary/40 text-foreground hover:bg-muted/40 gap-2 px-6 h-12 rounded-full">
+                    View 2025 Gallery
+                  </Button>
+                </Link>
+              </div>
             </div>
 
-            <p className="text-lg sm:text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed mb-12 font-light">
-              The UAE's premier integration competition for university students, where the brightest mathematical minds compete in speed, accuracy, and strategic problem-solving
-            </p>
+            {/* Photo collage column */}
+            <div className="lg:col-span-5 relative h-[420px] sm:h-[480px] lg:h-[560px] animate-in fade-in duration-1000">
+              <div className="absolute top-0 right-0 w-[62%] h-[58%] rounded-2xl overflow-hidden shadow-2xl shadow-tertiary/20 border-4 border-card rotate-[3deg] hover:rotate-0 transition-transform duration-700 ease-out animate-in slide-in-from-right-8 fade-in" style={{ animationDelay: "200ms", animationFillMode: "both" }}>
+                <img src={hero1} alt="Takãmul Cup competition" className="w-full h-full object-cover" loading="eager" />
+              </div>
+              <div className="absolute bottom-0 left-0 w-[58%] h-[55%] rounded-2xl overflow-hidden shadow-2xl shadow-tertiary/20 border-4 border-card -rotate-[4deg] hover:rotate-0 transition-transform duration-700 ease-out animate-in slide-in-from-left-8 fade-in" style={{ animationDelay: "400ms", animationFillMode: "both" }}>
+                <img src={hero2} alt="Competitors solving integrals" className="w-full h-full object-cover" loading="eager" />
+              </div>
+              <div className="absolute top-[28%] left-[34%] w-[44%] h-[44%] rounded-2xl overflow-hidden shadow-2xl shadow-tertiary/30 border-4 border-card rotate-[-2deg] hover:rotate-0 transition-transform duration-700 ease-out animate-in zoom-in-50 fade-in" style={{ animationDelay: "600ms", animationFillMode: "both" }}>
+                <img src={hero3} alt="Award ceremony" className="w-full h-full object-cover" loading="eager" />
+              </div>
+              {/* Soft glow */}
+              <div className="absolute -inset-8 -z-10 bg-[radial-gradient(circle_at_50%_50%,hsl(var(--primary)/0.35)_0%,transparent_60%)] blur-2xl" />
+            </div>
           </div>
         </div>
       </section>
@@ -74,7 +109,7 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center mb-12">
             <Trophy className="w-10 h-10 text-secondary mr-3" />
-            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#c47a1a] via-[#8b4513] to-[#3d1a08] bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
               Participating Universities
             </h2>
           </div>
@@ -94,7 +129,7 @@ const Home = () => {
       {/* Event Details Section */}
       <section className="py-16 bg-gradient-to-br from-primary/10 via-background to-primary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-[#c47a1a] via-[#8b4513] to-[#3d1a08] bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
             Event Details
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -123,7 +158,7 @@ const Home = () => {
       {/* Featured Testimonials Section */}
       <section className="py-16 bg-gradient-to-br from-secondary/10 via-background to-primary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#c47a1a] via-[#8b4513] to-[#3d1a08] bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
             What Participants Had to Say About Their Experience
           </h2>
           
@@ -194,7 +229,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-8">
               <Brain className="w-10 h-10 text-secondary mr-3" />
-              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#c47a1a] via-[#8b4513] to-[#3d1a08] bg-clip-text text-transparent">
+              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-[#a86b3e] via-[#7a4520] to-[#3d2515] bg-clip-text text-transparent">
                 Competition Philosophy
           </h2>
             </div>
