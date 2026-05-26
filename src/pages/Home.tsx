@@ -184,37 +184,34 @@ const Home = () => {
               { icon: Calendar, label: "Date", primary: "Sunday, Dec 7, 2025", secondary: "Mark your calendar" },
               { icon: Clock, label: "Time", primary: "9:00 AM – 5:00 PM", secondary: "Gulf Standard Time (GST)" },
               { icon: MapPin, label: "Venue", primary: "NYU Abu Dhabi", secondary: "C2 West Forum" },
-            ].map((item, index) => {
-              const isOdd = index % 2 === 1;
-              return (
-                <div
-                  key={index}
-                  className="relative mb-10 last:mb-0 sm:grid sm:grid-cols-2 sm:gap-12 sm:items-center animate-in fade-in slide-in-from-bottom-6"
-                  style={{ animationDelay: `${index * 150}ms`, animationFillMode: "both" }}
-                >
-                  {/* Dot */}
-                  <div className="absolute left-8 sm:left-1/2 top-6 w-4 h-4 rounded-full bg-[#e9c590] ring-4 ring-background sm:-translate-x-1/2 z-10" />
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="relative mb-10 last:mb-0 sm:grid sm:grid-cols-2 sm:gap-12 sm:items-center animate-in fade-in slide-in-from-bottom-6"
+                style={{ animationDelay: `${index * 150}ms`, animationFillMode: "both" }}
+              >
+                {/* Dot */}
+                <div className="absolute left-8 sm:left-1/2 top-6 w-4 h-4 rounded-full bg-[#e9c590] ring-4 ring-background sm:-translate-x-1/2 z-10" />
 
-                  {/* Label + icon column */}
-                  <div className={`pl-20 sm:pl-0 ${isOdd ? "sm:order-2 sm:text-left sm:pl-12" : "sm:text-right sm:pr-12"}`}>
-                    <div className={`inline-flex items-center gap-3 ${isOdd ? "" : "sm:flex-row-reverse"}`}>
-                      <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-[#e9c590]/60 to-[#a86b3e]/20">
-                        <item.icon className="w-5 h-5 text-[#7a4520]" strokeWidth={2} />
-                      </div>
-                      <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#7a4520]">
-                        {item.label}
-                      </span>
+                {/* Label + icon column (always left) */}
+                <div className="pl-20 sm:pl-0 sm:text-right sm:pr-12">
+                  <div className="inline-flex items-center gap-3 sm:flex-row-reverse">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-[#e9c590]/60 to-[#a86b3e]/20">
+                      <item.icon className="w-5 h-5 text-[#7a4520]" strokeWidth={2} />
                     </div>
-                  </div>
-
-                  {/* Primary/secondary text column */}
-                  <div className={`pl-20 sm:pl-0 mt-2 sm:mt-0 ${isOdd ? "sm:order-1 sm:pr-12 sm:text-right" : "sm:pl-12"}`}>
-                    <p className="text-2xl sm:text-3xl font-bold text-[#7a4520] leading-tight mb-1 tracking-tight">{item.primary}</p>
-                    <p className="text-sm text-[#a86b3e]/80 font-light">{item.secondary}</p>
+                    <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#7a4520]">
+                      {item.label}
+                    </span>
                   </div>
                 </div>
-              );
-            })}
+
+                {/* Primary/secondary text column (always right) */}
+                <div className="pl-20 sm:pl-12 mt-2 sm:mt-0 sm:text-left">
+                  <p className="text-2xl sm:text-3xl font-bold text-[#7a4520] leading-tight mb-1 tracking-tight">{item.primary}</p>
+                  <p className="text-sm text-[#a86b3e]/80 font-light">{item.secondary}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
