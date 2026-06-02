@@ -4,9 +4,9 @@ import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 import CountUp from "@/components/CountUp";
-import hero1 from "@/assets/hero1.jpg";
-import hero2 from "@/assets/hero2.jpg";
-import hero3 from "@/assets/hero3.jpg";
+const hero1 = "/event-2025/competition-room.png";
+const hero2 = "/event-2025/award-ceremony-winner.png";
+const hero3 = "/event-2025/group-photo-winners.png";
 const Home = () => {
   const stats = [{
     icon: Users,
