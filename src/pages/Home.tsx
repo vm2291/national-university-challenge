@@ -4,8 +4,9 @@ import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 import CountUp from "@/components/CountUp";
+import podiumDuo from "@/assets/podium-duo.png.asset.json";
 const hero1 = "/event-2025/competition-room.png";
-const hero2 = "/event-2025/award-ceremony-winner.png";
+const hero2 = podiumDuo.url;
 const hero3 = "/event-2025/group-photo-winners.png";
 const Home = () => {
   const stats = [{
